@@ -1,0 +1,24 @@
+// Anchor mixin
+// ---------------------------------------------------------------
+@mixin anchor-lvha($l-color , $h-color) {
+	&:link {
+		color:$l-color;
+	}
+	&:visited {
+		color:$l-color;
+	}
+	&:hover {
+		color:$l-color;
+		color:$h-color;
+	}
+	&:active {
+		color:$l-color;
+	}
+}
+
+// Text selection mixin
+// ---------------------------------------------------------------
+@mixin selection {
+	::-moz-selection { @content; }
+	::selection { @content; }
+}

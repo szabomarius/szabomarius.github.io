@@ -1,0 +1,21 @@
+// GENERAL BASIC STYLES
+// ---------------------------------------------------------------
+body {
+	//color: $basic-text-color;
+	//font-family: $reading-type;
+	//font-size: $base-font-size;
+	// background-color: $light-bg-color;
+}
+a {
+	// text-decoration:none;
+	// color: $basic-text-color;
+	// @include anchor-lvha( $basic-text-color , $basic-text-color );
+}
+// h1 {font-family: $heading-type;}
+// h2 {font-family: $subheading-type;}
+
+// Text selection color
+@include selection {
+	// color: $light-bg-color;
+	// background: $main-color;
+}
