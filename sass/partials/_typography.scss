@@ -1,9 +1,33 @@
+// ---------------------------------------------------------------
 // THE TYPOGRAPHY STYLES
 // ---------------------------------------------------------------
-
+html {
+	font-size:62.5%; //makes the base 10px
+}
+body {
+	@include x-rem ( font-size,16px );
+	color: $body-bg-color;
+}
 // HEADER STYLES
 // ---------------------------------------------------------------
-
+.main_header {
+	color: $header-txt-color;
+}
+.main_heading {
+	@include x-rem ( font-size, 42px );
+	font-family: $heading-type;
+	text-transform: capitalize;
+	h1 {
+		@include x-rem ( font-size, 98px );
+	}
+}
+.hello {
+	@include x-rem ( font-size, 72px );
+}
+.punctuation {
+	@include x-rem ( font-size, 72px );
+	color: $main-color;
+}
 // CONTENT STYLES
 // ---------------------------------------------------------------
 

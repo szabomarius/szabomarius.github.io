@@ -22,3 +22,10 @@
 	::-moz-selection { @content; }
 	::selection { @content; }
 }
+
+// Rem fallback for Internet Explorer 8 and <
+// ---------------------------------------------------------------
+@mixin x-rem ( $property , $pixels ) {
+	#{$property}: $pixels;
+	#{$property}: ( $pixels / $main-font-size ) * 1rem;
+}

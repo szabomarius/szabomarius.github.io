@@ -1,21 +1,9 @@
+// ---------------------------------------------------------------
 // GENERAL BASIC STYLES
 // ---------------------------------------------------------------
+html , body {
+	width: 100%; height: 100%;
+}
 body {
-	//color: $basic-text-color;
-	//font-family: $reading-type;
-	//font-size: $base-font-size;
-	// background-color: $light-bg-color;
-}
-a {
-	// text-decoration:none;
-	// color: $basic-text-color;
-	// @include anchor-lvha( $basic-text-color , $basic-text-color );
-}
-// h1 {font-family: $heading-type;}
-// h2 {font-family: $subheading-type;}
-
-// Text selection color
-@include selection {
-	// color: $light-bg-color;
-	// background: $main-color;
+	background: $body-bg-color image-url( 'pat/header-pat.png' );
 }

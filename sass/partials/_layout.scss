@@ -1,11 +1,44 @@
+// ---------------------------------------------------------------
 // THE LAYOUT AND REST OF THE STYLES
 // ---------------------------------------------------------------
 
 // HEADER STYLES
 // ---------------------------------------------------------------
 
+.main_header , .head_container {
+	width: 100%; min-height: 100%;
+}
+.main_header {
+	display: table;
+}
+.head_container {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.main-logo {
+	@include x-rem ( margin-bottom, 48px );
+	display: inline-block;
+}
+.main_heading {
+	h1 {
+		@include x-rem ( padding-top, 24px );
+		@include x-rem ( padding-bottom, 116px );
+	}
+}
+.profession {
+	@include x-rem ( padding-bottom, 34px );
+	display: inline-block;
+}
 // CONTENT STYLES
 // ---------------------------------------------------------------
+
+.main_content {
+	// temporary
+	height: 500px;
+	width: 100%;
+	background-color: #e3e3e3;
+}
 
 // FOOTER STYLES
 // ---------------------------------------------------------------

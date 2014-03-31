@@ -1,39 +1,17 @@
+// ---------------------------------------------------------------
 // TYPOGRAPHY VARIABLES
 // ---------------------------------------------------------------
-$heading-type: "Overpass" , "Verdana" , "Arial" , sans-serif;
-$subtitle-type: "Open Sans Condensed" , "Arial" , sans-serif;
-$subheading-type: "Open Sans" , "Arial" , sans-serif;
-$reading-type: "Cambo" , "Verdana" , serif;
-$base-font-size: 16px;
+
+// Font Families
+// ---------------------------------------------------------------
+$heading-type: "Intro" , "Arial" , sans-serif;
 
 //FONT SIZE CALCULATIONS VARIABLES
 // ---------------------------------------------------------------
-// Header h1
-$header_h1_fs: 91px;
-$header_h1_lh: 136px;
-// Header h2
-$header_h2_fs: 38px;
-$header_h2_lh: 65px;
-
-// Content Title
-$content_h1_fs: 49px;
-$content_h1_lh: 60px;
-// Article Post Date
-$content_span_fs: 16px;
-$content_span_lh: 0px;
-// Content Subheading
-$content_h2_fs: 28px;
-$content_h2_lh: 36px;
-// Content paragraph
-$content_p_fs: 20px;
-$content_p_lh: 32px;
+$main-font-size: 10px;
 
 // COLOR VARIABLES
 // ---------------------------------------------------------------
-$basic-text-color: #3f3f3f;
-$main-color: #a0507e;
-$light-bg-color: #f7f7f7;
-$drop-shadow-color: #e5e5e5;
-$main-content-bg-color: #fcfcfc;
-$post-date-color: #999999;
-$body-text-color: #666666;
+$body-bg-color: #131313;
+$header-txt-color: #f8f8f8;
+$main-color: #c44c7c;
