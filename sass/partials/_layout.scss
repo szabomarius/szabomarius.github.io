@@ -12,9 +12,11 @@
 	display: table;
 }
 .head_container {
+	position:relative;
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
+	padding: 5% 1% 0% 1%;
 }
 .main-logo {
 	@include x-rem ( margin-bottom, 48px );
@@ -23,12 +25,19 @@
 .main_heading {
 	h1 {
 		@include x-rem ( padding-top, 24px );
-		@include x-rem ( padding-bottom, 116px );
+		@include x-rem ( padding-bottom, 80px );
 	}
 }
 .profession {
 	@include x-rem ( padding-bottom, 34px );
 	display: inline-block;
+}
+.work_btn {
+	display:block;
+	position:absolute;
+	bottom:10px;
+	left:50%;
+	margin-left:-32px;
 }
 // CONTENT STYLES
 // ---------------------------------------------------------------
