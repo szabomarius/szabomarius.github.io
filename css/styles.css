@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Intro';
   src: url("fonts/intro-webfont.eot");
-  src: url("fonts/intro-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/intro-webfont.woff") format("woff"), url("fonts/intro-webfont.ttf") format("truetype"), url("fonts/intro-webfont.svg#intro_regular") format("svg");
+  src: url("fonts/intro-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/intro-webfont.svg#intro_regular") format("svg"), url("fonts/intro-webfont.ttf") format("truetype"), url("fonts/intro-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'Open Sans Condensed';
   src: url("fonts/OpenSans-CondBold-webfont.eot");
-  src: url("fonts/OpenSans-CondBold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-CondBold-webfont.woff") format("woff"), url("fonts/OpenSans-CondBold-webfont.ttf") format("truetype"), url("fonts/OpenSans-CondBold-webfont.svg#open_sans_condensedbold") format("svg");
+  src: url("fonts/OpenSans-CondBold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-CondBold-webfont.woff") format("woff"), url("fonts/OpenSans-CondBold-webfont.svg#open_sans_condensedbold") format("svg"), url("fonts/OpenSans-CondBold-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -142,10 +142,10 @@ body {
 .type_of_work h2 {
   font-family: "Intro", "Arial", sans-serif;
   text-transform: uppercase;
-  font-size: 42px;
-  font-size: 4.2rem;
-  color: #c44c7c;
-  text-shadow: 1px 1px 1px;
+  font-size: 32px;
+  font-size: 3.2rem;
+  color: #f8f8f8;
+  text-shadow: 0px 0px 0px;
 }
 
 /* line 8, ../sass/partials/_layout.scss */
@@ -202,7 +202,7 @@ body {
 /* line 45, ../sass/partials/_layout.scss */
 .main_content {
   width: 100%;
-  background-color: #e3e3e3;
+  background-color: #f8f8f8;
 }
 
 /* line 50, ../sass/partials/_layout.scss */
@@ -213,5 +213,5 @@ body {
 /* line 53, ../sass/partials/_layout.scss */
 .type_of_work h2 {
   padding: 20px 0px 20px 0px;
-  background-color: #131313;
+  background-color: #c44c7c;
 }
