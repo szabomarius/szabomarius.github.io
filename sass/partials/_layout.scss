@@ -44,10 +44,15 @@
 
 .main_content {
 	// temporary
-	height: 500px;
 	width: 100%;
 	background-color: #e3e3e3;
 }
-
+.type_of_work {
+	text-align: center;
+}
+.type_of_work h2{
+	padding: 20px 0px 20px 0px;
+	background-color: $body-bg-color;
+}
 // FOOTER STYLES
 // ---------------------------------------------------------------

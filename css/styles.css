@@ -135,7 +135,17 @@ body {
 .punctuation {
   font-size: 72px;
   font-size: 7.2rem;
-  color: #c44c7c;
+  color: #a0507e;
+}
+
+/* line 36, ../sass/partials/_typography.scss */
+.type_of_work h2 {
+  font-family: "Intro", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-size: 42px;
+  font-size: 4.2rem;
+  color: #a0507e;
+  text-shadow: 1px 1px 1px;
 }
 
 /* line 8, ../sass/partials/_layout.scss */
@@ -191,7 +201,17 @@ body {
 
 /* line 45, ../sass/partials/_layout.scss */
 .main_content {
-  height: 500px;
   width: 100%;
   background-color: #e3e3e3;
+}
+
+/* line 50, ../sass/partials/_layout.scss */
+.type_of_work {
+  text-align: center;
+}
+
+/* line 53, ../sass/partials/_layout.scss */
+.type_of_work h2 {
+  padding: 20px 0px 20px 0px;
+  background-color: #131313;
 }
