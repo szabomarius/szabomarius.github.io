@@ -54,11 +54,7 @@
 	padding: 20px 0px 20px 0px;
 	background-color: $main-color;
 	/* transition */
-	-webkit-transition: all 0.2s ease-out;	
-	-moz-transition: all 0.2s ease-out;
-	-ms-transition: all 0.2s ease-out;
-	-o-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
+	@include trans (all, 0.2s, ease-out);
 }
 .type_of_work h2:hover {
 	background-color: #131313;
