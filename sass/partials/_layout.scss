@@ -54,5 +54,24 @@
 	padding: 20px 0px 20px 0px;
 	background-color: $main-color;
 }
+// Web Design
+// ~~~~~~~~~~~~~~~~
+
+.desktop_slider {
+	width: 807px -(33px+33px);
+	height: 648px -(33px+149px);
+	padding: 33px 33px 149px 33px;
+	margin: 0 auto;
+	background:transparent image-url('desktop.png') no-repeat center center;
+}
+.slick_slider {
+	width: 100%;
+	height: 100%;
+	div {
+		width: 100%;
+		height: 100%;
+	}
+}
+
 // FOOTER STYLES
 // ---------------------------------------------------------------

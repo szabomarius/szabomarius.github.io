@@ -216,3 +216,23 @@ body {
   padding: 20px 0px 20px 0px;
   background-color: #c44c7c;
 }
+
+/* line 60, ../sass/partials/_layout.scss */
+.desktop_slider {
+  width: 741px;
+  height: 466px;
+  padding: 33px 33px 149px 33px;
+  margin: 0 auto;
+  background: transparent url('../img/desktop.png?1397207840') no-repeat center center;
+}
+
+/* line 67, ../sass/partials/_layout.scss */
+.slick_slider {
+  width: 100%;
+  height: 100%;
+}
+/* line 70, ../sass/partials/_layout.scss */
+.slick_slider div {
+  width: 100%;
+  height: 100%;
+}
