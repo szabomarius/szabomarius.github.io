@@ -149,6 +149,11 @@ body {
   text-shadow: 0px 0px 0px;
 }
 
+/* line 45, ../sass/partials/_typography.scss */
+.type_of_work h2:hover {
+  cursor: pointer;
+}
+
 /* line 8, ../sass/partials/_layout.scss */
 .main_header, .head_container {
   width: 100%;
@@ -223,27 +228,33 @@ body {
 }
 
 /* line 62, ../sass/partials/_layout.scss */
+.type_of_work h2:hover {
+  background-color: #131313;
+  outline: 1px solid #212121;
+}
+
+/* line 66, ../sass/partials/_layout.scss */
 .desktop_slider {
   width: 741px;
   height: 466px;
   padding: 33px 33px 149px 33px;
   margin: 0 auto;
-  background: transparent url('../img/desktop.png?1397207840') no-repeat center center;
+  background: transparent url('../img/desktop.png?1397240926') no-repeat center center;
 }
 
-/* line 69, ../sass/partials/_layout.scss */
+/* line 73, ../sass/partials/_layout.scss */
 .slick_slider {
   width: 100%;
   height: 100%;
   cursor: all-scroll;
 }
-/* line 73, ../sass/partials/_layout.scss */
+/* line 77, ../sass/partials/_layout.scss */
 .slick_slider div {
   width: 100%;
   height: 100%;
 }
 
-/* line 78, ../sass/partials/_layout.scss */
+/* line 82, ../sass/partials/_layout.scss */
 .slick-list.dragging {
   cursor: all-scroll;
 }
