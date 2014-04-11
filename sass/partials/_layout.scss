@@ -56,7 +56,9 @@
 }
 // Web Design
 // ~~~~~~~~~~~~~~~~
-
+.work_container {
+	padding:60px 0px;
+}
 .desktop_slider {
 	width: 807px -(33px+33px);
 	height: 648px -(33px+149px);
@@ -67,10 +69,15 @@
 .slick_slider {
 	width: 100%;
 	height: 100%;
+	cursor: all-scroll;
 	div {
 		width: 100%;
 		height: 100%;
 	}
+}
+.slick-list.dragging {
+	// Changes the default plugin pointer cursor when dragging into a scroll cursor
+	cursor: all-scroll;
 }
 
 // FOOTER STYLES
