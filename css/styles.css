@@ -92,7 +92,7 @@ html, body {
 
 /* line 7, ../sass/partials/_general.scss */
 body {
-  background: #131313 url('../img/pat/header-pat.png?1395827085');
+  background: #1c1c1c url('../img/pat/header-pat.png?1395827085');
 }
 
 /* line 4, ../sass/partials/_typography.scss */
@@ -104,7 +104,7 @@ html {
 body {
   font-size: 16px;
   font-size: 1.6rem;
-  color: #131313;
+  color: #1c1c1c;
 }
 
 /* line 13, ../sass/partials/_typography.scss */
@@ -244,7 +244,7 @@ body {
   height: 466px;
   padding: 33px 33px 149px 33px;
   margin: 0 auto;
-  background: transparent url('../img/desktop.png?1397240926') no-repeat center center;
+  background: transparent url('../img/desktop.png?1397315080') no-repeat center center;
 }
 
 /* line 76, ../sass/partials/_layout.scss */
