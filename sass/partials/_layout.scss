@@ -70,6 +70,7 @@
 	padding: 33px 33px 149px 33px;
 	margin: 0 auto;
 	background:transparent image-url('desktop.png') no-repeat center center;
+	position: relative;
 }
 // +slick slider
 // ~~~~~~~~~~~~~~~~
@@ -87,9 +88,9 @@
 	cursor: all-scroll;
 }
 .web_container button.slick-prev , .web_container button.slick-next {
-	height:100%;
-	width:30px;
-	top:10px;
+	height: 100%;
+	width: 30px;
+	top: 10px;
 	&:before {
 		content: '';
 		display: block;
@@ -103,7 +104,7 @@
 	}
 	&:hover {
 		&:before {
-			border-right:6px solid $main-color;
+			border-right: 6px solid $main-color;
 		}
 	}
 }
@@ -114,10 +115,21 @@
 	}
 	&:hover {
 		&:before {
-			border-left:6px solid $main-color;
+			border-left: 6px solid $main-color;
 		}
 	}
 }
-
+// ++responsive devices
+// ~~~~~~~~~~~~~~~~~~~~
+.pad , .phone {
+	position: absolute;
+	bottom: 0;
+}
+.phone {
+	left: -40px;
+}
+.pad {
+	right: -60px;
+}
 // FOOTER STYLES
 // ---------------------------------------------------------------/
