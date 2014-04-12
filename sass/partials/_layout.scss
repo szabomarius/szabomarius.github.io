@@ -87,14 +87,36 @@
 	cursor: all-scroll;
 }
 .web_container button.slick-prev , .web_container button.slick-next {
-
+	height:100%;
+	width:30px;
+	top:10px;
 	&:before {
-		content:'';
+		content: '';
+		display: block;
+		@include trans (border-color, 0.1s, ease);
 	}
 }
 .web_container button.slick-prev {
-	@include l-arrow (10px , #fff);
-	left: -33px;
+	&:before {
+		@include l-arrow (6px , #fff);
+		margin-right: 20px;
+	}
+	&:hover {
+		&:before {
+			border-right:6px solid $main-color;
+		}
+	}
+}
+.web_container button.slick-next {
+	&:before {
+		@include r-arrow (6px , #fff);
+		margin-left: 20px;
+	}
+	&:hover {
+		&:before {
+			border-left:6px solid $main-color;
+		}
+	}
 }
 
 // FOOTER STYLES

@@ -264,15 +264,43 @@ body {
   cursor: all-scroll;
 }
 
-/* line 91, ../sass/partials/_layout.scss */
+/* line 89, ../sass/partials/_layout.scss */
+.web_container button.slick-prev, .web_container button.slick-next {
+  height: 100%;
+  width: 30px;
+  top: 10px;
+}
+/* line 93, ../sass/partials/_layout.scss */
 .web_container button.slick-prev:before, .web_container button.slick-next:before {
   content: '';
+  display: block;
+  -webkit-transition: border-color 0.1s ease;
+  -moz-transition: border-color 0.1s ease;
+  -ms-transition: border-color 0.1s ease;
+  -o-transition: border-color 0.1s ease;
+  transition: border-color 0.1s ease;
 }
 
-/* line 95, ../sass/partials/_layout.scss */
-.web_container button.slick-prev {
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid white;
-  left: -33px;
+/* line 100, ../sass/partials/_layout.scss */
+.web_container button.slick-prev:before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-right: 6px solid white;
+  margin-right: 20px;
+}
+/* line 105, ../sass/partials/_layout.scss */
+.web_container button.slick-prev:hover:before {
+  border-right: 6px solid #c44c7c;
+}
+
+/* line 111, ../sass/partials/_layout.scss */
+.web_container button.slick-next:before {
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid white;
+  margin-left: 20px;
+}
+/* line 116, ../sass/partials/_layout.scss */
+.web_container button.slick-next:hover:before {
+  border-left: 6px solid #c44c7c;
 }
