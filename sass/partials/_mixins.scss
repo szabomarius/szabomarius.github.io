@@ -15,7 +15,6 @@
 		color:$l-color;
 	}
 }
-
 // Text selection mixin
 // ---------------------------------------------------------------
 @mixin selection {
@@ -30,6 +29,7 @@
 	#{$property}: ( $pixels / $main-font-size ) * 1rem;
 }
 // CSS3 transitions mixin
+// ---------------------------------------------------------------
 @mixin trans ( $property , $duration , $ease) {
 	-webkit-transition: $property $duration $ease;
 	-moz-transition: $property $duration $ease;
@@ -38,6 +38,7 @@
 	transition: $property $duration $ease;
 }
 // CSS3 arrows mixin
+// ---------------------------------------------------------------
 @mixin l-arrow ( $size , $color) {
 	border-top: $size solid transparent;
 	border-bottom: $size solid transparent;
@@ -57,4 +58,17 @@
 	border-left: $size solid transparent;
 	border-right: $size solid transparent;
 	border-top: $size solid $color;
+}
+// Box shadow mixin
+// ---------------------------------------------------------------
+@mixin box-shadow($top, $left, $blur, $color, $spread, $inset: false) {
+	@if $inset {
+		-webkit-box-shadow:inset $top $left $blur $spread $color;
+		-moz-box-shadow:inset $top $left $blur  $spread $color;
+		box-shadow:inset $top $left $blur $spread $color;
+	} @else {
+		-webkit-box-shadow: $top $left $blur $spread $color;
+		-moz-box-shadow: $top $left $blur $spread $color;
+		box-shadow: $top $left $blur $spread $color;
+	}
 }

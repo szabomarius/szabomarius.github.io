@@ -315,18 +315,27 @@ body {
 .pad, .phone {
   position: absolute;
   bottom: 0;
+  overflow: hidden;
 }
-/* line 132, ../sass/partials/_layout.scss */
+/* line 133, ../sass/partials/_layout.scss */
 .pad img, .phone img {
   vertical-align: bottom;
 }
 
-/* line 136, ../sass/partials/_layout.scss */
+/* line 137, ../sass/partials/_layout.scss */
 .phone {
+  width: 154px;
+  height: 236px;
+  padding: 30px 13px 29px 13px;
+  background: transparent url('../img/phone.png?1397376096') no-repeat;
   left: -40px;
 }
 
-/* line 139, ../sass/partials/_layout.scss */
+/* line 144, ../sass/partials/_layout.scss */
 .pad {
+  width: 401px;
+  height: 295px;
+  padding: 31px 31px 31px 30px;
+  background: transparent url('../img/pad.png?1397376096') no-repeat;
   right: -60px;
 }

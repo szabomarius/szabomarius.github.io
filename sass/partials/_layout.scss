@@ -129,14 +129,23 @@
 .pad , .phone {
 	position: absolute;
 	bottom: 0;
+	overflow: hidden;
 	img {
 		vertical-align: bottom;
 	}
 }
 .phone {
+	width: 180px - (13px + 13px);
+	height: 295px - (30px + 29px);
+	padding: 30px 13px 29px 13px;
+	background: transparent image-url('phone.png') no-repeat;
 	left: -40px;
 }
 .pad {
+	width: 462px - (30px + 31px);
+	height: 357px - (31px + 31px);
+	padding: 31px 31px 31px 30px;
+	background: transparent image-url('pad.png') no-repeat;
 	right: -60px;
 }
 // FOOTER STYLES
