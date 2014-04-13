@@ -18,14 +18,33 @@ if ( firstImg.data('res') ) {
 		onAfterChange: function(){
 			// Had to put in a timeour because the callback triggered faster than the active class could be applied
 			setTimeout(function(){
-				currentImg = $('.slick-active').find('img');
-				responsive = currentImg.data('res');
+				var currentImg = $('.slick-active').find('img');
+				var responsive = currentImg.data('res');
 				if ( responsive ) {
 					responsiveDevices.fadeIn('fast');
+					var project = currentImg.data('proj');
+					switch (project) {
+						case "project1":
+							$(".pad img").fadeTo(100,0.50, function() {
+								$(this).attr("src" , "img/slider/web/project1-pad.jpg");
+							}).fadeTo(100,1);
+							$(".phone img").fadeTo(80,0.50, function() {
+								$(this).attr("src" , "img/slider/web/project1-phone.jpg");
+							}).fadeTo(100,1);
+							break;
+						case "project3":
+							$(".pad img").fadeTo(80,0.50, function() {
+								$(this).attr("src" , "img/slider/web/project3-pad.jpg");
+							}).fadeTo(100,1);
+							$(".phone img").fadeTo(80,0.50, function() {
+								$(this).attr("src" , "img/slider/web/project3-phone.jpg");
+							}).fadeTo(100,1);
+							break;
+					} // end switch
 				}
 				else {
 					responsiveDevices.fadeOut('fast');
-				}
+				} // end if else
   			}, 1); //end of setTimeout()
 
 
