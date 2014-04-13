@@ -314,7 +314,7 @@ body {
 /* line 129, ../sass/partials/_layout.scss */
 .pad, .phone {
   position: absolute;
-  bottom: 0;
+  bottom: -15px;
   overflow: hidden;
 }
 /* line 133, ../sass/partials/_layout.scss */
