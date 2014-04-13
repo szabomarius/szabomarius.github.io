@@ -339,3 +339,8 @@ body {
   background: transparent url('../img/pad.png?1397376096') no-repeat;
   right: -60px;
 }
+
+/* line 151, ../sass/partials/_layout.scss */
+#cock {
+  outline: 20px solid green;
+}
