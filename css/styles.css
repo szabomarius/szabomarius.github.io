@@ -316,13 +316,17 @@ body {
   position: absolute;
   bottom: 0;
 }
+/* line 132, ../sass/partials/_layout.scss */
+.pad img, .phone img {
+  vertical-align: bottom;
+}
 
-/* line 133, ../sass/partials/_layout.scss */
+/* line 136, ../sass/partials/_layout.scss */
 .phone {
   left: -40px;
 }
 
-/* line 136, ../sass/partials/_layout.scss */
+/* line 139, ../sass/partials/_layout.scss */
 .pad {
   right: -60px;
 }

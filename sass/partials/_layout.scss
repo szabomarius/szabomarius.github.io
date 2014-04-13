@@ -129,6 +129,9 @@
 .pad , .phone {
 	position: absolute;
 	bottom: 0;
+	img {
+		vertical-align: bottom;
+	}
 }
 .phone {
 	left: -40px;
