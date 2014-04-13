@@ -20,8 +20,13 @@ if ( firstImg.data('res') ) {
 			setTimeout(function(){
 				var currentImg = $('.slick-active').find('img');
 				var responsive = currentImg.data('res');
+				var projectNr = currentImg.data('proj');
+				var link = $('.web_link');
+
+				// for responsive images only 
 				if ( responsive ) {
 					responsiveDevices.fadeIn('fast');
+					// get the images for responsive devices
 					var project = currentImg.data('proj');
 					switch (project) {
 						case "project1":
@@ -45,6 +50,22 @@ if ( firstImg.data('res') ) {
 				else {
 					responsiveDevices.fadeOut('fast');
 				} // end if else
+
+				// Change links according to the current selected
+				switch (projectNr) {
+					case "project1":
+						link.attr("href" , "http://www.google-1.com");
+						break;
+					case "project2":
+						link.attr("href" , "http://www.google-2.com");
+						break;
+					case "project3":
+						link.attr("href" , "http://www.google-3.com");
+						break;
+					default:
+						
+				}
+
   			}, 1); //end of setTimeout()
 
 
