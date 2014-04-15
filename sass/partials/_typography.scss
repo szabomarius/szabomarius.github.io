@@ -33,7 +33,7 @@ body {
 .type_of_work {
 
 } 
-.type_of_work h2{
+.type_of_work h2 , .type_of_work h3{
 	font-family: $heading-type;
 	// font-family: "Open Sans" , Arial , sans-serif;
 	text-transform: uppercase;
@@ -44,6 +44,12 @@ body {
 }
 .type_of_work h2:hover {
 	cursor: pointer;
+}
+.logo_container h3 {
+	font-family: "Open Sans Condensed" , sans-serif;
+	@include x-rem ( font-size, 20px );
+	letter-spacing: 2px;
+	text-transform: capitalize;
 }
 // FOOTER STYLES
 // ---------------------------------------------------------------

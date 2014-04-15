@@ -169,11 +169,11 @@
 .logo_slider {
 	width: 753px;
 	height: 379px;
-	padding-bottom: 45px;
 	margin: 0 auto;
-	background: transparent image-url('logo_shadow.png') no-repeat bottom center;
+	// background: transparent image-url('logo_shadow.png') no-repeat bottom center;
 	.slick_slider {
 		background-color: #fff;
+		margin-bottom: 0px;
 		div {
 			text-align: center;
 			padding-top: 20px;
@@ -184,6 +184,41 @@
 		}
 	}
 }
-
+.logo_container button.slick-prev , .logo_container button.slick-next {
+	height: 100%;
+	width: 30px;
+	top: 10px;
+	&:before {
+		content: '';
+		display: block;
+		@include trans (border-color, 0.1s, ease);
+	}
+}
+.logo_container button.slick-prev {
+	&:before {
+		@include l-arrow (18px , #dcdcdc);
+		margin-right: 6px;
+	}
+	&:hover {
+		&:before {
+			border-right: 18px solid $main-color;
+		}
+	}
+}
+.logo_container button.slick-next {
+	&:before {
+		@include r-arrow (18px , #dcdcdc);
+		margin-left: 6px;
+	}
+	&:hover {
+		&:before {
+			border-left: 18px solid $main-color;
+		}
+	}
+}
+.logo_container h3 {
+	padding: 20px 0px 20px 0px;
+	background-color: $body-bg-color;
+}
 // FOOTER STYLES
 // ---------------------------------------------------------------/

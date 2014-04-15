@@ -82,7 +82,7 @@ if ( firstImg.data('res') ) {
 // Initiate the slick slider plugin
 
 $('.logo_container .slick_slider').slick({
-	slide: 'div'
+
 });
 
 }); //end of document.ready()
