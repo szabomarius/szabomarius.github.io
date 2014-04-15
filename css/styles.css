@@ -411,7 +411,7 @@ body {
 .logo_container button.slick-prev:before {
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
-  border-right: 18px solid gainsboro;
+  border-right: 18px solid #1c1c1c;
   margin-right: 6px;
 }
 /* line 203, ../sass/partials/_layout.scss */
@@ -423,7 +423,7 @@ body {
 .logo_container button.slick-next:before {
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
-  border-left: 18px solid gainsboro;
+  border-left: 18px solid #1c1c1c;
   margin-left: 6px;
 }
 /* line 214, ../sass/partials/_layout.scss */

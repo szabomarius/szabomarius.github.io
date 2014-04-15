@@ -196,7 +196,7 @@
 }
 .logo_container button.slick-prev {
 	&:before {
-		@include l-arrow (18px , #dcdcdc);
+		@include l-arrow (18px , $body-bg-color);
 		margin-right: 6px;
 	}
 	&:hover {
@@ -207,7 +207,7 @@
 }
 .logo_container button.slick-next {
 	&:before {
-		@include r-arrow (18px , #dcdcdc);
+		@include r-arrow (18px , $body-bg-color);
 		margin-left: 6px;
 	}
 	&:hover {
