@@ -235,7 +235,7 @@ body {
 
 /* line 64, ../sass/partials/_layout.scss */
 .work_container {
-  padding: 60px 0px;
+  padding: 60px 0px 120px 0px;
 }
 
 /* line 67, ../sass/partials/_layout.scss */
@@ -359,7 +359,25 @@ body {
   right: -60px;
 }
 
-/* line 163, ../sass/partials/_layout.scss */
-#cock {
-  outline: 20px solid green;
+/* line 169, ../sass/partials/_layout.scss */
+.logo_slider {
+  width: 753px;
+  height: 379px;
+  padding-bottom: 45px;
+  margin: 0 auto;
+  background: transparent url('../img/logo_shadow.png?1397559174') no-repeat bottom center;
+}
+/* line 175, ../sass/partials/_layout.scss */
+.logo_slider .slick_slider {
+  background-color: #fff;
+}
+/* line 177, ../sass/partials/_layout.scss */
+.logo_slider .slick_slider div {
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 180, ../sass/partials/_layout.scss */
+.logo_slider .slick_slider div img {
+  display: inline-block;
+  vertical-align: middle;
 }

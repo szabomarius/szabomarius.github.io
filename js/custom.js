@@ -1,6 +1,10 @@
 // custom js
 
 $(document).ready(function() {
+
+// Javascript for the web slider
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 // Make the phone and pad screen invisible if the first project is not responsive
 var firstImg = $('.desktop_slider .slick_slider').find('img').first();
 var responsiveDevices = $('.pad, .phone');
@@ -12,8 +16,7 @@ if ( firstImg.data('res') ) {
 	responsiveDevices.hide();
 }
 // Initiate the slick slider plugin
-	var slickIndex = 1;
-	$('.slick_slider').slick({
+	$('.web_container .slick_slider').slick({
 
 		onAfterChange: function(){
 			// Had to put in a timeour because the callback triggered faster than the active class could be applied
@@ -72,4 +75,14 @@ if ( firstImg.data('res') ) {
 		} //end of onAfterChange	
 
 	}); //end of slick()
+
+// Javascript for the logo slider
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Initiate the slick slider plugin
+
+$('.logo_container .slick_slider').slick({
+	slide: 'div'
+});
+
 }); //end of document.ready()

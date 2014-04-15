@@ -59,10 +59,10 @@
 .type_of_work h2:hover {
 	background-color: #131313;
 }
-// Web Design
-// ~~~~~~~~~~~~~~~~
+// WEB DESIGN
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .work_container {
-	padding:60px 0px;
+	padding:60px 0px 120px 0px;
 }
 .desktop_slider {
 	width: 807px -(33px+33px);
@@ -160,8 +160,30 @@
 	background: transparent image-url('pad.png') no-repeat;
 	right: -60px;
 }
-#cock {
-	outline:20px solid green;
+
+// LOGO DESIGN
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// +slick slider
+// ~~~~~~~~~~~~~~~~
+.logo_slider {
+	width: 753px;
+	height: 379px;
+	padding-bottom: 45px;
+	margin: 0 auto;
+	background: transparent image-url('logo_shadow.png') no-repeat bottom center;
+	.slick_slider {
+		background-color: #fff;
+		div {
+			text-align: center;
+			padding-top: 20px;
+			img {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+	}
 }
+
 // FOOTER STYLES
 // ---------------------------------------------------------------/
