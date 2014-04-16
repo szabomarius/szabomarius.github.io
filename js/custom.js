@@ -21,7 +21,7 @@ if ( firstImg.data('res') ) {
 		onAfterChange: function(){
 			// Had to put in a timeour because the callback triggered faster than the active class could be applied
 			setTimeout(function(){
-				var currentImg = $('.slick-active').find('img');
+				var currentImg = $('.web_container .slick-active').find('img');
 				var responsive = currentImg.data('res');
 				var projectNr = currentImg.data('proj');
 				var link = $('.web_link');
@@ -82,7 +82,23 @@ if ( firstImg.data('res') ) {
 // Initiate the slick slider plugin
 
 $('.logo_container .slick_slider').slick({
+	onAfterChange: function(){
+		setTimeout(function(){
 
+			var currentImg = $('.logo_container .slick-active').find('img');
+			var titlu_logo = currentImg.data('title');
+			var text_container = $('.logo_slider h3');
+			text_container.text(titlu_logo);
+
+		}, 1); //end of setTimeout()
+	} // end of onAfterChange
 });
+
+// Javascript for the graphic slider
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+$('.graphic_container .slick_slider').slick({
+	
+})
 
 }); //end of document.ready()

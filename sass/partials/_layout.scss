@@ -220,5 +220,65 @@
 	padding: 20px 0px 20px 0px;
 	background-color: $body-bg-color;
 }
+
+// GRAPHIC DESIGN
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.graphic_container {
+	padding: 0;
+}
+.graphic_slider {
+	width: 95%;
+	height: 500px;
+	margin: 0 auto;
+	.slick_slider {
+		div {
+			position: relative;
+			text-align: center;
+			img {
+				display: inline-block;
+				position: absolute;
+				top: 0; left: 0; right:0; bottom:0;
+				max-height:80%;
+				margin: auto;
+			}
+		}
+	}
+}
+.graphic_slider button.slick-prev , .graphic_slider button.slick-next {
+	height: 100%;
+	width: 30px;
+	top: 10px;
+	outline: 1px solid blue;
+	&:before {
+		content: '';
+		display: block;
+		outline: 1px solid red;
+		@include trans (border-color, 0.1s, ease);
+	}
+}
+.graphic_slider button.slick-prev {
+	&:before {
+		@include l-arrow (18px , $body-bg-color);
+		right: -100px;
+	}
+	&:hover {
+		&:before {
+			border-right: 18px solid $main-color;
+		}
+	}
+}
+.graphic_slider button.slick-next {
+	&:before {
+		@include r-arrow (18px , $body-bg-color);
+		left: -100px;
+	}
+	&:hover {
+		&:before {
+			border-left: 18px solid $main-color;
+		}
+	}
+}
+
 // FOOTER STYLES
 // ---------------------------------------------------------------/

@@ -161,6 +161,7 @@ body {
   font-size: 2rem;
   letter-spacing: 2px;
   text-transform: capitalize;
+  color: #c2c2c2;
 }
 
 /* line 8, ../sass/partials/_layout.scss */
@@ -435,4 +436,75 @@ body {
 .logo_container h3 {
   padding: 20px 0px 20px 0px;
   background-color: #1c1c1c;
+}
+
+/* line 227, ../sass/partials/_layout.scss */
+.graphic_container {
+  padding: 0;
+}
+
+/* line 230, ../sass/partials/_layout.scss */
+.graphic_slider {
+  width: 95%;
+  height: 500px;
+  margin: 0 auto;
+}
+/* line 235, ../sass/partials/_layout.scss */
+.graphic_slider .slick_slider div {
+  position: relative;
+  text-align: center;
+}
+/* line 238, ../sass/partials/_layout.scss */
+.graphic_slider .slick_slider div img {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-height: 80%;
+  margin: auto;
+}
+
+/* line 248, ../sass/partials/_layout.scss */
+.graphic_slider button.slick-prev, .graphic_slider button.slick-next {
+  height: 100%;
+  width: 30px;
+  top: 10px;
+  outline: 1px solid blue;
+}
+/* line 253, ../sass/partials/_layout.scss */
+.graphic_slider button.slick-prev:before, .graphic_slider button.slick-next:before {
+  content: '';
+  display: block;
+  outline: 1px solid red;
+  -webkit-transition: border-color 0.1s ease;
+  -moz-transition: border-color 0.1s ease;
+  -ms-transition: border-color 0.1s ease;
+  -o-transition: border-color 0.1s ease;
+  transition: border-color 0.1s ease;
+}
+
+/* line 261, ../sass/partials/_layout.scss */
+.graphic_slider button.slick-prev:before {
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-right: 18px solid #1c1c1c;
+  right: -100px;
+}
+/* line 266, ../sass/partials/_layout.scss */
+.graphic_slider button.slick-prev:hover:before {
+  border-right: 18px solid #c44c7c;
+}
+
+/* line 272, ../sass/partials/_layout.scss */
+.graphic_slider button.slick-next:before {
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 18px solid #1c1c1c;
+  left: -100px;
+}
+/* line 277, ../sass/partials/_layout.scss */
+.graphic_slider button.slick-next:hover:before {
+  border-left: 18px solid #c44c7c;
 }
