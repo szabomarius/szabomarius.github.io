@@ -57,7 +57,7 @@
 	@include trans (all, 0.2s, ease-out);
 }
 .type_of_work h2:hover {
-	background-color: #131313;
+	background-color: $body-bg-color;
 }
 // WEB DESIGN
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,20 +226,25 @@
 
 .graphic_container {
 	padding: 0;
+	width:100%;
 }
 .graphic_slider {
-	width: 95%;
-	height: 500px;
+	width: 100%;
+	height: 700px;
 	margin: 0 auto;
 	.slick_slider {
+		overflow: hidden;
+		margin-bottom: 0px;
+		padding: 0px 0px 0px 0px;
 		div {
 			position: relative;
 			text-align: center;
+			padding: 0px 0px 0px 0px;
 			img {
 				display: inline-block;
 				position: absolute;
 				top: 0; left: 0; right:0; bottom:0;
-				max-height:80%;
+				max-height: 600px;
 				margin: auto;
 			}
 		}
@@ -247,20 +252,21 @@
 }
 .graphic_slider button.slick-prev , .graphic_slider button.slick-next {
 	height: 100%;
-	width: 30px;
+	width: 50px;
 	top: 10px;
-	outline: 1px solid blue;
+	background-color: $body-bg-color;
 	&:before {
 		content: '';
 		display: block;
-		outline: 1px solid red;
+		opacity: 1;
 		@include trans (border-color, 0.1s, ease);
 	}
 }
 .graphic_slider button.slick-prev {
+	left: 0px;
 	&:before {
-		@include l-arrow (18px , $body-bg-color);
-		right: -100px;
+		@include l-arrow (18px , #f8f8f8);
+		margin-right:18px;
 	}
 	&:hover {
 		&:before {
@@ -269,9 +275,10 @@
 	}
 }
 .graphic_slider button.slick-next {
+	right: 0px;
 	&:before {
-		@include r-arrow (18px , $body-bg-color);
-		left: -100px;
+		@include r-arrow (18px , #f8f8f8);
+		margin-left:18px;
 	}
 	&:hover {
 		&:before {
