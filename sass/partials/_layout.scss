@@ -74,14 +74,36 @@
 }
 // +slick slider
 // ~~~~~~~~~~~~~~~~
-.web_link {
-	display: block;
+.slide_links {
+	width: 741px;
+	height: 40px;
 	position: absolute;
+	background-color: #000;
+	opacity: 0.46;
 	top: 33px;
-	right: 33px;
+	z-index: 2;
+}
+.web_link {
+	position: relative;
+	display: inline-block;
+	position: absolute;
+	height: 40px;
+	width: 100%;
+	top: 0;
+	right: 0;
 	opacity: 0.5;
-	z-index:1;
+	z-index: 1;
+	vertical-align: middle;
 	@include trans (all, 0.2s, ease-out);
+	span {
+		height: 100%;
+		display:block;
+	}
+	img {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
 	&:hover {
 		opacity: 1;
 	}
@@ -89,7 +111,7 @@
 .slick_slider {
 	width: 100%;
 	height: 100%;
-	cursor: all-scroll;
+	@include grab-cursor;
 	div {
 		width: 100%;
 		height: 100%;
@@ -102,7 +124,7 @@
 }
 .slick-list.dragging {
 	// Changes the default plugin pointer cursor when dragging into a scroll cursor
-	cursor: all-scroll;
+	@include grabbing-cursor;
 }
 .web_container button.slick-prev , .web_container button.slick-next {
 	height: 100%;

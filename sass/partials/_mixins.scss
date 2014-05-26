@@ -72,3 +72,13 @@
 		box-shadow: $top $left $blur $spread $color;
 	}
 }
+// Grab Cursor
+// ---------------------------------------------------------------
+@mixin grab-cursor {
+	cursor: -webkit-grab;
+	cursor: -moz-grab;
+}
+@mixin grabbing-cursor {
+	cursor: -webkit-grabbing;
+	cursor: -moz-grabbing;
+}

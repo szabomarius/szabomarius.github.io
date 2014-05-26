@@ -30,9 +30,15 @@ body {
 }
 // CONTENT STYLES
 // ---------------------------------------------------------------
-.type_of_work {
-
-} 
+.web_link {
+	color: $header-txt-color;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: $logo-type;
+	letter-spacing: 1px;
+	line-height: 37px;
+	@include x-rem ( font-size, 16px );
+}
 .type_of_work h2 , .type_of_work h3{
 	font-family: $heading-type;
 	// font-family: "Open Sans" , Arial , sans-serif;
@@ -41,9 +47,6 @@ body {
 	letter-spacing: -1px;
 	color: $header-txt-color;
 	text-shadow: 0px 0px 0px;
-}
-.type_of_work h2:hover {
-	cursor: pointer;
 }
 .logo_container h3 {
 	font-family: "Open Sans Condensed" , sans-serif;
