@@ -8,6 +8,9 @@ $(document).ready(function() {
 var webSlider = $('.web_container .slick_slider');
 var logoSlider = $('.logo_container .slick_slider');
 var graphicSlider = $('.graphic_container .slick_slider');
+var link = $('.web_link');
+var padImage = $('.pad img');
+var phoneImage = $('.phone img');
 // Make the phone and pad screen invisible if the first project is not responsive
 var firstImg = $('.desktop_slider .slick_slider').find('img').first();
 var responsiveDevices = $('.pad, .phone');
@@ -28,7 +31,7 @@ webSlider.slick({
 			var currentImg = $('.web_container .slick-active').find('img');
 			var responsive = currentImg.data('res');
 			var projectNr = currentImg.data('proj');
-			var link = $('.web_link');
+
 
 			// for responsive images only 
 			if ( responsive ) {
@@ -37,18 +40,18 @@ webSlider.slick({
 				var project = currentImg.data('proj');
 				switch (project) {
 					case "project1":
-						$(".pad img").fadeTo(100,0.50, function() {
+						padImage.fadeTo(100,0.50, function() {
 							$(this).attr("src" , "img/slider/web/project1-pad.jpg");
 						}).fadeTo(100,1);
-						$(".phone img").fadeTo(80,0.50, function() {
+						phoneImage.fadeTo(80,0.50, function() {
 							$(this).attr("src" , "img/slider/web/project1-phone.jpg");
 						}).fadeTo(100,1);
 						break;
 					case "project3":
-						$(".pad img").fadeTo(80,0.50, function() {
+						padImage.fadeTo(80,0.50, function() {
 							$(this).attr("src" , "img/slider/web/project3-pad.jpg");
 						}).fadeTo(100,1);
-						$(".phone img").fadeTo(80,0.50, function() {
+						phoneImage.fadeTo(80,0.50, function() {
 							$(this).attr("src" , "img/slider/web/project3-phone.jpg");
 						}).fadeTo(100,1);
 						break;
