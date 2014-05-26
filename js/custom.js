@@ -17,6 +17,7 @@ if ( firstImg.data('res') ) {
 }
 // Initiate the slick slider plugin
 	$('.web_container .slick_slider').slick({
+		speed: 500 ,
 
 		onAfterChange: function(){
 			// Had to put in a timeour because the callback triggered faster than the active class could be applied
@@ -82,6 +83,8 @@ if ( firstImg.data('res') ) {
 // Initiate the slick slider plugin
 
 $('.logo_container .slick_slider').slick({
+	speed: 500 ,
+
 	onAfterChange: function(){
 		setTimeout(function(){
 
@@ -98,7 +101,7 @@ $('.logo_container .slick_slider').slick({
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 $('.graphic_container .slick_slider').slick({
-	
+	speed: 500
 })
 
 }); //end of document.ready()

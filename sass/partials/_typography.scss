@@ -50,7 +50,7 @@ body {
 	@include x-rem ( font-size, 20px );
 	letter-spacing: 2px;
 	text-transform: capitalize;
-	color: #c2c2c2;
+	color: $header-txt-color;
 }
 // FOOTER STYLES
 // ---------------------------------------------------------------

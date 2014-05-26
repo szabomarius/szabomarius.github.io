@@ -221,7 +221,7 @@
 	background-color: $body-bg-color;
 }
 
-// GRAPHIC DESIGN
+// MISC. DESIGN
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .graphic_container {
@@ -265,27 +265,36 @@
 .graphic_slider button.slick-prev {
 	left: 0px;
 	&:before {
-		@include l-arrow (18px , #f8f8f8);
-		margin-right:18px;
+		@include l-arrow (10px , #f8f8f8);
+		margin-right:22px;
 	}
 	&:hover {
 		&:before {
-			border-right: 18px solid $main-color;
+			border-right: 10px solid $main-color;
 		}
 	}
 }
 .graphic_slider button.slick-next {
 	right: 0px;
 	&:before {
-		@include r-arrow (18px , #f8f8f8);
-		margin-left:18px;
+		@include r-arrow (10px , #f8f8f8);
+		margin-left:22px;
 	}
 	&:hover {
 		&:before {
-			border-left: 18px solid $main-color;
+			border-left: 10px solid $main-color;
 		}
 	}
 }
 
 // FOOTER STYLES
 // ---------------------------------------------------------------/
+
+.bottom_divider {
+	height: 70px;
+	background-color: $main-color;	
+}
+.main_footer {
+	height: 100%;
+	width: 100%;
+}

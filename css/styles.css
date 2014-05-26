@@ -161,7 +161,7 @@ body {
   font-size: 2rem;
   letter-spacing: 2px;
   text-transform: capitalize;
-  color: #c2c2c2;
+  color: #f8f8f8;
 }
 
 /* line 8, ../sass/partials/_layout.scss */
@@ -499,14 +499,14 @@ body {
 }
 /* line 267, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev:before {
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  border-right: 18px solid #f8f8f8;
-  margin-right: 18px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #f8f8f8;
+  margin-right: 22px;
 }
 /* line 272, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev:hover:before {
-  border-right: 18px solid #c44c7c;
+  border-right: 10px solid #c44c7c;
 }
 
 /* line 277, ../sass/partials/_layout.scss */
@@ -515,12 +515,24 @@ body {
 }
 /* line 279, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-next:before {
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  border-left: 18px solid #f8f8f8;
-  margin-left: 18px;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #f8f8f8;
+  margin-left: 22px;
 }
 /* line 284, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-next:hover:before {
-  border-left: 18px solid #c44c7c;
+  border-left: 10px solid #c44c7c;
+}
+
+/* line 293, ../sass/partials/_layout.scss */
+.bottom_divider {
+  height: 70px;
+  background-color: #c44c7c;
+}
+
+/* line 297, ../sass/partials/_layout.scss */
+.main_footer {
+  height: 100%;
+  width: 100%;
 }
