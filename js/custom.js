@@ -24,7 +24,7 @@ if ( firstImg.data('res') ) {
 }
 // Initiate the slick slider plugin
 webSlider.slick({
-	speed: 800 ,
+	speed: 500 ,
 
 	onAfterChange: function(){
 		// Had to put in a timeour because the callback triggered faster than the active class could be applied
@@ -94,7 +94,7 @@ webSlider.slick({
 
 // Javascript for the logo slider
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// variables for the logo slide
+// variables for the logo slider
 var text_container = $('.logo_slider h3 span');
 var slideProgress = $('.logo_slider h3 div');
 var logoSlidesTotal = logoSlider.find("div").length;
@@ -126,9 +126,32 @@ logoSlider.slick({
 
 // Javascript for the graphic slider
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+// variables for the misc slider
+var text_container_misc = $('.bottom_divider h3');
+var slideProgress_misc = $('.bottom_divider div');
+var miscSlidesTotal = graphicSlider.find("div").length;
+console.log("The length of the misc slider is" + miscSlidesTotal);
+// Initiate the slick slider plugin
 graphicSlider.slick({
-	speed: 500
+	speed: 500,
+
+	onAfterChange: function() {
+		setTimeout(function(){
+
+			var currentImg = $('.graphic_slider .slick-active').find('img');
+			var titlu_misc = currentImg.data('title');
+			var current = graphicSlider.get(0).slick.currentSlide; //current index in the slider
+			// calculates how much the width of the span should be, to reflect the progress
+			var calculateProgress = ( 100 / (miscSlidesTotal - 1) ) * current;
+			var progress = String(calculateProgress) + "%";
+			// modify the text for the appropriate element
+			text_container_misc.text(titlu_misc);
+			// slide progress, makes the before element increase in width with progress
+			slideProgress_misc.css("width", progress);
+			console.log(progress);
+
+		}, 1); //end of setTimeout()
+	} // end of onAfterChange
 })
 
 }); //end of document.ready()

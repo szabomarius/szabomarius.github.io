@@ -346,13 +346,33 @@
 	}
 }
 
+.bottom_divider {
+	position: relative;
+	height: 70px;
+	background-color: $body-bg-color;
+	text-align: center;
+	// border-bottom: 10px solid $main-color;
+	div {
+		position: absolute;
+		left: 0; right: 0;
+		margin: 0 auto;
+		height: 100%;
+		width: 0%;
+		background-color: $main-color;
+		@include trans(all, 0.2s, ease-in);
+	}
+	h3 {
+		position: absolute;
+		z-index: 1;
+		left: 0; right: 0;
+		margin: 0 auto;
+		height: 100%;
+
+	}	
+}
 // FOOTER STYLES
 // ---------------------------------------------------------------/
 
-.bottom_divider {
-	height: 70px;
-	background-color: $main-color;	
-}
 .main_footer {
 	height: 100%;
 	width: 100%;
