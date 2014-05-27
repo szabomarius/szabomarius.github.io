@@ -9,6 +9,7 @@ var webSlider = $('.web_container .slick_slider');
 var logoSlider = $('.logo_container .slick_slider');
 var graphicSlider = $('.graphic_container .slick_slider');
 var link = $('.web_link');
+var linkText = link.find('span');
 var padImage = $('.pad img');
 var phoneImage = $('.phone img');
 // Make the phone and pad screen invisible if the first project is not responsive
@@ -65,21 +66,29 @@ webSlider.slick({
 			switch (projectNr) {
 				case "project1":
 					link.attr("href" , "http://www.google-1.com");
+					linkText.html("Ciclist");
 					break;
 				case "project2":
 					link.attr("href" , "http://www.google-2.com");
+					linkText.html("Electronica");
 					break;
 				case "project3":
 					link.attr("href" , "http://www.google-3.com");
+					linkText.html("Autobus Rosu");
 					break;
 				default:
 					
 			}
 
 			}, 1); //end of setTimeout()
+		// change link title to reflect website
+		linkText.removeClass("webTitlefadeOut");
+		linkText.addClass("webTitlefadeIn");
 
-
-	} //end of onAfterChange	
+	}, //end of onAfterChange	
+	onBeforeChange: function() {
+		linkText.addClass("webTitlefadeOut");
+	}
 
 }); //end of slick()
 

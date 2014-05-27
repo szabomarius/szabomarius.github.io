@@ -82,3 +82,10 @@
 	cursor: -webkit-grabbing;
 	cursor: -moz-grabbing;
 }
+// CSS3 Rotate
+@mixin rotate($degree) {
+	transform:rotate($degree);
+	-ms-transform:rotate($degree); /* IE 9 */
+	// buggy webkit rotate needs to render with 3d engine
+	-webkit-transform: rotate($degree) translate3d( 0, 0, 0); /* Opera, Chrome, and Safari */
+}

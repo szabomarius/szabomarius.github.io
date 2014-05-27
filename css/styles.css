@@ -245,17 +245,12 @@ body {
   transition: all 0.2s ease-out;
 }
 
-/* line 59, ../sass/partials/_layout.scss */
-.type_of_work h2:hover {
-  background-color: #1c1c1c;
-}
-
-/* line 64, ../sass/partials/_layout.scss */
+/* line 61, ../sass/partials/_layout.scss */
 .work_container {
   padding: 60px 0px 120px 0px;
 }
 
-/* line 67, ../sass/partials/_layout.scss */
+/* line 64, ../sass/partials/_layout.scss */
 .desktop_slider {
   width: 741px;
   height: 466px;
@@ -265,7 +260,7 @@ body {
   position: relative;
 }
 
-/* line 77, ../sass/partials/_layout.scss */
+/* line 74, ../sass/partials/_layout.scss */
 .slide_links {
   width: 741px;
   height: 40px;
@@ -276,7 +271,7 @@ body {
   z-index: 2;
 }
 
-/* line 86, ../sass/partials/_layout.scss */
+/* line 83, ../sass/partials/_layout.scss */
 .web_link {
   position: relative;
   display: inline-block;
@@ -294,53 +289,83 @@ body {
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 98, ../sass/partials/_layout.scss */
+/* line 95, ../sass/partials/_layout.scss */
 .web_link span {
   height: 100%;
   display: block;
+  -webkit-transition: all 0.35s ease-out;
+  -moz-transition: all 0.35s ease-out;
+  -ms-transition: all 0.35s ease-out;
+  -o-transition: all 0.35s ease-out;
+  transition: all 0.35s ease-out;
 }
-/* line 102, ../sass/partials/_layout.scss */
+/* line 100, ../sass/partials/_layout.scss */
 .web_link img {
   position: absolute;
   right: 0;
-  top: 0;
+  top: 4px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
-/* line 107, ../sass/partials/_layout.scss */
+/* line 106, ../sass/partials/_layout.scss */
 .web_link:hover {
   opacity: 1;
 }
+/* line 108, ../sass/partials/_layout.scss */
+.web_link:hover img {
+  transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  /* IE 9 */
+  -webkit-transform: rotate(90deg) translate3d(0, 0, 0);
+  /* Opera, Chrome, and Safari */
+}
 
-/* line 111, ../sass/partials/_layout.scss */
+/* line 114, ../sass/partials/_layout.scss */
+.webTitlefadeIn {
+  margin-left: 0px;
+  opacity: 1;
+}
+
+/* line 118, ../sass/partials/_layout.scss */
+.webTitlefadeOut {
+  margin-left: 20%;
+  opacity: 0;
+}
+
+/* line 122, ../sass/partials/_layout.scss */
 .slick_slider {
   width: 100%;
   height: 100%;
   cursor: -webkit-grab;
   cursor: -moz-grab;
 }
-/* line 115, ../sass/partials/_layout.scss */
+/* line 126, ../sass/partials/_layout.scss */
 .slick_slider div {
   width: 100%;
   height: 100%;
   display: none;
 }
-/* line 120, ../sass/partials/_layout.scss */
+/* line 131, ../sass/partials/_layout.scss */
 .slick_slider div:first-child {
   display: block;
 }
 
-/* line 125, ../sass/partials/_layout.scss */
+/* line 136, ../sass/partials/_layout.scss */
 .slick-list.dragging {
   cursor: -webkit-grabbing;
   cursor: -moz-grabbing;
 }
 
-/* line 129, ../sass/partials/_layout.scss */
+/* line 140, ../sass/partials/_layout.scss */
 .web_container button.slick-prev, .web_container button.slick-next {
   height: 100%;
   width: 30px;
   top: 10px;
 }
-/* line 133, ../sass/partials/_layout.scss */
+/* line 144, ../sass/partials/_layout.scss */
 .web_container button.slick-prev:before, .web_container button.slick-next:before {
   content: '';
   display: block;
@@ -351,42 +376,42 @@ body {
   transition: border-color 0.1s ease;
 }
 
-/* line 140, ../sass/partials/_layout.scss */
+/* line 151, ../sass/partials/_layout.scss */
 .web_container button.slick-prev:before {
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
   border-right: 6px solid white;
   margin-right: 20px;
 }
-/* line 145, ../sass/partials/_layout.scss */
+/* line 156, ../sass/partials/_layout.scss */
 .web_container button.slick-prev:hover:before {
   border-right: 6px solid #c44c7c;
 }
 
-/* line 151, ../sass/partials/_layout.scss */
+/* line 162, ../sass/partials/_layout.scss */
 .web_container button.slick-next:before {
   border-top: 6px solid transparent;
   border-bottom: 6px solid transparent;
   border-left: 6px solid white;
   margin-left: 20px;
 }
-/* line 156, ../sass/partials/_layout.scss */
+/* line 167, ../sass/partials/_layout.scss */
 .web_container button.slick-next:hover:before {
   border-left: 6px solid #c44c7c;
 }
 
-/* line 163, ../sass/partials/_layout.scss */
+/* line 174, ../sass/partials/_layout.scss */
 .pad, .phone {
   position: absolute;
   bottom: -15px;
   overflow: hidden;
 }
-/* line 167, ../sass/partials/_layout.scss */
+/* line 178, ../sass/partials/_layout.scss */
 .pad img, .phone img {
   vertical-align: bottom;
 }
 
-/* line 171, ../sass/partials/_layout.scss */
+/* line 182, ../sass/partials/_layout.scss */
 .phone {
   width: 154px;
   height: 236px;
@@ -395,7 +420,7 @@ body {
   left: -40px;
 }
 
-/* line 178, ../sass/partials/_layout.scss */
+/* line 189, ../sass/partials/_layout.scss */
 .pad {
   width: 401px;
   height: 295px;
@@ -404,35 +429,35 @@ body {
   right: -60px;
 }
 
-/* line 191, ../sass/partials/_layout.scss */
+/* line 202, ../sass/partials/_layout.scss */
 .logo_slider {
   width: 753px;
   height: 379px;
   margin: 0 auto;
 }
-/* line 196, ../sass/partials/_layout.scss */
+/* line 207, ../sass/partials/_layout.scss */
 .logo_slider .slick_slider {
   background-color: #fff;
   margin-bottom: 0px;
 }
-/* line 199, ../sass/partials/_layout.scss */
+/* line 210, ../sass/partials/_layout.scss */
 .logo_slider .slick_slider div {
   text-align: center;
   padding-top: 20px;
 }
-/* line 202, ../sass/partials/_layout.scss */
+/* line 213, ../sass/partials/_layout.scss */
 .logo_slider .slick_slider div img {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 209, ../sass/partials/_layout.scss */
+/* line 220, ../sass/partials/_layout.scss */
 .logo_container button.slick-prev, .logo_container button.slick-next {
   height: 100%;
   width: 30px;
   top: 10px;
 }
-/* line 213, ../sass/partials/_layout.scss */
+/* line 224, ../sass/partials/_layout.scss */
 .logo_container button.slick-prev:before, .logo_container button.slick-next:before {
   content: '';
   display: block;
@@ -443,61 +468,61 @@ body {
   transition: border-color 0.1s ease;
 }
 
-/* line 220, ../sass/partials/_layout.scss */
+/* line 231, ../sass/partials/_layout.scss */
 .logo_container button.slick-prev:before {
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
   border-right: 18px solid #1c1c1c;
   margin-right: 6px;
 }
-/* line 225, ../sass/partials/_layout.scss */
+/* line 236, ../sass/partials/_layout.scss */
 .logo_container button.slick-prev:hover:before {
   border-right: 18px solid #c44c7c;
 }
 
-/* line 231, ../sass/partials/_layout.scss */
+/* line 242, ../sass/partials/_layout.scss */
 .logo_container button.slick-next:before {
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
   border-left: 18px solid #1c1c1c;
   margin-left: 6px;
 }
-/* line 236, ../sass/partials/_layout.scss */
+/* line 247, ../sass/partials/_layout.scss */
 .logo_container button.slick-next:hover:before {
   border-left: 18px solid #c44c7c;
 }
 
-/* line 241, ../sass/partials/_layout.scss */
+/* line 252, ../sass/partials/_layout.scss */
 .logo_container h3 {
   padding: 20px 0px 20px 0px;
   background-color: #1c1c1c;
 }
 
-/* line 249, ../sass/partials/_layout.scss */
+/* line 260, ../sass/partials/_layout.scss */
 .graphic_container {
   padding: 0;
   width: 100%;
 }
 
-/* line 253, ../sass/partials/_layout.scss */
+/* line 264, ../sass/partials/_layout.scss */
 .graphic_slider {
   width: 100%;
   height: 700px;
   margin: 0 auto;
 }
-/* line 257, ../sass/partials/_layout.scss */
+/* line 268, ../sass/partials/_layout.scss */
 .graphic_slider .slick_slider {
   overflow: hidden;
   margin-bottom: 0px;
   padding: 0px 0px 0px 0px;
 }
-/* line 261, ../sass/partials/_layout.scss */
+/* line 272, ../sass/partials/_layout.scss */
 .graphic_slider .slick_slider div {
   position: relative;
   text-align: center;
   padding: 0px 0px 0px 0px;
 }
-/* line 265, ../sass/partials/_layout.scss */
+/* line 276, ../sass/partials/_layout.scss */
 .graphic_slider .slick_slider div img {
   display: inline-block;
   position: absolute;
@@ -509,14 +534,14 @@ body {
   margin: auto;
 }
 
-/* line 275, ../sass/partials/_layout.scss */
+/* line 286, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev, .graphic_slider button.slick-next {
   height: 100%;
   width: 50px;
   top: 10px;
   background-color: #1c1c1c;
 }
-/* line 280, ../sass/partials/_layout.scss */
+/* line 291, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev:before, .graphic_slider button.slick-next:before {
   content: '';
   display: block;
@@ -528,45 +553,45 @@ body {
   transition: border-color 0.1s ease;
 }
 
-/* line 287, ../sass/partials/_layout.scss */
+/* line 298, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev {
   left: 0px;
 }
-/* line 289, ../sass/partials/_layout.scss */
+/* line 300, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev:before {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid #f8f8f8;
   margin-right: 22px;
 }
-/* line 294, ../sass/partials/_layout.scss */
+/* line 305, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev:hover:before {
   border-right: 10px solid #c44c7c;
 }
 
-/* line 299, ../sass/partials/_layout.scss */
+/* line 310, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-next {
   right: 0px;
 }
-/* line 301, ../sass/partials/_layout.scss */
+/* line 312, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-next:before {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid #f8f8f8;
   margin-left: 22px;
 }
-/* line 306, ../sass/partials/_layout.scss */
+/* line 317, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-next:hover:before {
   border-left: 10px solid #c44c7c;
 }
 
-/* line 315, ../sass/partials/_layout.scss */
+/* line 326, ../sass/partials/_layout.scss */
 .bottom_divider {
   height: 70px;
   background-color: #c44c7c;
 }
 
-/* line 319, ../sass/partials/_layout.scss */
+/* line 330, ../sass/partials/_layout.scss */
 .main_footer {
   height: 100%;
   width: 100%;

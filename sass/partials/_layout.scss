@@ -56,9 +56,6 @@
 	/* transition */
 	@include trans (all, 0.2s, ease-out);
 }
-.type_of_work h2:hover {
-	background-color: $body-bg-color;
-}
 // WEB DESIGN
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .work_container {
@@ -98,15 +95,29 @@
 	span {
 		height: 100%;
 		display:block;
+		@include trans(all, 0.35s, ease-out);
 	}
 	img {
 		position: absolute;
 		right: 0;
-		top: 0;
+		top: 4px;
+		@include trans(all, 0.2s, ease-out);
 	}
 	&:hover {
 		opacity: 1;
+		img {
+			@include rotate(90deg);
+		}
 	}
+}
+// css3 animation classes
+.webTitlefadeIn {
+	margin-left: 0px;
+	opacity: 1;
+}
+.webTitlefadeOut {
+	margin-left: 20%;
+	opacity: 0;
 }
 .slick_slider {
 	width: 100%;
