@@ -94,19 +94,31 @@ webSlider.slick({
 
 // Javascript for the logo slider
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// variables for the logo slide
+var text_container = $('.logo_slider h3 span');
+var slideProgress = $('.logo_slider h3 div');
+var logoSlidesTotal = logoSlider.find("div").length;
 
 // Initiate the slick slider plugin
-
+console.log("The length of the logo slider is" + logoSlidesTotal);
 logoSlider.slick({
 	speed: 500 ,
+	dots: false,
 
 	onAfterChange: function(){
 		setTimeout(function(){
 
 			var currentImg = $('.logo_container .slick-active').find('img');
 			var titlu_logo = currentImg.data('title');
-			var text_container = $('.logo_slider h3');
+			var current = logoSlider.get(0).slick.currentSlide; //current index in the slider
+			// calculates how much the width of the span should be, to reflect the progress
+			var calculateProgress = ( 100 / (logoSlidesTotal - 1) ) * current;
+			var progress = String(calculateProgress) + "%";
+			// modify the text for the appropriate element
 			text_container.text(titlu_logo);
+			// slide progress, makes the before element increase in width with progress
+			slideProgress.css("width", progress);
+			console.log(progress);
 
 		}, 1); //end of setTimeout()
 	} // end of onAfterChange
