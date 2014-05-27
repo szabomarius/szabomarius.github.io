@@ -48,12 +48,15 @@ body {
 	color: $header-txt-color;
 	text-shadow: 0px 0px 0px;
 }
-.logo_container h3 {
+.logo_container h3 , .bottom_divider h3{
 	font-family: "Open Sans Condensed" , sans-serif;
 	@include x-rem ( font-size, 20px );
 	letter-spacing: 2px;
 	text-transform: capitalize;
 	color: $header-txt-color;
+}
+.bottom_divider h3 {
+	line-height: 71px;
 }
 // FOOTER STYLES
 // ---------------------------------------------------------------

@@ -173,13 +173,18 @@ body {
 }
 
 /* line 51, ../sass/partials/_typography.scss */
-.logo_container h3 {
+.logo_container h3, .bottom_divider h3 {
   font-family: "Open Sans Condensed" , sans-serif;
   font-size: 20px;
   font-size: 2rem;
   letter-spacing: 2px;
   text-transform: capitalize;
   color: #f8f8f8;
+}
+
+/* line 58, ../sass/partials/_typography.scss */
+.bottom_divider h3 {
+  line-height: 71px;
 }
 
 /* line 8, ../sass/partials/_layout.scss */
@@ -631,13 +636,39 @@ body {
   border-left: 10px solid #c44c7c;
 }
 
-/* line 352, ../sass/partials/_layout.scss */
+/* line 349, ../sass/partials/_layout.scss */
 .bottom_divider {
+  position: relative;
   height: 70px;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+/* line 355, ../sass/partials/_layout.scss */
+.bottom_divider div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100%;
+  width: 0%;
   background-color: #c44c7c;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+/* line 364, ../sass/partials/_layout.scss */
+.bottom_divider h3 {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100%;
 }
 
-/* line 356, ../sass/partials/_layout.scss */
+/* line 376, ../sass/partials/_layout.scss */
 .main_footer {
   height: 100%;
   width: 100%;
