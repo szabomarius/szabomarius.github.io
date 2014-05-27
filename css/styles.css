@@ -103,7 +103,7 @@ html ::selection {
 
 /* line 13, ../sass/partials/_general.scss */
 body {
-  background: #1c1c1c url('../img/pat/header-pat.png?1395827085');
+  background: #1c1c1c url('../img/pat/header-pat.png?1401185819');
 }
 
 /* line 4, ../sass/partials/_typography.scss */
@@ -267,7 +267,7 @@ body {
   height: 466px;
   padding: 33px 33px 149px 33px;
   margin: 0 auto;
-  background: transparent url('../img/desktop.png?1397376096') no-repeat center center;
+  background: transparent url('../img/desktop.png?1401185819') no-repeat center center;
   position: relative;
 }
 
@@ -427,7 +427,7 @@ body {
   width: 154px;
   height: 236px;
   padding: 30px 13px 29px 13px;
-  background: transparent url('../img/phone.png?1397376096') no-repeat;
+  background: transparent url('../img/phone.png?1401185819') no-repeat;
   left: -40px;
 }
 
@@ -436,7 +436,7 @@ body {
   width: 401px;
   height: 295px;
   padding: 31px 31px 31px 30px;
-  background: transparent url('../img/pad.png?1397376096') no-repeat;
+  background: transparent url('../img/pad.png?1401185819') no-repeat;
   right: -60px;
 }
 
