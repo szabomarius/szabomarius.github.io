@@ -24,7 +24,7 @@ if ( firstImg.data('res') ) {
 }
 // Initiate the slick slider plugin
 webSlider.slick({
-	speed: 800 ,
+	speed: 500 ,
 
 	onAfterChange: function(){
 		// Had to put in a timeour because the callback triggered faster than the active class could be applied
