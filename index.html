@@ -132,20 +132,24 @@
 			</div><!-- end of .footer_section -->
 			<section class="footer_section footer_contact">
 				<h2>Je suis en contact</h2>
-				<!-- Do not change the code! -->
 				<form action="http://formtoemail.com/user_forms.php" method="post">
 					<input type="hidden" name="user_id" value="4LDZUJYBL6FI90JUR9N1">
 					<input type="hidden" name="form_id" value="1">
 					<!-- modify things yo'-->
-					<label>Your name</label>
-					<input type="text" name="name" id="yName" style="width:100%;margin:0 0 10px;">
-					<labe>Your e-mail address</label>
-					<input type="text" name="email" id="yEmail">
-					<label>Your message</label>
-					<textarea name="comments" id="yMessage"></textarea>
-					<input type="submit" value="Send">
+					<label for="yName">Your name</label>
+					<input type="text" name="name" class="form_input" id="yName" placeholder="Type in your name">
+					<label for="yEmail">Your e-mail address</label>
+					<input type="text" name="email" class="form_input" id="yEmail" placeholder="Type in your e-mail adress">
+					<label for="yMessage">Your message</label>
+					<textarea name="comments" class="form_input" id="yMessage" placeholder="Type in your message"></textarea>
+					<input type="submit" value="Send" id="ySend">
 				</form>
-				<!-- Do not change the code! -->
+				<ul class="social_contact">
+					<li><a href="#"><img src="" /></a></li>
+					<li><a href="#"><img src="" /></a></li>
+					<li><a href="#"><img src="" /></a></li>
+					<li><a href="#"><img src="" /></a></li>
+				</ul><!-- end of .social_contact -->
 			</section><!-- end of .footer_section -->
 		</div><!-- end of footer_wrap -->
 	</div><!-- end of footer_container -->

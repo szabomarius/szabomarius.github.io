@@ -435,7 +435,35 @@
 // contact
 .footer_contact {
 	text-align: left;
+	h2 {
+		margin-bottom: 35px; //to better align the texts
+	}
+	label {
+		margin: 30px 0px 15px 0px;
+		display: block;
+	}
 }
 #yName , #yEmail , #yMessage {
 	width: 100%;
+	background: none;
+	border-top: 2px dashed $form-border-color;
+	border-bottom: 2px dashed $form-border-color;
+	border-left: none;
+	border-right: none;
+	padding: 8px 0px 8px 0px;
+	outline: none;
+}
+#yMessage {
+	margin-bottom: 15px;
+	height: 150px;	
+}
+#ySend {
+	background: none;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+	padding: 10px;
+	@include trans(all, 0.1s, ease-out);
 }

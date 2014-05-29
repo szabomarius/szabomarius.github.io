@@ -22,6 +22,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Bold-webfont.eot");
+  src: url("fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg"), url("fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("fonts/OpenSans-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Light-webfont.eot");
+  src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg"), url("fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/OpenSans-Light-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -207,7 +223,7 @@ body {
   font-family: "Intro", "Arial", sans-serif;
 }
 
-/* line 73, ../sass/partials/_typography.scss */
+/* line 74, ../sass/partials/_typography.scss */
 .footer_about p {
   opacity: 0.6;
   font-size: 16px;
@@ -219,12 +235,12 @@ body {
   font-weight: normal;
 }
 
-/* line 83, ../sass/partials/_typography.scss */
+/* line 85, ../sass/partials/_typography.scss */
 .skill_list {
   text-align: left;
   padding: 0px 6% 0px 6%;
 }
-/* line 86, ../sass/partials/_typography.scss */
+/* line 88, ../sass/partials/_typography.scss */
 .skill_list li {
   line-height: 48px;
   font-size: 14px;
@@ -232,9 +248,39 @@ body {
   font-family: "Intro", "Arial", sans-serif;
 }
 
-/* line 92, ../sass/partials/_typography.scss */
+/* line 94, ../sass/partials/_typography.scss */
 .current_skills {
   margin-bottom: 35px;
+}
+
+/* line 99, ../sass/partials/_typography.scss */
+.footer_contact label {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+/* line 105, ../sass/partials/_typography.scss */
+#yName, #yEmail, #yMessage {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #f8f8f8;
+  opacity: 0.8;
+}
+
+/* line 112, ../sass/partials/_typography.scss */
+#ySend {
+  font-family: "Intro", "Arial", sans-serif;
+  color: #f8f8f8;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 116, ../sass/partials/_typography.scss */
+#ySend:hover {
+  color: #c44c7c;
 }
 
 /* line 8, ../sass/partials/_layout.scss */
@@ -795,8 +841,46 @@ body {
 .footer_contact {
   text-align: left;
 }
+/* line 438, ../sass/partials/_layout.scss */
+.footer_contact h2 {
+  margin-bottom: 35px;
+}
+/* line 441, ../sass/partials/_layout.scss */
+.footer_contact label {
+  margin: 30px 0px 15px 0px;
+  display: block;
+}
 
-/* line 439, ../sass/partials/_layout.scss */
+/* line 446, ../sass/partials/_layout.scss */
 #yName, #yEmail, #yMessage {
   width: 100%;
+  background: none;
+  border-top: 2px dashed #4e4e4e;
+  border-bottom: 2px dashed #4e4e4e;
+  border-left: none;
+  border-right: none;
+  padding: 8px 0px 8px 0px;
+  outline: none;
+}
+
+/* line 456, ../sass/partials/_layout.scss */
+#yMessage {
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+/* line 460, ../sass/partials/_layout.scss */
+#ySend {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
 }

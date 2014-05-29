@@ -69,6 +69,7 @@ body {
 		font-family: $heading-type;
 	}
 }
+// about
 .footer_about {
 	p {
 		opacity: 0.6;
@@ -80,6 +81,7 @@ body {
 		font-weight: normal;
 	}
 }
+// skills
 .skill_list {
 	text-align: left;
 	padding: 0px 6% 0px 6%;
@@ -91,4 +93,27 @@ body {
 }
 .current_skills {
 	margin-bottom: 35px;
+}
+// contact
+.footer_contact {
+	label {
+		@include x-rem ( font-size, 14px );
+		font-family: $footer-type;
+		font-weight: bold;
+	}
+}
+#yName , #yEmail , #yMessage {
+	font-family: $footer-type;
+	font-weight: normal;
+	@include x-rem ( font-size, 14px );
+	color: $header-txt-color;
+	opacity: 0.8;
+}
+#ySend {
+	font-family: $heading-type;
+	color: $header-txt-color;
+	@include x-rem ( font-size, 16px );
+	&:hover {
+		color: $main-color;
+	}
 }

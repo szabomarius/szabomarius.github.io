@@ -155,4 +155,25 @@ graphicSlider.slick({
 	} // end of onAfterChange
 })
 
+// Form effects
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+var focusedElement = $('.form_input');
+$('.form_input').focus(function() {
+	var elementId = $(this).attr('id');
+	switch (elementId) {
+				case "yName":
+					console.log("yName");
+					break;
+				case "yEmail":
+					console.log("yEmail");
+					break;
+				case "yMessage":
+					console.log("yMessage");
+					break;
+				default:
+					
+	}
+});
+
+
 }); //end of document.ready()
