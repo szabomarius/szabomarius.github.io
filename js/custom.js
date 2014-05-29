@@ -25,6 +25,7 @@ if ( firstImg.data('res') ) {
 // Initiate the slick slider plugin
 webSlider.slick({
 	speed: 500 ,
+	dots: true ,
 
 	onAfterChange: function(){
 		// Had to put in a timeour because the callback triggered faster than the active class could be applied
@@ -154,4 +155,42 @@ graphicSlider.slick({
 	} // end of onAfterChange
 })
 
+// Form effects
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+var focusedElement = $('.form_input');
+var labels = $('.footer_contact label');
+
+var name = labels.eq(0);
+var email = labels.eq(1);
+var message = labels.eq(2);
+
+focusedElement.focus(function() {
+	var elementId = $(this).attr('id');
+	switch (elementId) {
+				case "yName":
+					name.addClass('focused');
+					break;
+				case "yEmail":
+					email.addClass('focused');
+					break;
+				case "yMessage":
+					message.addClass('focused');
+					break;
+	}
+});
+focusedElement.focusout(function() {
+	labels.removeClass('focused');	
+});
+// Social links
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+var socialLinks = $('.social_contact li');
+socialLinks.hover(
+  function() {
+    $(this).addClass("social_hover");
+    console.log('rolledin');
+  }, function() {
+    $(this).removeClass("social_hover");
+    console.log('rolledout');
+  }
+);
 }); //end of document.ready()

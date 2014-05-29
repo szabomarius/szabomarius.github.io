@@ -14,6 +14,30 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Regular-webfont.eot");
+  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg"), url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("fonts/OpenSans-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Bold-webfont.eot");
+  src: url("fonts/OpenSans-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Bold-webfont.svg#open_sansbold") format("svg"), url("fonts/OpenSans-Bold-webfont.ttf") format("truetype"), url("fonts/OpenSans-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Light-webfont.eot");
+  src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg"), url("fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/OpenSans-Light-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -185,6 +209,83 @@ body {
 /* line 58, ../sass/partials/_typography.scss */
 .bottom_divider h3 {
   line-height: 71px;
+}
+
+/* line 63, ../sass/partials/_typography.scss */
+.main_footer {
+  color: #f8f8f8;
+}
+
+/* line 67, ../sass/partials/_typography.scss */
+.footer_section h2 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-family: "Intro", "Arial", sans-serif;
+}
+
+/* line 74, ../sass/partials/_typography.scss */
+.footer_about p {
+  opacity: 0.6;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 34px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: normal;
+}
+
+/* line 85, ../sass/partials/_typography.scss */
+.skill_list {
+  text-align: left;
+  padding: 0px 6% 0px 6%;
+}
+/* line 88, ../sass/partials/_typography.scss */
+.skill_list li {
+  line-height: 48px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Intro", "Arial", sans-serif;
+}
+
+/* line 94, ../sass/partials/_typography.scss */
+.current_skills {
+  margin-bottom: 35px;
+}
+
+/* line 99, ../sass/partials/_typography.scss */
+.footer_contact label {
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+/* line 105, ../sass/partials/_typography.scss */
+.form_input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  font-size: 1.4rem;
+  color: #f8f8f8;
+  opacity: 0.8;
+}
+
+/* line 112, ../sass/partials/_typography.scss */
+#ySend {
+  font-family: "Intro", "Arial", sans-serif;
+  color: #f8f8f8;
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+/* line 116, ../sass/partials/_typography.scss */
+#ySend:hover {
+  color: #c44c7c;
+}
+
+/* line 120, ../sass/partials/_typography.scss */
+.focused {
+  color: #c44c7c;
 }
 
 /* line 8, ../sass/partials/_layout.scss */
@@ -417,18 +518,23 @@ body {
   border-left: 6px solid #c44c7c;
 }
 
-/* line 175, ../sass/partials/_layout.scss */
+/* line 174, ../sass/partials/_layout.scss */
+.desktop_slider .slick-dots {
+  bottom: -210px;
+}
+
+/* line 179, ../sass/partials/_layout.scss */
 .pad, .phone {
   position: absolute;
   bottom: -15px;
   overflow: hidden;
 }
-/* line 179, ../sass/partials/_layout.scss */
+/* line 183, ../sass/partials/_layout.scss */
 .pad img, .phone img {
   vertical-align: bottom;
 }
 
-/* line 183, ../sass/partials/_layout.scss */
+/* line 187, ../sass/partials/_layout.scss */
 .phone {
   width: 154px;
   height: 236px;
@@ -437,7 +543,7 @@ body {
   left: -40px;
 }
 
-/* line 190, ../sass/partials/_layout.scss */
+/* line 194, ../sass/partials/_layout.scss */
 .pad {
   width: 401px;
   height: 295px;
@@ -446,35 +552,35 @@ body {
   right: -60px;
 }
 
-/* line 203, ../sass/partials/_layout.scss */
+/* line 207, ../sass/partials/_layout.scss */
 .logo_slider {
   width: 753px;
   height: 379px;
   margin: 0 auto;
 }
-/* line 208, ../sass/partials/_layout.scss */
+/* line 212, ../sass/partials/_layout.scss */
 .logo_slider .slick_slider {
   background-color: #fff;
   margin-bottom: 0px;
 }
-/* line 211, ../sass/partials/_layout.scss */
+/* line 215, ../sass/partials/_layout.scss */
 .logo_slider .slick_slider div {
   text-align: center;
   padding-top: 20px;
 }
-/* line 214, ../sass/partials/_layout.scss */
+/* line 218, ../sass/partials/_layout.scss */
 .logo_slider .slick_slider div img {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 221, ../sass/partials/_layout.scss */
+/* line 225, ../sass/partials/_layout.scss */
 .logo_container button.slick-prev, .logo_container button.slick-next {
   height: 100%;
   width: 30px;
   top: 10px;
 }
-/* line 225, ../sass/partials/_layout.scss */
+/* line 229, ../sass/partials/_layout.scss */
 .logo_container button.slick-prev:before, .logo_container button.slick-next:before {
   content: '';
   display: block;
@@ -485,31 +591,31 @@ body {
   transition: border-color 0.1s ease;
 }
 
-/* line 232, ../sass/partials/_layout.scss */
+/* line 236, ../sass/partials/_layout.scss */
 .logo_container button.slick-prev:before {
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
   border-right: 18px solid #1c1c1c;
   margin-right: 6px;
 }
-/* line 237, ../sass/partials/_layout.scss */
+/* line 241, ../sass/partials/_layout.scss */
 .logo_container button.slick-prev:hover:before {
   border-right: 18px solid #c44c7c;
 }
 
-/* line 243, ../sass/partials/_layout.scss */
+/* line 247, ../sass/partials/_layout.scss */
 .logo_container button.slick-next:before {
   border-top: 18px solid transparent;
   border-bottom: 18px solid transparent;
   border-left: 18px solid #1c1c1c;
   margin-left: 6px;
 }
-/* line 248, ../sass/partials/_layout.scss */
+/* line 252, ../sass/partials/_layout.scss */
 .logo_container button.slick-next:hover:before {
   border-left: 18px solid #c44c7c;
 }
 
-/* line 254, ../sass/partials/_layout.scss */
+/* line 258, ../sass/partials/_layout.scss */
 .logo_slider .slick-dots {
   height: 60px;
   background-color: red;
@@ -518,13 +624,13 @@ body {
   bottom: -60px;
 }
 
-/* line 261, ../sass/partials/_layout.scss */
+/* line 265, ../sass/partials/_layout.scss */
 .logo_container h3 {
   position: relative;
   padding: 30px 0px 30px 0px;
   background-color: #1c1c1c;
 }
-/* line 265, ../sass/partials/_layout.scss */
+/* line 269, ../sass/partials/_layout.scss */
 .logo_container h3 span {
   position: absolute;
   top: 20px;
@@ -533,7 +639,7 @@ body {
   margin: 0 auto;
   z-index: 2;
 }
-/* line 271, ../sass/partials/_layout.scss */
+/* line 275, ../sass/partials/_layout.scss */
 .logo_container h3 div {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -549,31 +655,31 @@ body {
   width: 0%;
 }
 
-/* line 286, ../sass/partials/_layout.scss */
+/* line 290, ../sass/partials/_layout.scss */
 .graphic_container {
   padding: 0;
   width: 100%;
 }
 
-/* line 290, ../sass/partials/_layout.scss */
+/* line 294, ../sass/partials/_layout.scss */
 .graphic_slider {
   width: 100%;
   height: 700px;
   margin: 0 auto;
 }
-/* line 294, ../sass/partials/_layout.scss */
+/* line 298, ../sass/partials/_layout.scss */
 .graphic_slider .slick_slider {
   overflow: hidden;
   margin-bottom: 0px;
   padding: 0px 0px 0px 0px;
 }
-/* line 298, ../sass/partials/_layout.scss */
+/* line 302, ../sass/partials/_layout.scss */
 .graphic_slider .slick_slider div {
   position: relative;
   text-align: center;
   padding: 0px 0px 0px 0px;
 }
-/* line 302, ../sass/partials/_layout.scss */
+/* line 306, ../sass/partials/_layout.scss */
 .graphic_slider .slick_slider div img {
   display: inline-block;
   position: absolute;
@@ -585,14 +691,14 @@ body {
   margin: auto;
 }
 
-/* line 312, ../sass/partials/_layout.scss */
+/* line 316, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev, .graphic_slider button.slick-next {
   height: 100%;
   width: 50px;
   top: 10px;
   background-color: #1c1c1c;
 }
-/* line 317, ../sass/partials/_layout.scss */
+/* line 321, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev:before, .graphic_slider button.slick-next:before {
   content: '';
   display: block;
@@ -604,46 +710,46 @@ body {
   transition: border-color 0.1s ease;
 }
 
-/* line 324, ../sass/partials/_layout.scss */
+/* line 328, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev {
   left: 0px;
 }
-/* line 326, ../sass/partials/_layout.scss */
+/* line 330, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev:before {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid #f8f8f8;
   margin-right: 22px;
 }
-/* line 331, ../sass/partials/_layout.scss */
+/* line 335, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-prev:hover:before {
   border-right: 10px solid #c44c7c;
 }
 
-/* line 336, ../sass/partials/_layout.scss */
+/* line 340, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-next {
   right: 0px;
 }
-/* line 338, ../sass/partials/_layout.scss */
+/* line 342, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-next:before {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 10px solid #f8f8f8;
   margin-left: 22px;
 }
-/* line 343, ../sass/partials/_layout.scss */
+/* line 347, ../sass/partials/_layout.scss */
 .graphic_slider button.slick-next:hover:before {
   border-left: 10px solid #c44c7c;
 }
 
-/* line 349, ../sass/partials/_layout.scss */
+/* line 353, ../sass/partials/_layout.scss */
 .bottom_divider {
   position: relative;
   height: 70px;
-  background-color: #1c1c1c;
+  background-color: #c44c7c;
   text-align: center;
 }
-/* line 355, ../sass/partials/_layout.scss */
+/* line 359, ../sass/partials/_layout.scss */
 .bottom_divider div {
   position: absolute;
   left: 0;
@@ -651,14 +757,14 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 0%;
-  background-color: #c44c7c;
+  background-color: #1c1c1c;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 364, ../sass/partials/_layout.scss */
+/* line 369, ../sass/partials/_layout.scss */
 .bottom_divider h3 {
   position: absolute;
   z-index: 1;
@@ -668,8 +774,168 @@ body {
   height: 100%;
 }
 
-/* line 376, ../sass/partials/_layout.scss */
+/* line 381, ../sass/partials/_layout.scss */
 .main_footer {
   height: 100%;
   width: 100%;
+  display: table;
+}
+
+/* line 386, ../sass/partials/_layout.scss */
+.footer_container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 390, ../sass/partials/_layout.scss */
+.footer_wrap {
+  max-width: 1280px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 397, ../sass/partials/_layout.scss */
+.footer_section {
+  display: inline-block;
+  vertical-align: top;
+  width: 31.21951%;
+}
+/* line 401, ../sass/partials/_layout.scss */
+.footer_section h2 {
+  margin-bottom: 20px;
+}
+
+/* line 407, ../sass/partials/_layout.scss */
+.footer_about p {
+  margin-top: 20px;
+}
+/* line 410, ../sass/partials/_layout.scss */
+.footer_about .first_p {
+  margin-top: 0px;
+}
+/* line 413, ../sass/partials/_layout.scss */
+.footer_about .avatar {
+  margin-bottom: 20px;
+}
+
+/* line 418, ../sass/partials/_layout.scss */
+.footer_skills {
+  margin: 0 1.953125% 0 1.953125%;
+}
+
+/* line 421, ../sass/partials/_layout.scss */
+.skill_list {
+  width: 100%;
+}
+/* line 423, ../sass/partials/_layout.scss */
+.skill_list li {
+  display: inline-block;
+  padding-left: 40px;
+  margin: 0 5% 0 5%;
+  text-align: left;
+}
+
+/* line 432, ../sass/partials/_layout.scss */
+.ps {
+  background: transparent url('../img/skills/ps.png?1401365393') no-repeat left center;
+}
+
+/* line 436, ../sass/partials/_layout.scss */
+.footer_contact {
+  text-align: left;
+}
+/* line 438, ../sass/partials/_layout.scss */
+.footer_contact h2 {
+  margin-bottom: 35px;
+}
+/* line 441, ../sass/partials/_layout.scss */
+.footer_contact label {
+  margin: 30px 0px 15px 0px;
+  display: block;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 447, ../sass/partials/_layout.scss */
+.form_input {
+  width: 100%;
+  background: none;
+  border-top: 2px dashed #4e4e4e;
+  border-bottom: 2px dashed #4e4e4e;
+  border-left: none;
+  border-right: none;
+  padding: 8px 0px 8px 0px;
+  outline: none;
+}
+
+/* line 458, ../sass/partials/_layout.scss */
+#yMessage {
+  margin-bottom: 15px;
+  height: 150px;
+}
+
+/* line 462, ../sass/partials/_layout.scss */
+#ySend {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+/* line 472, ../sass/partials/_layout.scss */
+.social_contact {
+  text-align: center;
+}
+/* line 474, ../sass/partials/_layout.scss */
+.social_contact li {
+  display: inline-block;
+  width: 19.75%;
+  margin-left: 6%;
+}
+/* line 478, ../sass/partials/_layout.scss */
+.social_contact li:first-child {
+  margin-left: 0px;
+}
+/* line 482, ../sass/partials/_layout.scss */
+.social_contact a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+/* line 487, ../sass/partials/_layout.scss */
+.social_contact a img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+}
+
+/* line 496, ../sass/partials/_layout.scss */
+.social_contact img:nth-child(2) {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+/* line 501, ../sass/partials/_layout.scss */
+.social_hover img:nth-child(2) {
+  opacity: 0;
 }
