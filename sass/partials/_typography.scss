@@ -60,3 +60,35 @@ body {
 }
 // FOOTER STYLES
 // ---------------------------------------------------------------
+.main_footer {
+	color: $header-txt-color;
+}
+.footer_section {
+	h2 {
+		@include x-rem ( font-size, 32px );
+		font-family: $heading-type;
+	}
+}
+.footer_about {
+	p {
+		opacity: 0.6;
+		@include x-rem ( font-size, 16px );
+		font-family: $footer-type;
+		line-height: 34px;
+		text-align:justify;
+		text-justify:inter-word;
+		font-weight: normal;
+	}
+}
+.skill_list {
+	text-align: left;
+	padding: 0px 6% 0px 6%;
+	li {
+		line-height: 48px;
+		@include x-rem ( font-size, 14px );
+		font-family: $heading-type;
+	}
+}
+.current_skills {
+	margin-bottom: 35px;
+}

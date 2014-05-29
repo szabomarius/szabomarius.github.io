@@ -353,7 +353,7 @@
 .bottom_divider {
 	position: relative;
 	height: 70px;
-	background-color: $body-bg-color;
+		background-color: $main-color;
 	text-align: center;
 	// border-bottom: 10px solid $main-color;
 	div {
@@ -362,7 +362,8 @@
 		margin: 0 auto;
 		height: 100%;
 		width: 0%;
-		background-color: $main-color;
+			background-color: $body-bg-color;
+
 		@include trans(all, 0.2s, ease-in);
 	}
 	h3 {
@@ -380,4 +381,55 @@
 .main_footer {
 	height: 100%;
 	width: 100%;
+	display: table;
 }
+.footer_container {
+	display: table-cell;
+	vertical-align: middle;
+}
+.footer_wrap {
+	max-width: 1280px;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	vertical-align: top;
+}
+.footer_section {
+	display: inline-block;
+	vertical-align: top;
+	width: 31.21951%;
+	h2 {
+		margin-bottom: 20px;
+	}
+}
+// about
+.footer_about {
+	p {
+		margin-top: 20px;
+	}
+	.first_p {
+		margin-top: 0px;
+	}
+	.avatar {
+		margin-bottom: 20px;
+	}
+}
+// skills
+.footer_skills {
+	margin: 0 1.953125% 0 1.953125%;
+}
+.skill_list {
+	width: 100%;
+	li {
+		display: inline-block;
+		// min-height: 32px;
+		padding-left: 40px;
+		margin: 0 5% 0 5%;
+		text-align: left;
+	}
+}
+// each and every damn bg image for the skills
+.ps {
+	background: transparent image-url('skills/ps.png') no-repeat left center;
+}
+// contact

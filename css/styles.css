@@ -14,6 +14,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Regular-webfont.eot");
+  src: url("fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Regular-webfont.svg#open_sansregular") format("svg"), url("fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("fonts/OpenSans-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Light-webfont.eot");
+  src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg"), url("fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/OpenSans-Light-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -185,6 +201,48 @@ body {
 /* line 58, ../sass/partials/_typography.scss */
 .bottom_divider h3 {
   line-height: 71px;
+}
+
+/* line 63, ../sass/partials/_typography.scss */
+.main_footer {
+  color: #f8f8f8;
+}
+
+/* line 67, ../sass/partials/_typography.scss */
+.footer_section h2 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-family: "Intro", "Arial", sans-serif;
+}
+
+/* line 73, ../sass/partials/_typography.scss */
+.footer_about p {
+  opacity: 0.6;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 34px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: normal;
+}
+
+/* line 83, ../sass/partials/_typography.scss */
+.skill_list {
+  text-align: left;
+  padding: 0px 6% 0px 6%;
+}
+/* line 86, ../sass/partials/_typography.scss */
+.skill_list li {
+  line-height: 48px;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-family: "Intro", "Arial", sans-serif;
+}
+
+/* line 92, ../sass/partials/_typography.scss */
+.current_skills {
+  margin-bottom: 35px;
 }
 
 /* line 8, ../sass/partials/_layout.scss */
@@ -645,7 +703,7 @@ body {
 .bottom_divider {
   position: relative;
   height: 70px;
-  background-color: #1c1c1c;
+  background-color: #c44c7c;
   text-align: center;
 }
 /* line 359, ../sass/partials/_layout.scss */
@@ -656,14 +714,14 @@ body {
   margin: 0 auto;
   height: 100%;
   width: 0%;
-  background-color: #c44c7c;
+  background-color: #1c1c1c;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -ms-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
   transition: all 0.2s ease-in;
 }
-/* line 368, ../sass/partials/_layout.scss */
+/* line 369, ../sass/partials/_layout.scss */
 .bottom_divider h3 {
   position: absolute;
   z-index: 1;
@@ -673,8 +731,70 @@ body {
   height: 100%;
 }
 
-/* line 380, ../sass/partials/_layout.scss */
+/* line 381, ../sass/partials/_layout.scss */
 .main_footer {
   height: 100%;
   width: 100%;
+  display: table;
+}
+
+/* line 386, ../sass/partials/_layout.scss */
+.footer_container {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 390, ../sass/partials/_layout.scss */
+.footer_wrap {
+  max-width: 1280px;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  vertical-align: top;
+}
+
+/* line 397, ../sass/partials/_layout.scss */
+.footer_section {
+  display: inline-block;
+  vertical-align: top;
+  width: 31.21951%;
+}
+/* line 401, ../sass/partials/_layout.scss */
+.footer_section h2 {
+  margin-bottom: 20px;
+}
+
+/* line 407, ../sass/partials/_layout.scss */
+.footer_about p {
+  margin-top: 20px;
+}
+/* line 410, ../sass/partials/_layout.scss */
+.footer_about .first_p {
+  margin-top: 0px;
+}
+/* line 413, ../sass/partials/_layout.scss */
+.footer_about .avatar {
+  margin-bottom: 20px;
+}
+
+/* line 418, ../sass/partials/_layout.scss */
+.footer_skills {
+  margin: 0 1.953125% 0 1.953125%;
+}
+
+/* line 421, ../sass/partials/_layout.scss */
+.skill_list {
+  width: 100%;
+}
+/* line 423, ../sass/partials/_layout.scss */
+.skill_list li {
+  display: inline-block;
+  padding-left: 40px;
+  margin: 0 5% 0 5%;
+  text-align: left;
+}
+
+/* line 432, ../sass/partials/_layout.scss */
+.ps {
+  background: transparent url('../img/skills/ps.png?1401365393') no-repeat left center;
 }
