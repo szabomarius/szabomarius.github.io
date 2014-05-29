@@ -179,8 +179,18 @@ focusedElement.focus(function() {
 	}
 });
 focusedElement.focusout(function() {
-	labels.removeClass('focused');
+	labels.removeClass('focused');	
 });
-
-
+// Social links
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+var socialLinks = $('.social_contact li');
+socialLinks.hover(
+  function() {
+    $(this).addClass("social_hover");
+    console.log('rolledin');
+  }, function() {
+    $(this).removeClass("social_hover");
+    console.log('rolledout');
+  }
+);
 }); //end of document.ready()

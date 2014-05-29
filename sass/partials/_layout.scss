@@ -470,9 +470,14 @@
 	@include trans(all, 0.3s, ease-out);
 }
 .social_contact {
+	text-align: center;
 	li {
 		display: inline-block;
 		width: 19.75%;
+		margin-left: 6%;
+		&:first-child {
+			margin-left: 0px;
+		}
 	}
 	a {
 		display: block;
@@ -487,4 +492,12 @@
 			top:0;
 		}
 	}
+}
+.social_contact img:nth-child(2) {
+	@include trans(all, 0.3s, ease-out);
+	opacity: 1;
+
+}
+.social_hover img:nth-child(2) {
+	opacity: 0;
 }

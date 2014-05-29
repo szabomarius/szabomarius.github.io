@@ -895,23 +895,47 @@ body {
   transition: all 0.3s ease-out;
 }
 
-/* line 473, ../sass/partials/_layout.scss */
+/* line 472, ../sass/partials/_layout.scss */
+.social_contact {
+  text-align: center;
+}
+/* line 474, ../sass/partials/_layout.scss */
 .social_contact li {
   display: inline-block;
   width: 19.75%;
+  margin-left: 6%;
 }
-/* line 477, ../sass/partials/_layout.scss */
+/* line 478, ../sass/partials/_layout.scss */
+.social_contact li:first-child {
+  margin-left: 0px;
+}
+/* line 482, ../sass/partials/_layout.scss */
 .social_contact a {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 482, ../sass/partials/_layout.scss */
+/* line 487, ../sass/partials/_layout.scss */
 .social_contact a img {
   display: block;
   position: absolute;
   width: 100%;
   height: auto;
   top: 0;
+}
+
+/* line 496, ../sass/partials/_layout.scss */
+.social_contact img:nth-child(2) {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+
+/* line 501, ../sass/partials/_layout.scss */
+.social_hover img:nth-child(2) {
+  opacity: 0;
 }
