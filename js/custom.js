@@ -158,21 +158,28 @@ graphicSlider.slick({
 // Form effects
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 var focusedElement = $('.form_input');
-$('.form_input').focus(function() {
+var labels = $('.footer_contact label');
+
+var name = labels.eq(0);
+var email = labels.eq(1);
+var message = labels.eq(2);
+
+focusedElement.focus(function() {
 	var elementId = $(this).attr('id');
 	switch (elementId) {
 				case "yName":
-					console.log("yName");
+					name.addClass('focused');
 					break;
 				case "yEmail":
-					console.log("yEmail");
+					email.addClass('focused');
 					break;
 				case "yMessage":
-					console.log("yMessage");
+					message.addClass('focused');
 					break;
-				default:
-					
 	}
+});
+focusedElement.focusout(function() {
+	labels.removeClass('focused');
 });
 
 
