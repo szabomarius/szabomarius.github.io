@@ -22,14 +22,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Open Sans';
-  src: url("fonts/OpenSans-Light-webfont.eot");
-  src: url("fonts/OpenSans-Light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/OpenSans-Light-webfont.svg#open_sanslight") format("svg"), url("fonts/OpenSans-Light-webfont.ttf") format("truetype"), url("fonts/OpenSans-Light-webfont.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -797,4 +789,14 @@ body {
 /* line 432, ../sass/partials/_layout.scss */
 .ps {
   background: transparent url('../img/skills/ps.png?1401365393') no-repeat left center;
+}
+
+/* line 436, ../sass/partials/_layout.scss */
+.footer_contact {
+  text-align: left;
+}
+
+/* line 439, ../sass/partials/_layout.scss */
+#yName, #yEmail, #yMessage {
+  width: 100%;
 }
