@@ -832,100 +832,100 @@ body {
 /* line 423, ../sass/partials/_layout.scss */
 .skill_list li {
   display: inline-block;
-  padding-left: 40px;
+  padding-left: 48px;
   min-width: 92px;
-  margin: 0 5% 0 5%;
+  margin: 0 5% 5px 5%;
   text-align: left;
 }
 
 /* line 433, ../sass/partials/_layout.scss */
 .ps {
-  background: transparent url('../img/skills/ps.png?1401459792') no-repeat left center;
+  background: transparent url('../img/skills/ps.png?1401463068') no-repeat left center;
 }
 
 /* line 436, ../sass/partials/_layout.scss */
 .html {
-  background: transparent url('../img/skills/html5.png?1401459924') no-repeat left center;
+  background: transparent url('../img/skills/html5.png?1401462826') no-repeat left center;
 }
 
 /* line 439, ../sass/partials/_layout.scss */
 .css {
-  background: transparent url('../img/skills/css3.png?1401460010') no-repeat left center;
+  background: transparent url('../img/skills/css3.png?1401462466') no-repeat left center;
 }
 
 /* line 442, ../sass/partials/_layout.scss */
 .jvs {
-  background: transparent url('../img/skills/js.png?1401459872') no-repeat left center;
+  background: transparent url('../img/skills/js.png?1401464390') no-repeat left center;
 }
 
 /* line 445, ../sass/partials/_layout.scss */
 .jquery {
-  background: transparent url('../img/skills/jquery.png?1401459884') no-repeat left center;
+  background: transparent url('../img/skills/jquery.png?1401462933') no-repeat left center;
 }
 
 /* line 448, ../sass/partials/_layout.scss */
 .php {
-  background: transparent url('../img/skills/php.png?1401459808') no-repeat left center;
+  background: transparent url('../img/skills/php.png?1401464182') no-repeat left center;
 }
 
 /* line 451, ../sass/partials/_layout.scss */
 .mysql {
-  background: transparent url('../img/skills/mysql.png?1401459858') no-repeat left center;
+  background: transparent url('../img/skills/mysql.png?1401463014') no-repeat left center;
 }
 
 /* line 454, ../sass/partials/_layout.scss */
 .wp {
-  background: transparent url('../img/skills/wp.png?1401459750') no-repeat left center;
+  background: transparent url('../img/skills/wp.png?1401463218') no-repeat left center;
 }
 
 /* line 457, ../sass/partials/_layout.scss */
 .sublime {
-  background: transparent url('../img/skills/sublime.png?1401459776') no-repeat left center;
+  background: transparent url('../img/skills/sublime.png?1401463181') no-repeat left center;
 }
 
 /* line 460, ../sass/partials/_layout.scss */
 .git {
-  background: transparent url('../img/skills/git.png?1401459948') no-repeat left center;
+  background: transparent url('../img/skills/git.png?1401462625') no-repeat left center;
 }
 
 /* line 463, ../sass/partials/_layout.scss */
 .fl {
-  background: transparent url('../img/skills/fl.png?1401459992') no-repeat left center;
+  background: transparent url('../img/skills/fl.png?1401462505') no-repeat left center;
 }
 
 /* line 466, ../sass/partials/_layout.scss */
 .corel {
-  background: transparent url('../img/skills/corel.png?1401460022') no-repeat left center;
+  background: transparent url('../img/skills/corel.png?1401462082') no-repeat left center;
 }
 
 /* line 469, ../sass/partials/_layout.scss */
 .ilustr {
-  background: transparent url('../img/skills/ai.png?1401460073') no-repeat left center;
+  background: transparent url('../img/skills/ai.png?1401462239') no-repeat left center;
 }
 
 /* line 472, ../sass/partials/_layout.scss */
 .idesign {
-  background: transparent url('../img/skills/id.png?1401459910') no-repeat left center;
+  background: transparent url('../img/skills/id.png?1401462876') no-repeat left center;
 }
 
 /* line 475, ../sass/partials/_layout.scss */
 .c5 {
-  background: transparent url('../img/skills/c5.png?1401460039') no-repeat left center;
+  background: transparent url('../img/skills/c5.png?1401462348') no-repeat left center;
 }
 
 /* line 478, ../sass/partials/_layout.scss */
 .foundation {
-  background: transparent url('../img/skills/foundation.png?1401459965') no-repeat left center;
+  background: transparent url('../img/skills/foundation.png?1401462554') no-repeat left center;
 }
 
 /* line 481, ../sass/partials/_layout.scss */
 .ocart {
-  background: transparent url('../img/skills/open.png?1401459843') no-repeat left center;
+  background: transparent url('../img/skills/open.png?1401464280') no-repeat left center;
 }
 
 /* line 484, ../sass/partials/_layout.scss */
 .grunt {
-  background: transparent url('../img/skills/grunt.png?1401459936') no-repeat left center;
+  background: transparent url('../img/skills/grunt.png?1401462751') no-repeat left center;
 }
 
 /* line 488, ../sass/partials/_layout.scss */
