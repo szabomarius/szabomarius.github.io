@@ -424,6 +424,7 @@
 		display: inline-block;
 		// min-height: 32px;
 		padding-left: 40px;
+		min-width: 92px;
 		margin: 0 5% 0 5%;
 		text-align: left;
 	}
@@ -431,6 +432,57 @@
 // each and every damn bg image for the skills
 .ps {
 	background: transparent image-url('skills/ps.png') no-repeat left center;
+}
+.html {
+	background: transparent image-url('skills/html5.png') no-repeat left center;
+}
+.css {
+	background: transparent image-url('skills/css3.png') no-repeat left center;
+}
+.jvs {
+	background: transparent image-url('skills/js.png') no-repeat left center;	
+}
+.jquery {
+	background: transparent image-url('skills/jquery.png') no-repeat left center;	
+}
+.php {
+	background: transparent image-url('skills/php.png') no-repeat left center;	
+}
+.mysql {
+	background: transparent image-url('skills/mysql.png') no-repeat left center;	
+}
+.wp {
+	background: transparent image-url('skills/wp.png') no-repeat left center;	
+}
+.sublime {
+	background: transparent image-url('skills/sublime.png') no-repeat left center;
+}
+.git {
+	background: transparent image-url('skills/git.png') no-repeat left center;	
+}
+.fl {
+	background: transparent image-url('skills/fl.png') no-repeat left center;	
+}
+.corel {
+	background: transparent image-url('skills/corel.png') no-repeat left center;	
+}
+.ilustr {
+	background: transparent image-url('skills/ai.png') no-repeat left center;	
+}
+.idesign {
+	background: transparent image-url('skills/id.png') no-repeat left center;	
+}
+.c5 {
+	background: transparent image-url('skills/c5.png') no-repeat left center;	
+}
+.foundation {
+	background: transparent image-url('skills/foundation.png') no-repeat left center;	
+}
+.ocart {
+	background: transparent image-url('skills/open.png') no-repeat left center;	
+}
+.grunt {
+	background: transparent image-url('skills/grunt.png') no-repeat left center;	
 }
 // contact
 .footer_contact {
