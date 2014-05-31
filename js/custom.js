@@ -197,27 +197,33 @@ socialLinks.hover(
 // Contact form validation
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // this runs when the submit button is clicked
-var errorMsgComment = '<span class="errorMsg"> - Please type in your message</span>';
-var formMessage = $('#yMessage');
-function validateForm() {
-	var formValue = formMessage.val();
-	// validate text messages
-    if (formValue == null || formValue == "" || formValue == undefined) {
-    	$("label[for='yMessage']").append(errorMsgComment);
+var formName = $("#yName");
+var formEmail = $("#yEmail");
+var formMessage = $("#yMessage");
+
+function testError(object, message) {
+	var errorMsg = '<span class="errorMsg"> - ' + message + '</span>';
+	var objectValue = object.val();
+	var labelId = object.attr('id');
+	console.log("It tested the one with the message " + message);
+
+    if (objectValue == null || objectValue == "" || objectValue == undefined) {
+    	$("label[for='"+labelId+"']").append(errorMsg);
     	// wait some time before fading it away
     	setTimeout(function(){
     		$('.errorMsg').fadeOut(200, function() {
     			$(this).remove();
     		});
     	}, 600);
-
   		return false;
 	}
 	else {
 		return true;
 	}
 }
-function falsey() {
-	console.log('worked');
-	return false;
+function validateForm() {
+	var yName = testError(formName, 'Please enter your name');
+	var yEmail = testError(formEmail, 'Please enter your email');
+	var yMessage = testError(formMessage, 'Please enter your message');
+	return (yName && yEmail && yMessage);
 }
