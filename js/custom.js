@@ -205,10 +205,10 @@ function testError(object, message) {
 	var errorMsg = '<span class="errorMsg"> - ' + message + '</span>';
 	var objectValue = object.val();
 	var labelId = object.attr('id');
-	console.log("It tested the one with the message " + message);
+	var labelObj = $("label[for='"+labelId+"']")
 
     if (objectValue == null || objectValue == "" || objectValue == undefined) {
-    	$("label[for='"+labelId+"']").append(errorMsg);
+    	labelObj.append(errorMsg);
     	// wait some time before fading it away
     	setTimeout(function(){
     		$('.errorMsg').fadeOut(200, function() {
@@ -216,6 +216,15 @@ function testError(object, message) {
     		});
     	}, 600);
   		return false;
+	}
+	else if (object == formEmail) {
+		var atpos = objectValue.indexOf("@");
+		var dotpos = objectValue.lastIndexOf(".");
+		var vlength = objectValue.length;
+		if (atpos < 1 || dotpos<atpos+2 || dotpos+2>=vlength) {
+			labelObj.append('<span class="errorMsg"> - Please enter a valid email</span>');
+			return false;
+		}
 	}
 	else {
 		return true;
