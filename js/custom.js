@@ -223,6 +223,11 @@ function testError(object, message) {
 		var vlength = objectValue.length;
 		if (atpos < 1 || dotpos<atpos+2 || dotpos+2>=vlength) {
 			labelObj.append('<span class="errorMsg"> - Please enter a valid email</span>');
+			setTimeout(function(){
+				$('.errorMsg').fadeOut(200, function() {
+					$(this).remove();
+				});
+			}, 600);
 			return false;
 		}
 	}
