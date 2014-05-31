@@ -194,3 +194,45 @@ socialLinks.hover(
   }
 );
 }); //end of document.ready()
+// Contact form validation
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// this runs when the submit button is clicked
+var formName = $("#yName");
+var formEmail = $("#yEmail");
+var formMessage = $("#yMessage");
+
+function testError(object, message) {
+	var errorMsg = '<span class="errorMsg"> - ' + message + '</span>';
+	var objectValue = object.val();
+	var labelId = object.attr('id');
+	var labelObj = $("label[for='"+labelId+"']")
+
+    if (objectValue == null || objectValue == "" || objectValue == undefined) {
+    	labelObj.append(errorMsg);
+    	// wait some time before fading it away
+    	setTimeout(function(){
+    		$('.errorMsg').fadeOut(200, function() {
+    			$(this).remove();
+    		});
+    	}, 600);
+  		return false;
+	}
+	else if (object == formEmail) {
+		var atpos = objectValue.indexOf("@");
+		var dotpos = objectValue.lastIndexOf(".");
+		var vlength = objectValue.length;
+		if (atpos < 1 || dotpos<atpos+2 || dotpos+2>=vlength) {
+			labelObj.append('<span class="errorMsg"> - Please enter a valid email</span>');
+			return false;
+		}
+	}
+	else {
+		return true;
+	}
+}
+function validateForm() {
+	var yName = testError(formName, 'Please enter your name');
+	var yEmail = testError(formEmail, 'Please enter your email');
+	var yMessage = testError(formMessage, 'Please enter your message');
+	return (yName && yEmail && yMessage);
+}
