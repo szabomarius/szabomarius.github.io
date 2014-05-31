@@ -13,3 +13,7 @@ html {
 body {
 	background: $body-bg-color image-url( 'pat/header-pat.png' );
 }
+// fixes the problem where chrome gives a yellow background if you autocomplete fields
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #fff inset;
+}
