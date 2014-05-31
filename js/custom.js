@@ -194,3 +194,30 @@ socialLinks.hover(
   }
 );
 }); //end of document.ready()
+// Contact form validation
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// this runs when the submit button is clicked
+var errorMsgComment = '<span class="errorMsg"> - Please type in your message</span>';
+var formMessage = $('#yMessage');
+function validateForm() {
+	var formValue = formMessage.val();
+	// validate text messages
+    if (formValue == null || formValue == "" || formValue == undefined) {
+    	$("label[for='yMessage']").append(errorMsgComment);
+    	// wait some time before fading it away
+    	setTimeout(function(){
+    		$('.errorMsg').fadeOut(200, function() {
+    			$(this).remove();
+    		});
+    	}, 600);
+
+  		return false;
+	}
+	else {
+		return true;
+	}
+}
+function falsey() {
+	console.log('worked');
+	return false;
+}

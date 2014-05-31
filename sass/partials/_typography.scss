@@ -120,3 +120,12 @@ body {
 .focused {
 	color: $main-color;
 }
+// error message styles
+.errorMsg {
+	color: $main-color;
+	font-family: $logo-type;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-weight: normal;
+	text-transform: uppercase;
+}

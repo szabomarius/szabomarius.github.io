@@ -131,7 +131,7 @@
 			</div><!-- end of .footer_section -->
 			<section class="footer_section footer_contact">
 				<h2>You can contact me</h2>
-				<form action="http://formtoemail.com/user_forms.php" method="post">
+				<form name="myForm" onsubmit="if(!validateForm()){return false;}" action="http://formtoemail.com/user_forms.php" method="post">
 					<input type="hidden" name="user_id" value="4LDZUJYBL6FI90JUR9N1">
 					<input type="hidden" name="form_id" value="1">
 					<!-- modify things yo'-->

@@ -288,6 +288,16 @@ body {
   color: #c44c7c;
 }
 
+/* line 124, ../sass/partials/_typography.scss */
+.errorMsg {
+  color: #c44c7c;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
 /* line 8, ../sass/partials/_layout.scss */
 .main_header, .head_container {
   width: 100%;
