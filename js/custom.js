@@ -1,14 +1,3 @@
-// custom js
-
-/*!
-* FitText.js 1.2
-*
-* Copyright 2011, Dave Rupert http://daverupert.com
-* Released under the WTFPL license
-* http://sam.zoy.org/wtfpl/
-*
-* Date: Thu May 05 14:23:00 2011 -0600
-*/
 // FIT TEXT PLUGIN
 (function( $ ){
 
@@ -40,10 +29,14 @@
     });
 
   };
-
 })( jQuery );
 
 $(document).ready(function() {
+
+// Fit text implementation
+
+$('main_heading span').fitText();
+$('main_heading h1').fitText();
 
 // Javascript for the web slider
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -237,6 +230,8 @@ socialLinks.hover(
   }
 );
 }); //end of document.ready()
+
+
 // Contact form validation
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // this runs when the submit button is clicked
