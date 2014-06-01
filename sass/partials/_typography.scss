@@ -84,15 +84,11 @@ body {
 // skills
 .skill_list {
 	text-align: left;
-	padding: 0px 6% 0px 6%;
 	li {
 		line-height: 48px;
 		@include x-rem ( font-size, 14px );
 		font-family: $heading-type;
 	}
-}
-.current_skills {
-	margin-bottom: 35px;
 }
 // contact
 .footer_contact {

@@ -16,8 +16,7 @@
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	// padding: 5% 1% 0% 1%;
-	padding: 10% 5%;
+	padding: 5% 1% 5% 1%;
 }
 .main-logo {
 	@include x-rem ( margin-bottom, 48px );
@@ -387,7 +386,7 @@
 .footer_container {
 	display: table-cell;
 	vertical-align: middle;
-	padding: 10% 5%;
+	padding: 5% 1% 5% 1%;
 }
 .footer_wrap {
 	max-width: 1280px;
@@ -422,6 +421,7 @@
 }
 .skill_list {
 	width: 100%;
+	padding: 0px 6% 0px 6%;
 	li {
 		display: inline-block;
 		// min-height: 32px;
@@ -430,6 +430,9 @@
 		margin: 0 5% 5px 5%;
 		text-align: left;
 	}
+}
+.current_skills {
+	margin-bottom: 35px;
 }
 // each and every damn bg image for the skills
 .ps {
@@ -528,6 +531,7 @@
 	li {
 		display: inline-block;
 		width: 19.75%;
+		height: 79px;
 		margin-left: 6%;
 		&:first-child {
 			margin-left: 0px;
@@ -542,6 +546,7 @@
 			display: block;
 			position: absolute;
 			width: 100%;
+			max-width: 79px;
 			height: auto;
 			top:0;
 		}

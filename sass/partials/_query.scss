@@ -8,13 +8,99 @@
 /* HEADER */
 /* CONTENT */
 /* FOOTER */
-
-@media all and ( max-width: 850px ) {
+@media all and ( max-width: 1280px ) {
 // ------------------------------------------------------
 /* HEADER */
 .head_container {
 	padding: 10% 5% ;
 }
+/* CONTENT */
+/* FOOTER */
+.footer_container {
+	padding: 5% 5%;
+	width: 90%;
+}
+.footer_about {
+	width: 100%;
+	clear: both;
+	margin-bottom: 50px;
+}
+// about
+.about_heading_container {
+	width: 30%;
+	float: left;
+	margin-top: 7px;
+	margin-right: 2%;
+	text-align: left;
+	img {
+		display: block;
+		// margin: 0 auto;
+	}
+}
+.about_heading_paragraphs {
+	width: 68%;
+	float: left;
+}
+// skillz
+.footer_skills {
+	width: 59%;
+	float: left;
+	display: block;
+	text-align: left;
+	margin: 0;
+	margin-right: 1%;
+}
+.skill_list {
+	padding: 0;
+	margin: 0;
+	li {
+		padding-left: 48px;
+		margin: 0;
+		margin-right: 10%;
+		margin-bottom: 5%;
+	}
+}
+// contact
+.footer_contact {
+	width: 40%;
+	float: left;
+	display: block;
+	margin: 0;
+}
+// ------------------------------------------------------
+}
+@media all and ( max-width: 1165px ) {
+// ------------------------------------------------------
+/* FOOTER */
+// skillz
+.footer_skills {
+	width: 39%;
+}
+// contact
+.footer_contact {
+	width: 60%;
+}
+// ------------------------------------------------------
+}
+@media all and ( max-width: 1030px ) {
+// ------------------------------------------------------
+// skillz
+.footer_skills {
+	width: 49%;
+	li {
+		margin-right: 2%;
+	}
+}
+// contact
+.footer_contact {
+	width: 50%;
+	float: right;
+}
+// ------------------------------------------------------
+}
+@media all and ( max-width: 850px ) {
+// ------------------------------------------------------
+/* HEADER */
 .main_heading {
 	@include x-rem ( font-size, 31px );
 	h1 {
@@ -28,7 +114,38 @@
 	@include x-rem ( font-size, 53px );
 }
 /* CONTENT */
+
 /* FOOTER */
+
+// about
+.footer_about {
+	margin-bottom: 70px;
+}
+// skills
+.footer_skills {
+	text-align: left;
+	width: 100%;
+	float: none;
+	margin-bottom: 70px;
+	.skill_list {
+		text-align: left;
+	}
+	li {
+		margin-right: 5%;
+		margin-left: 0;
+	}
+}
+.current_skills {
+	margin-bottom: 10px;
+}
+// contact
+.footer_contact {
+	width: 100%;
+	float: none;
+}
+.social_contact {
+	margin-bottom: 40px;
+}
 // ------------------------------------------------------
 }
 @media all and ( max-width: 350px ) {

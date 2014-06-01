@@ -1,6 +1,10 @@
 $(document).ready(function() {
-
-
+// Responsive window width for the footer
+var windo = $(window);
+$(window).resize(function() {
+        var wi = window.outerWidth;
+        console.log('Screen width is currently: ' + wi + 'px.');
+});
 // Javascript for the web slider
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Variables with each jquery slider object
