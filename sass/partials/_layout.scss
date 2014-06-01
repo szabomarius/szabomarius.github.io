@@ -16,7 +16,8 @@
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	padding: 5% 1% 0% 1%;
+	// padding: 5% 1% 0% 1%;
+	padding: 10% 5%;
 }
 .main-logo {
 	@include x-rem ( margin-bottom, 48px );

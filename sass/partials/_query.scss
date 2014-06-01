@@ -1,1 +1,43 @@
-// This are the media queries
+// MEDIA QUERIES GO IN HERE
+// ---------------------------------------------------------------
+
+// I'll use these examples or whatever
+// @media all and (min-width: 1001px) {}
+// @media all and (max-width: 1000px) and (min-width: 700px) {}
+// @media all and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) {}
+/* HEADER */
+/* CONTENT */
+/* FOOTER */
+
+@media all and ( max-width: 850px ) {
+// ------------------------------------------------------
+/* HEADER */
+.head_container {
+	padding: 10% 5% ;
+}
+.main_heading {
+	@include x-rem ( font-size, 31px );
+	h1 {
+		@include x-rem ( font-size, 72px );
+	}
+}
+.hello {
+	@include x-rem ( font-size, 53px );
+}
+.punctuation {
+	@include x-rem ( font-size, 53px );
+}
+/* CONTENT */
+/* FOOTER */
+// ------------------------------------------------------
+}
+@media all and ( max-width: 350px ) {
+// ------------------------------------------------------
+/* HEADER */
+.profession {
+	width: 80%;
+}
+/* CONTENT */
+/* FOOTER */
+// ------------------------------------------------------
+}
