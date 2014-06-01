@@ -800,9 +800,10 @@ body {
 .footer_container {
   display: table-cell;
   vertical-align: middle;
+  padding: 10% 5%;
 }
 
-/* line 391, ../sass/partials/_layout.scss */
+/* line 392, ../sass/partials/_layout.scss */
 .footer_wrap {
   max-width: 1280px;
   text-align: center;
@@ -811,40 +812,40 @@ body {
   vertical-align: top;
 }
 
-/* line 398, ../sass/partials/_layout.scss */
+/* line 399, ../sass/partials/_layout.scss */
 .footer_section {
   display: inline-block;
   vertical-align: top;
   width: 31.21951%;
 }
-/* line 402, ../sass/partials/_layout.scss */
+/* line 403, ../sass/partials/_layout.scss */
 .footer_section h2 {
   margin-bottom: 20px;
 }
 
-/* line 408, ../sass/partials/_layout.scss */
+/* line 409, ../sass/partials/_layout.scss */
 .footer_about p {
   margin-top: 20px;
 }
-/* line 411, ../sass/partials/_layout.scss */
+/* line 412, ../sass/partials/_layout.scss */
 .footer_about .first_p {
   margin-top: 0px;
 }
-/* line 414, ../sass/partials/_layout.scss */
+/* line 415, ../sass/partials/_layout.scss */
 .footer_about .avatar {
   margin-bottom: 20px;
 }
 
-/* line 419, ../sass/partials/_layout.scss */
+/* line 420, ../sass/partials/_layout.scss */
 .footer_skills {
   margin: 0 1.953125% 0 1.953125%;
 }
 
-/* line 422, ../sass/partials/_layout.scss */
+/* line 423, ../sass/partials/_layout.scss */
 .skill_list {
   width: 100%;
 }
-/* line 424, ../sass/partials/_layout.scss */
+/* line 425, ../sass/partials/_layout.scss */
 .skill_list li {
   display: inline-block;
   padding-left: 48px;
@@ -853,105 +854,105 @@ body {
   text-align: left;
 }
 
-/* line 434, ../sass/partials/_layout.scss */
+/* line 435, ../sass/partials/_layout.scss */
 .ps {
   background: transparent url('../img/skills/ps.png?1401562482') no-repeat left center;
 }
 
-/* line 437, ../sass/partials/_layout.scss */
+/* line 438, ../sass/partials/_layout.scss */
 .html {
   background: transparent url('../img/skills/html5.png?1401562482') no-repeat left center;
 }
 
-/* line 440, ../sass/partials/_layout.scss */
+/* line 441, ../sass/partials/_layout.scss */
 .css {
   background: transparent url('../img/skills/css3.png?1401562482') no-repeat left center;
 }
 
-/* line 443, ../sass/partials/_layout.scss */
+/* line 444, ../sass/partials/_layout.scss */
 .jvs {
   background: transparent url('../img/skills/js.png?1401562482') no-repeat left center;
 }
 
-/* line 446, ../sass/partials/_layout.scss */
+/* line 447, ../sass/partials/_layout.scss */
 .jquery {
   background: transparent url('../img/skills/jquery.png?1401562482') no-repeat left center;
 }
 
-/* line 449, ../sass/partials/_layout.scss */
+/* line 450, ../sass/partials/_layout.scss */
 .php {
   background: transparent url('../img/skills/php.png?1401562482') no-repeat left center;
 }
 
-/* line 452, ../sass/partials/_layout.scss */
+/* line 453, ../sass/partials/_layout.scss */
 .mysql {
   background: transparent url('../img/skills/mysql.png?1401562482') no-repeat left center;
 }
 
-/* line 455, ../sass/partials/_layout.scss */
+/* line 456, ../sass/partials/_layout.scss */
 .wp {
   background: transparent url('../img/skills/wp.png?1401562482') no-repeat left center;
 }
 
-/* line 458, ../sass/partials/_layout.scss */
+/* line 459, ../sass/partials/_layout.scss */
 .sublime {
   background: transparent url('../img/skills/sublime.png?1401562482') no-repeat left center;
 }
 
-/* line 461, ../sass/partials/_layout.scss */
+/* line 462, ../sass/partials/_layout.scss */
 .git {
   background: transparent url('../img/skills/git.png?1401562482') no-repeat left center;
 }
 
-/* line 464, ../sass/partials/_layout.scss */
+/* line 465, ../sass/partials/_layout.scss */
 .fl {
   background: transparent url('../img/skills/fl.png?1401562482') no-repeat left center;
 }
 
-/* line 467, ../sass/partials/_layout.scss */
+/* line 468, ../sass/partials/_layout.scss */
 .corel {
   background: transparent url('../img/skills/corel.png?1401562482') no-repeat left center;
 }
 
-/* line 470, ../sass/partials/_layout.scss */
+/* line 471, ../sass/partials/_layout.scss */
 .ilustr {
   background: transparent url('../img/skills/ai.png?1401562482') no-repeat left center;
 }
 
-/* line 473, ../sass/partials/_layout.scss */
+/* line 474, ../sass/partials/_layout.scss */
 .idesign {
   background: transparent url('../img/skills/id.png?1401562482') no-repeat left center;
 }
 
-/* line 476, ../sass/partials/_layout.scss */
+/* line 477, ../sass/partials/_layout.scss */
 .c5 {
   background: transparent url('../img/skills/c5.png?1401562482') no-repeat left center;
 }
 
-/* line 479, ../sass/partials/_layout.scss */
+/* line 480, ../sass/partials/_layout.scss */
 .foundation {
   background: transparent url('../img/skills/foundation.png?1401562482') no-repeat left center;
 }
 
-/* line 482, ../sass/partials/_layout.scss */
+/* line 483, ../sass/partials/_layout.scss */
 .ocart {
   background: transparent url('../img/skills/open.png?1401562482') no-repeat left center;
 }
 
-/* line 485, ../sass/partials/_layout.scss */
+/* line 486, ../sass/partials/_layout.scss */
 .grunt {
   background: transparent url('../img/skills/grunt.png?1401562482') no-repeat left center;
 }
 
-/* line 489, ../sass/partials/_layout.scss */
+/* line 490, ../sass/partials/_layout.scss */
 .footer_contact {
   text-align: left;
 }
-/* line 491, ../sass/partials/_layout.scss */
+/* line 492, ../sass/partials/_layout.scss */
 .footer_contact h2 {
   margin-bottom: 35px;
 }
-/* line 494, ../sass/partials/_layout.scss */
+/* line 495, ../sass/partials/_layout.scss */
 .footer_contact label {
   margin: 30px 0px 15px 0px;
   display: block;
@@ -962,7 +963,7 @@ body {
   transition: all 0.3s ease-out;
 }
 
-/* line 500, ../sass/partials/_layout.scss */
+/* line 501, ../sass/partials/_layout.scss */
 .form_input {
   width: 100%;
   background: none;
@@ -974,13 +975,13 @@ body {
   outline: none;
 }
 
-/* line 511, ../sass/partials/_layout.scss */
+/* line 512, ../sass/partials/_layout.scss */
 #yMessage {
   margin-bottom: 15px;
   height: 150px;
 }
 
-/* line 515, ../sass/partials/_layout.scss */
+/* line 516, ../sass/partials/_layout.scss */
 #ySend {
   background: none;
   outline: none;
@@ -996,28 +997,28 @@ body {
   transition: all 0.3s ease-out;
 }
 
-/* line 525, ../sass/partials/_layout.scss */
+/* line 526, ../sass/partials/_layout.scss */
 .social_contact {
   text-align: center;
 }
-/* line 527, ../sass/partials/_layout.scss */
+/* line 528, ../sass/partials/_layout.scss */
 .social_contact li {
   display: inline-block;
   width: 19.75%;
   margin-left: 6%;
 }
-/* line 531, ../sass/partials/_layout.scss */
+/* line 532, ../sass/partials/_layout.scss */
 .social_contact li:first-child {
   margin-left: 0px;
 }
-/* line 535, ../sass/partials/_layout.scss */
+/* line 536, ../sass/partials/_layout.scss */
 .social_contact a {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 540, ../sass/partials/_layout.scss */
+/* line 541, ../sass/partials/_layout.scss */
 .social_contact a img {
   display: block;
   position: absolute;
@@ -1026,7 +1027,7 @@ body {
   top: 0;
 }
 
-/* line 549, ../sass/partials/_layout.scss */
+/* line 550, ../sass/partials/_layout.scss */
 .social_contact img:nth-child(2) {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -1036,7 +1037,7 @@ body {
   opacity: 1;
 }
 
-/* line 554, ../sass/partials/_layout.scss */
+/* line 555, ../sass/partials/_layout.scss */
 .social_hover img:nth-child(2) {
   opacity: 0;
 }
