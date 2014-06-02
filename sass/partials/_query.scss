@@ -173,17 +173,22 @@
 
 // CONTENT
 .work_container {
-	padding: 4% 0px 0px 0px;
+	padding: 0;
 }
 // web
 .desktop_slider {
 	background: none;
 	width: 100%;
 	padding: 0;
+	height: 100%;
 	.slick_slider {
+		overflow: hidden;
+		height: 100%;
+		margin-bottom: 0;
 		img {
 			width: 100%;
 			height: auto;
+
 		}
 	}
 }
