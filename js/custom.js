@@ -21,28 +21,18 @@ var responsiveDevices = $('.pad, .phone');
 if ( firstImg.data('res') ) {
 	console.log ("the first image is responsive");
 } else {
-	console.log ("the first image is not responsive");
-	console.log (responsiveDevices);
 	responsiveDevices.hide();
 }
 // Initiate the slick slider plugin
 webSlider.slick({
 	speed: 500 ,
 	dots: true ,
-	responsive: [
-		{
-			breakpoint: 795,
-			settings: {
-				dots: false,
-				arrows: false
-			}		
-		}
-	],
-
+	slide: 'img',
 	onAfterChange: function(){
 		// Had to put in a timeour because the callback triggered faster than the active class could be applied
 		setTimeout(function(){
-			var currentImg = $('.web_container .slick-active').find('img');
+			var currentImg = $('.web_container .slick-active');
+			console.log(currentImg);
 			var responsive = currentImg.data('res');
 			var projectNr = currentImg.data('proj');
 
@@ -101,8 +91,14 @@ webSlider.slick({
 	}, //end of onAfterChange	
 	onBeforeChange: function() {
 		linkText.addClass("webTitlefadeOut");
+	},
+	responsive: {
+		breakpoint: 768,
+		settings: {
+			dots: false,
+			arrows: false
+		}
 	}
-
 }); //end of slick()
 
 // Javascript for the logo slider
