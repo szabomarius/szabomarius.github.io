@@ -29,6 +29,15 @@ if ( firstImg.data('res') ) {
 webSlider.slick({
 	speed: 500 ,
 	dots: true ,
+	responsive: [
+		{
+			breakpoint: 795,
+			settings: {
+				dots: false,
+				arrows: false
+			}		
+		}
+	],
 
 	onAfterChange: function(){
 		// Had to put in a timeour because the callback triggered faster than the active class could be applied

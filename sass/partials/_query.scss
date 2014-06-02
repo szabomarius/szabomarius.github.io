@@ -98,6 +98,23 @@
 }
 // ------------------------------------------------------
 }
+@media all and ( max-width: 930px ) {
+// ------------------------------------------------------
+// CONTENT
+
+// web design
+.phone {
+	left: 40px;
+}
+.pad {
+	right: 40px;
+}
+// logo design
+
+// misc design
+
+// ------------------------------------------------------
+}
 @media all and ( max-width: 850px ) {
 // ------------------------------------------------------
 /* HEADER */
@@ -152,6 +169,41 @@
 }
 @media all and ( max-width: 795px ) {
 // ------------------------------------------------------
+// HEADER
+
+// CONTENT
+.work_container {
+	padding: 4% 0px 0px 0px;
+}
+// web
+.desktop_slider {
+	background: none;
+	width: 100%;
+	padding: 0;
+	.slick_slider {
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+.slide_links {
+	width: 100%;
+	top: 0px;
+}
+.phone , .pad {
+	display: none;
+}
+
+
+// logo
+.logo_slider {
+	display: none;
+}
+// misc
+.graphic_slider {
+	display: none;
+}
 // about
 .footer_about {
 	img {

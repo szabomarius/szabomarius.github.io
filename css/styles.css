@@ -1147,26 +1147,37 @@ body {
     float: right;
   }
 }
+@media all and (max-width: 930px) {
+  /* line 106, ../sass/partials/_query.scss */
+  .phone {
+    left: 40px;
+  }
+
+  /* line 109, ../sass/partials/_query.scss */
+  .pad {
+    right: 40px;
+  }
+}
 @media all and (max-width: 850px) {
   /* HEADER */
-  /* line 104, ../sass/partials/_query.scss */
+  /* line 121, ../sass/partials/_query.scss */
   .main_heading {
     font-size: 31px;
     font-size: 3.1rem;
   }
-  /* line 106, ../sass/partials/_query.scss */
+  /* line 123, ../sass/partials/_query.scss */
   .main_heading h1 {
     font-size: 72px;
     font-size: 7.2rem;
   }
 
-  /* line 110, ../sass/partials/_query.scss */
+  /* line 127, ../sass/partials/_query.scss */
   .hello {
     font-size: 53px;
     font-size: 5.3rem;
   }
 
-  /* line 113, ../sass/partials/_query.scss */
+  /* line 130, ../sass/partials/_query.scss */
   .punctuation {
     font-size: 53px;
     font-size: 5.3rem;
@@ -1174,46 +1185,84 @@ body {
 
   /* CONTENT */
   /* FOOTER */
-  /* line 121, ../sass/partials/_query.scss */
+  /* line 138, ../sass/partials/_query.scss */
   .footer_about {
     margin-bottom: 70px;
   }
 
-  /* line 125, ../sass/partials/_query.scss */
+  /* line 142, ../sass/partials/_query.scss */
   .footer_skills {
     text-align: left;
     width: 100%;
     float: none;
     margin-bottom: 70px;
   }
-  /* line 130, ../sass/partials/_query.scss */
+  /* line 147, ../sass/partials/_query.scss */
   .footer_skills .skill_list {
     text-align: left;
   }
-  /* line 133, ../sass/partials/_query.scss */
+  /* line 150, ../sass/partials/_query.scss */
   .footer_skills li {
     margin-right: 5%;
     margin-left: 0;
   }
 
-  /* line 138, ../sass/partials/_query.scss */
+  /* line 155, ../sass/partials/_query.scss */
   .current_skills {
     margin-bottom: 10px;
   }
 
-  /* line 142, ../sass/partials/_query.scss */
+  /* line 159, ../sass/partials/_query.scss */
   .footer_contact {
     width: 100%;
     float: none;
   }
 
-  /* line 147, ../sass/partials/_query.scss */
+  /* line 164, ../sass/partials/_query.scss */
   .social_contact li {
     width: 10%;
   }
 }
 @media all and (max-width: 795px) {
-  /* line 157, ../sass/partials/_query.scss */
+  /* line 175, ../sass/partials/_query.scss */
+  .work_container {
+    padding: 4% 0px 0px 0px;
+  }
+
+  /* line 179, ../sass/partials/_query.scss */
+  .desktop_slider {
+    background: none;
+    width: 100%;
+    padding: 0;
+  }
+  /* line 184, ../sass/partials/_query.scss */
+  .desktop_slider .slick_slider img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* line 190, ../sass/partials/_query.scss */
+  .slide_links {
+    width: 100%;
+    top: 0px;
+  }
+
+  /* line 194, ../sass/partials/_query.scss */
+  .phone, .pad {
+    display: none;
+  }
+
+  /* line 200, ../sass/partials/_query.scss */
+  .logo_slider {
+    display: none;
+  }
+
+  /* line 204, ../sass/partials/_query.scss */
+  .graphic_slider {
+    display: none;
+  }
+
+  /* line 209, ../sass/partials/_query.scss */
   .footer_about img {
     float: left;
     margin-right: 10px;
@@ -1221,13 +1270,13 @@ body {
     height: auto;
   }
 
-  /* line 164, ../sass/partials/_query.scss */
+  /* line 216, ../sass/partials/_query.scss */
   .about_heading_container {
     float: none;
     width: 100%;
   }
 
-  /* line 168, ../sass/partials/_query.scss */
+  /* line 220, ../sass/partials/_query.scss */
   .about_heading_paragraphs {
     float: none;
     width: 100%;
@@ -1235,23 +1284,23 @@ body {
 }
 @media all and (max-width: 350px) {
   /* HEADER */
-  /* line 177, ../sass/partials/_query.scss */
+  /* line 229, ../sass/partials/_query.scss */
   .profession {
     width: 80%;
   }
 
   /* FOOTER */
-  /* line 182, ../sass/partials/_query.scss */
+  /* line 234, ../sass/partials/_query.scss */
   .footer_section h2 {
     text-align: center;
   }
 
-  /* line 188, ../sass/partials/_query.scss */
+  /* line 240, ../sass/partials/_query.scss */
   .footer_skills .skill_list {
     text-align: center;
   }
 
-  /* line 193, ../sass/partials/_query.scss */
+  /* line 245, ../sass/partials/_query.scss */
   .social_contact li {
     min-width: 50px;
   }
