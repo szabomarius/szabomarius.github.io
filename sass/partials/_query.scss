@@ -144,7 +144,30 @@
 	float: none;
 }
 .social_contact {
-	margin-bottom: 40px;
+	li {
+		width: 10%;
+	}
+}
+// ------------------------------------------------------
+}
+@media all and ( max-width: 795px ) {
+// ------------------------------------------------------
+// about
+.footer_about {
+	img {
+		float: left;
+		margin-right: 10px;
+		width: 100px;
+		height: auto;
+	}
+}
+.about_heading_container {
+	float: none;
+	width: 100%;
+}
+.about_heading_paragraphs {
+	float: none;
+	width: 100%;
 }
 // ------------------------------------------------------
 }
@@ -153,6 +176,23 @@
 /* HEADER */
 .profession {
 	width: 80%;
+}
+/* FOOTER */
+.footer_section {
+	h2 {
+		text-align: center;
+	}
+}
+// skillz
+.footer_skills {
+	.skill_list {
+			text-align: center;
+	}
+}
+.social_contact {
+	li {
+		min-width: 50px;
+	}
 }
 /* CONTENT */
 /* FOOTER */

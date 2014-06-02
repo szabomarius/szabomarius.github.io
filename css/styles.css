@@ -1207,16 +1207,53 @@ body {
     float: none;
   }
 
-  /* line 146, ../sass/partials/_query.scss */
-  .social_contact {
-    margin-bottom: 40px;
+  /* line 147, ../sass/partials/_query.scss */
+  .social_contact li {
+    width: 10%;
+  }
+}
+@media all and (max-width: 795px) {
+  /* line 157, ../sass/partials/_query.scss */
+  .footer_about img {
+    float: left;
+    margin-right: 10px;
+    width: 100px;
+    height: auto;
+  }
+
+  /* line 164, ../sass/partials/_query.scss */
+  .about_heading_container {
+    float: none;
+    width: 100%;
+  }
+
+  /* line 168, ../sass/partials/_query.scss */
+  .about_heading_paragraphs {
+    float: none;
+    width: 100%;
   }
 }
 @media all and (max-width: 350px) {
   /* HEADER */
-  /* line 154, ../sass/partials/_query.scss */
+  /* line 177, ../sass/partials/_query.scss */
   .profession {
     width: 80%;
+  }
+
+  /* FOOTER */
+  /* line 182, ../sass/partials/_query.scss */
+  .footer_section h2 {
+    text-align: center;
+  }
+
+  /* line 188, ../sass/partials/_query.scss */
+  .footer_skills .skill_list {
+    text-align: center;
+  }
+
+  /* line 193, ../sass/partials/_query.scss */
+  .social_contact li {
+    min-width: 50px;
   }
 
   /* CONTENT */
