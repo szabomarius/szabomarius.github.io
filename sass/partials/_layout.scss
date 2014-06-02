@@ -82,6 +82,7 @@
 	z-index: 2;
 }
 .web_link {
+	overflow: hidden;
 	position: relative;
 	display: inline-block;
 	position: absolute;
@@ -119,7 +120,8 @@
 	left: 0px;
 	z-index: 2;
 	cursor: help;
-	opacity: 0.8;
+	opacity: 0.5;
+	@include trans (all, 0.2s, ease-out);
 	img {
 		@include trans (all, 0.2s, ease-out);
 	}
@@ -131,10 +133,19 @@
 	}
 }
 .slide_info {
+	overflow: hidden;
 	background-color: $body-bg-color;
 	position: absolute;
 	top: 40px;
+	height: 150px;
 	padding: 35px 5% 35px 5%;
+	@include trans (all, 0.3s, ease);
+}
+.toggle_info {
+	padding-top: 0;
+	padding-bottom: 0;
+	height: 0;
+	border-width: 0;
 }
 .close_info {
 	position: absolute;
@@ -145,7 +156,6 @@
 	@include trans (all, 0.2s, ease-out);
 	&:hover {
 		opacity: 1;
-		@include rotate(180deg);
 	}
 }
 // css3 animation classes

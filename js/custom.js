@@ -15,14 +15,27 @@ var link = $('.web_link');
 var linkText = link.find('span');
 var padImage = $('.pad img');
 var phoneImage = $('.phone img');
-// Make the phone and pad screen invisible if the first project is not responsive
 var firstImg = $('.desktop_slider .slick_slider').find('img').first();
 var responsiveDevices = $('.pad, .phone');
+var info_btn = $('.info_btn');
+var info = $('.slide_info');
+var close_info = $('.close_info');
+// Hide every other device instead of the first one, or something like that
 if ( firstImg.data('res') ) {
 	console.log ("the first image is responsive");
 } else {
 	responsiveDevices.hide();
 }
+
+// Controls for the Slide info section, the text will be updated inside the onAfterChange callback function from the slickslider
+
+info_btn.click(function(){
+	info.toggleClass('toggle_info');
+});
+close_info.click(function(){
+	info.toggleClass('toggle_info');
+})
+
 // Initiate the slick slider plugin
 webSlider.slick({
 	speed: 500 ,
