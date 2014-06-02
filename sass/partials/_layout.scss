@@ -77,7 +77,7 @@
 	height: 40px;
 	position: absolute;
 	background-color: #000;
-	opacity: 0.46;
+	opacity: 0.7;
 	top: 33px;
 	z-index: 2;
 }
@@ -109,6 +109,43 @@
 		img {
 			@include rotate(90deg);
 		}
+	}
+}
+.info_btn {
+	height: 40px;
+	width: 50px;
+	padding-right: 20px;
+	position: absolute;
+	left: 0px;
+	z-index: 2;
+	cursor: help;
+	opacity: 0.8;
+	img {
+		@include trans (all, 0.2s, ease-out);
+	}
+	&:hover {
+		opacity: 1;
+		img {
+			@include rotate(90deg);
+		}
+	}
+}
+.slide_info {
+	background-color: $body-bg-color;
+	position: absolute;
+	top: 40px;
+	padding: 35px 5% 35px 5%;
+}
+.close_info {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	opacity: 0.4;
+	cursor: pointer;
+	@include trans (all, 0.2s, ease-out);
+	&:hover {
+		opacity: 1;
+		@include rotate(180deg);
 	}
 }
 // css3 animation classes
