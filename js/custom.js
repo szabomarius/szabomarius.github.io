@@ -176,6 +176,7 @@ console.log("The length of the misc slider is" + miscSlidesTotal);
 // Initiate the slick slider plugin
 graphicSlider.slick({
 	speed: 500,
+	touchThreshold: 20,
 
 	onAfterChange: function() {
 		setTimeout(function(){
