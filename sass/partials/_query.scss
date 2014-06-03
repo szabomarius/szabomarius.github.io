@@ -172,6 +172,29 @@
 // HEADER
 
 // CONTENT
+
+// adding the plus symbols
+.plus {
+	h2 {
+		position: relative;
+		cursor: pointer;
+		border-top: 1px solid $main-color-light;
+		border-bottom: 1px solid $main-color-dark;
+		&:before {
+		content: "+";
+		background-color: none;
+		position: absolute;
+		top: 22px;
+		left: 22px;
+		}		
+	}
+	.work_container {
+		overflow: hidden;
+		height: 0px;
+		padding: 0px;
+	}
+
+}
 .work_container {
 	padding: 0;
 }
