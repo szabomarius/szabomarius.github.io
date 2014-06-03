@@ -72,6 +72,23 @@
 }
 // +slick slider
 // ~~~~~~~~~~~~~~~~
+.slick_slider {
+	width: 100%;
+	height: 100%;
+	@include grab-cursor;
+	img {
+		pointer-events: none;
+		// don't display the images until js loads
+		display: none;
+		&:first-child {
+			display: block;
+		}
+	}
+}
+.slick-list.dragging {
+	// Changes the default plugin pointer cursor when dragging into a scroll cursor
+	@include grabbing-cursor;
+}
 .slide_links {
 	width: 741px;
 	height: 40px;
@@ -167,24 +184,6 @@
 .webTitlefadeOut {
 	margin-left: 20%;
 	opacity: 0;
-}
-.slick_slider {
-	width: 100%;
-	height: 100%;
-	@include grab-cursor;
-	img {
-		width: 100%;
-		height: 100%;
-		// don't display the images until js loads
-		display: none;
-		&:first-child {
-			display: block;
-		}
-	}
-}
-.slick-list.dragging {
-	// Changes the default plugin pointer cursor when dragging into a scroll cursor
-	@include grabbing-cursor;
 }
 .web_container button.slick-prev , .web_container button.slick-next {
 	height: 100%;

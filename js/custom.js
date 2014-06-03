@@ -119,7 +119,7 @@ webSlider.slick({
 		linkText.addClass("webTitlefadeOut");
 	},
 	responsive: {
-		breakpoint: 768,
+		breakpoint: 795,
 		settings: {
 			dots: false,
 			arrows: false
@@ -156,7 +156,14 @@ logoSlider.slick({
 			console.log(progress);
 
 		}, 1); //end of setTimeout()
-	} // end of onAfterChange
+	}, // end of onAfterChange
+	responsive: {
+	breakpoint: 795,
+		settings: {
+			dots: false,
+			arrows: false
+		}
+	}
 });
 
 // Javascript for the graphic slider
