@@ -1359,36 +1359,41 @@ body {
   }
 
   /* line 208, ../sass/partials/_query.scss */
+  .logo_container {
+    overflow: hidden;
+  }
+
+  /* line 211, ../sass/partials/_query.scss */
   .logo_slider {
     width: 100%;
     height: auto;
   }
-  /* line 212, ../sass/partials/_query.scss */
+  /* line 215, ../sass/partials/_query.scss */
   .logo_slider .slick_slider div {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
   }
-  /* line 216, ../sass/partials/_query.scss */
+  /* line 219, ../sass/partials/_query.scss */
   .logo_slider img {
     width: 30%;
   }
 
-  /* line 222, ../sass/partials/_query.scss */
+  /* line 225, ../sass/partials/_query.scss */
   .graphic_slider button.slick-next, .graphic_slider button.slick-prev {
     display: none !important;
   }
 
-  /* line 226, ../sass/partials/_query.scss */
+  /* line 229, ../sass/partials/_query.scss */
   .graphic_slider {
     height: 300px;
   }
-  /* line 230, ../sass/partials/_query.scss */
+  /* line 233, ../sass/partials/_query.scss */
   .graphic_slider .slick_slider div img {
     width: auto;
     height: 100%;
   }
 
-  /* line 239, ../sass/partials/_query.scss */
+  /* line 242, ../sass/partials/_query.scss */
   .footer_about img {
     float: left;
     margin-right: 10px;
@@ -1396,13 +1401,13 @@ body {
     height: auto;
   }
 
-  /* line 246, ../sass/partials/_query.scss */
+  /* line 249, ../sass/partials/_query.scss */
   .about_heading_container {
     float: none;
     width: 100%;
   }
 
-  /* line 250, ../sass/partials/_query.scss */
+  /* line 253, ../sass/partials/_query.scss */
   .about_heading_paragraphs {
     float: none;
     width: 100%;
@@ -1410,42 +1415,42 @@ body {
 }
 @media all and (max-width: 350px) {
   /* HEADER */
-  /* line 259, ../sass/partials/_query.scss */
+  /* line 262, ../sass/partials/_query.scss */
   .profession {
     width: 80%;
   }
 
   /* CONTENT */
-  /* line 264, ../sass/partials/_query.scss */
+  /* line 267, ../sass/partials/_query.scss */
   .type_of_work h2 {
     padding: 14px 0px 14px 0px;
     font-size: 24px;
     font-size: 2.4rem;
   }
 
-  /* line 269, ../sass/partials/_query.scss */
+  /* line 272, ../sass/partials/_query.scss */
   .slide_info {
     height: 93px;
     font-size: 12px;
     font-size: 1.2rem;
   }
 
-  /* line 273, ../sass/partials/_query.scss */
+  /* line 276, ../sass/partials/_query.scss */
   .logo_container h3 {
     padding: 20px 0px 20px 0px;
   }
-  /* line 275, ../sass/partials/_query.scss */
+  /* line 278, ../sass/partials/_query.scss */
   .logo_container h3 span {
     top: 16px;
     font-size: 12px;
     font-size: 1.2rem;
   }
 
-  /* line 280, ../sass/partials/_query.scss */
+  /* line 283, ../sass/partials/_query.scss */
   .bottom_divider {
     height: 40px;
   }
-  /* line 282, ../sass/partials/_query.scss */
+  /* line 285, ../sass/partials/_query.scss */
   .bottom_divider h3 {
     font-size: 12px;
     font-size: 1.2rem;
@@ -1453,17 +1458,17 @@ body {
   }
 
   /* FOOTER */
-  /* line 289, ../sass/partials/_query.scss */
+  /* line 292, ../sass/partials/_query.scss */
   .footer_section h2 {
     text-align: center;
   }
 
-  /* line 295, ../sass/partials/_query.scss */
+  /* line 298, ../sass/partials/_query.scss */
   .footer_skills .skill_list {
     text-align: center;
   }
 
-  /* line 300, ../sass/partials/_query.scss */
+  /* line 303, ../sass/partials/_query.scss */
   .social_contact li {
     min-width: 50px;
   }
