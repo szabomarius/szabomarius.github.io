@@ -20,6 +20,16 @@ var responsiveDevices = $('.pad, .phone');
 var info_btn = $('.info_btn');
 var info = $('.slide_info');
 var close_info = $('.close_info');
+var info_txt = info.find('p');
+
+// Variables with the description of each web slide
+
+var descriptions = [
+	"Bacon ipsum dolor sit amet filet mignon kevin ball tip brisket, tenderloin doner turkey pork loin meatball. Cow sirloin tri-tip chicken boudin ribeye pancetta bacon ball tip frankfurter capicola t-bone shoulder. Pork tongue tri-tip chicken. Spare ribs ham meatloaf tri-tip, pork chop leberkas biltong andouille." ,
+	"Strip steak venison corned beef, chicken brisket doner meatball short loin pastrami pork pork belly. Pork belly biltong ham hock ribeye, capicola tongue chuck drumstick hamburger corned beef" ,
+	"Ground round hamburger shank prosciutto capicola. Beef andouille pork chop ham pork chuck frankfurter. Shank capicola pig sirloin flank meatloaf leberkas pancetta beef ribs shoulder porchetta corned beef. Turducken andouille boudin bacon frankfurter"
+]
+
 // Hide every other device instead of the first one, or something like that
 if ( firstImg.data('res') ) {
 	console.log ("the first image is responsive");
@@ -83,14 +93,17 @@ webSlider.slick({
 				case "project1":
 					link.attr("href" , "http://www.google-1.com");
 					linkText.html("Ciclist");
+					info_txt.html(descriptions[0]);
 					break;
 				case "project2":
 					link.attr("href" , "http://www.google-2.com");
 					linkText.html("Electronica");
+					info_txt.html(descriptions[1]);
 					break;
 				case "project3":
 					link.attr("href" , "http://www.google-3.com");
 					linkText.html("Autobus Rosu");
+					info_txt.html(descriptions[2]);
 					break;
 				default:
 					

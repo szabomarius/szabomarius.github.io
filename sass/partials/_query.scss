@@ -196,8 +196,11 @@
 	width: 100%;
 	top: 0px;
 }
+.slide_info {
+	width: auto;
+}
 .phone , .pad {
-	display: none;
+	display: none !important;
 }
 
 

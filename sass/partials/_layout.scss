@@ -138,6 +138,7 @@
 	position: absolute;
 	top: 40px;
 	height: 150px;
+	width: 668px;
 	padding: 35px 5% 35px 5%;
 	@include trans (all, 0.3s, ease);
 }
@@ -244,6 +245,12 @@
 	padding: 31px 31px 31px 30px;
 	background: transparent image-url('pad.png') no-repeat;
 	right: -60px;
+}
+.fadeIn_responsive {
+	
+}
+.fadeOut_responsive {
+	
 }
 
 // LOGO DESIGN
