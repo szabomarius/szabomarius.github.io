@@ -206,11 +206,20 @@
 
 // logo
 .logo_slider {
-	display: none;
+width: 100%;
+height: auto;
+
+	.slick_slider div {
+		padding-top: 0.5%;
+		padding-bottom: 0.5%;
+	}
+	img {
+		width: 30%;
+	}
 }
 // misc
 .graphic_slider {
-	display: none;
+
 }
 // about
 .footer_about {

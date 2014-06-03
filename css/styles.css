@@ -1356,15 +1356,20 @@ body {
 
   /* line 208, ../sass/partials/_query.scss */
   .logo_slider {
-    display: none;
+    width: 100%;
+    height: auto;
   }
-
   /* line 212, ../sass/partials/_query.scss */
-  .graphic_slider {
-    display: none;
+  .logo_slider .slick_slider div {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+  }
+  /* line 216, ../sass/partials/_query.scss */
+  .logo_slider img {
+    width: 30%;
   }
 
-  /* line 217, ../sass/partials/_query.scss */
+  /* line 226, ../sass/partials/_query.scss */
   .footer_about img {
     float: left;
     margin-right: 10px;
@@ -1372,13 +1377,13 @@ body {
     height: auto;
   }
 
-  /* line 224, ../sass/partials/_query.scss */
+  /* line 233, ../sass/partials/_query.scss */
   .about_heading_container {
     float: none;
     width: 100%;
   }
 
-  /* line 228, ../sass/partials/_query.scss */
+  /* line 237, ../sass/partials/_query.scss */
   .about_heading_paragraphs {
     float: none;
     width: 100%;
@@ -1386,23 +1391,23 @@ body {
 }
 @media all and (max-width: 350px) {
   /* HEADER */
-  /* line 237, ../sass/partials/_query.scss */
+  /* line 246, ../sass/partials/_query.scss */
   .profession {
     width: 80%;
   }
 
   /* FOOTER */
-  /* line 242, ../sass/partials/_query.scss */
+  /* line 251, ../sass/partials/_query.scss */
   .footer_section h2 {
     text-align: center;
   }
 
-  /* line 248, ../sass/partials/_query.scss */
+  /* line 257, ../sass/partials/_query.scss */
   .footer_skills .skill_list {
     text-align: center;
   }
 
-  /* line 253, ../sass/partials/_query.scss */
+  /* line 262, ../sass/partials/_query.scss */
   .social_contact li {
     min-width: 50px;
   }

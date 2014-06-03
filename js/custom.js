@@ -120,10 +120,10 @@ webSlider.slick({
 	},
 	responsive: {
 		breakpoint: 795,
-		settings: {
+		settings: [{
 			dots: false,
 			arrows: false
-		}
+		}]
 	}
 }); //end of slick()
 
