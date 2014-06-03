@@ -242,6 +242,14 @@ socialLinks.hover(
     console.log('rolledout');
   }
 );
+
+// Make the Section colapse using CSS3 transitions and shit
+var sections = $('.type_of_work h2');
+sections.click(function() {
+	$(this).toggleClass('plus');
+	$(this).parent().toggleClass('minus');
+});
+
 }); //end of document.ready()
 
 
