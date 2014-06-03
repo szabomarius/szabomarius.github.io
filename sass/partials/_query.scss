@@ -219,7 +219,20 @@ height: auto;
 }
 // misc
 .graphic_slider {
-
+	button.slick-next , button.slick-prev{
+		display: none !important;
+	}
+}
+.graphic_slider {
+	height: 300px;
+	.slick_slider {
+		div {
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+	}
 }
 // about
 .footer_about {
@@ -245,6 +258,31 @@ height: auto;
 /* HEADER */
 .profession {
 	width: 80%;
+}
+/* CONTENT */
+.type_of_work {
+	h2 {
+		padding: 14px 0px 14px 0px;
+		@include x-rem ( font-size, 24px );	
+	}
+}
+.slide_info {
+	height: 93px;
+	@include x-rem ( font-size, 12px );
+}
+.logo_container h3 {
+	padding: 20px 0px 20px 0px;
+	span {
+		top: 16px;
+		@include x-rem ( font-size, 12px );
+	}
+}
+.bottom_divider {
+	height: 40px;
+	h3 {
+		@include x-rem ( font-size, 12px);
+		line-height: 40px;
+	}
 }
 /* FOOTER */
 .footer_section {

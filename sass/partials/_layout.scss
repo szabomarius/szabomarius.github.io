@@ -160,10 +160,10 @@
 	@include trans (all, 0.3s, ease);
 }
 .toggle_info {
-	padding-top: 0;
-	padding-bottom: 0;
-	height: 0;
-	border-width: 0;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	height: 0 !important;
+	border-width: 0 !important;
 }
 .close_info {
 	position: absolute;
@@ -245,13 +245,6 @@
 	background: transparent image-url('pad.png') no-repeat;
 	right: -60px;
 }
-.fadeIn_responsive {
-	
-}
-.fadeOut_responsive {
-	
-}
-
 // LOGO DESIGN
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -353,11 +346,15 @@
 		margin-bottom: 0px;
 		padding: 0px 0px 0px 0px;
 		div {
+			width: 100%;
+			height: 100%;
 			position: relative;
 			text-align: center;
 			padding: 0px 0px 0px 0px;
 			img {
 				display: inline-block;
+				width: auto;
+				height: auto;
 				position: absolute;
 				top: 0; left: 0; right:0; bottom:0;
 				max-height: 600px;

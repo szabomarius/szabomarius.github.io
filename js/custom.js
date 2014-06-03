@@ -25,7 +25,7 @@ var info_txt = info.find('p');
 // Variables with the description of each web slide
 
 var descriptions = [
-	"Bacon ipsum dolor sit amet filet mignon kevin ball tip brisket, tenderloin doner turkey pork loin meatball. Cow sirloin tri-tip chicken boudin ribeye pancetta bacon ball tip frankfurter capicola t-bone shoulder. Pork tongue tri-tip chicken. Spare ribs ham meatloaf tri-tip, pork chop leberkas biltong andouille." ,
+	"Bacon ipsum dolor sit amet filet mignon kevin ball tip brisket, tenderloin doner turkey pork loin meatball. Cow sirloin tri-tip chicken boudin ribeye pancetta bacon ball tip frankfurter capicola t-bone shoulder. Pork tongue tri-tip chicken." ,
 	"Strip steak venison corned beef, chicken brisket doner meatball short loin pastrami pork pork belly. Pork belly biltong ham hock ribeye, capicola tongue chuck drumstick hamburger corned beef" ,
 	"Ground round hamburger shank prosciutto capicola. Beef andouille pork chop ham pork chuck frankfurter. Shank capicola pig sirloin flank meatloaf leberkas pancetta beef ribs shoulder porchetta corned beef. Turducken andouille boudin bacon frankfurter"
 ]
@@ -193,7 +193,14 @@ graphicSlider.slick({
 			console.log(progress);
 
 		}, 1); //end of setTimeout()
-	} // end of onAfterChange
+	}, // end of onAfterChange
+	responsive: {
+		breakpoint: 795,
+		settings: [{
+			dots: false,
+			arrows: false
+		}]
+	}
 })
 
 // Form effects
