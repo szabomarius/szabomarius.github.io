@@ -289,6 +289,7 @@ function testError(object, message) {
 			}, 600);
 			return false;
 		}
+		return true;
 	}
 	else {
 		return true;
@@ -298,5 +299,10 @@ function validateForm() {
 	var yName = testError(formName, 'Please enter your name');
 	var yEmail = testError(formEmail, 'Please enter your email');
 	var yMessage = testError(formMessage, 'Please enter your message');
-	return (yName && yEmail && yMessage);
+	var result = yName && yEmail && yMessage;
+	console.log("y Name is " + yName);
+	console.log("y Message is " + yMessage);
+	console.log("y Email is " + yEmail);
+	console.log(result);
+	return result;
 }
