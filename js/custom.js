@@ -133,12 +133,14 @@ webSlider.slick({
 var text_container = $('.logo_slider h3 span');
 var slideProgress = $('.logo_slider h3 div');
 var logoSlidesTotal = logoSlider.find("div").length;
+// light logo
 
 // Initiate the slick slider plugin
 console.log("The length of the logo slider is" + logoSlidesTotal);
 logoSlider.slick({
 	speed: 500 ,
 	dots: false,
+	lazyLoad: 'ondemand',
 
 	onAfterChange: function(){
 		setTimeout(function(){
