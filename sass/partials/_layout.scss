@@ -370,6 +370,9 @@
 				opacity: 1;
 			}
 		}
+		&:active {
+			cursor: pointer;
+		}
 	}
 	.change_bulb {
 		img {
