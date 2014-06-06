@@ -290,7 +290,8 @@
 .logo_container button.slick-prev {
 	&:before {
 		@include l-arrow (18px , $body-bg-color);
-		margin-right: 6px;
+		margin-right: 5px;
+		opacity: 1;
 	}
 	&:hover {
 		&:before {
@@ -301,7 +302,8 @@
 .logo_container button.slick-next {
 	&:before {
 		@include r-arrow (18px , $body-bg-color);
-		margin-left: 6px;
+		margin-left: 5px;
+		opacity: 1;
 	}
 	&:hover {
 		&:before {
