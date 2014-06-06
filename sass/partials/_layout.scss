@@ -273,6 +273,9 @@
 			}
 		}
 	}
+	.dark_bg {
+		background-color: $body-bg-color;
+	}
 }
 .logo_container button.slick-prev , .logo_container button.slick-next {
 	height: 100%;
@@ -363,6 +366,14 @@
 		&:hover {
 			img {
 				opacity: 1;
+			}
+		}
+	}
+	.change_bulb {
+		img {
+			display: none;
+			&:first-child {
+				display: block;
 			}
 		}
 	}

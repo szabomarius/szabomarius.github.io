@@ -133,14 +133,13 @@ webSlider.slick({
 var text_container = $('.logo_slider h3 span');
 var slideProgress = $('.logo_slider h3 div');
 var logoSlidesTotal = logoSlider.find("div").length;
-// light logo
 
 // Initiate the slick slider plugin
 console.log("The length of the logo slider is" + logoSlidesTotal);
 logoSlider.slick({
 	speed: 500 ,
 	dots: false,
-	lazyLoad: 'ondemand',
+	// lazyLoad: 'ondemand',
 
 	onAfterChange: function(){
 		setTimeout(function(){
@@ -166,6 +165,33 @@ logoSlider.slick({
 			arrows: false
 		}
 	}
+});
+// Light logo change button
+// light logo, change the logos to a darker / whiter background
+var logoSliderImg = logoSlider.find('img');
+var logoControl = $('.logo_light');
+var logoArray = [];
+var logoArrayD = [];
+
+// itterates over each img from logo slider and changes the src
+function logoLight() {
+	logoSliderImg.each(function() {
+		var dis = $(this);
+		var getDark = dis.data('dark');
+		var getLight = dis.data('lazy');
+		if (!dis.hasClass('dark')) {
+			dis.attr('src' , getDark ).addClass('dark');
+		}
+		else {
+			dis.attr('src' , getLight).removeClass('dark');
+		}
+	});
+	logoSlider.toggleClass('dark_bg');
+	logoControl.toggleClass('change_bulb');
+}
+// Add event listener for button
+logoControl.click(function() {
+	logoLight();
 });
 
 // Javascript for the graphic slider
