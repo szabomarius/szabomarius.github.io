@@ -139,7 +139,7 @@ console.log("The length of the logo slider is" + logoSlidesTotal);
 logoSlider.slick({
 	speed: 500 ,
 	dots: false,
-	// lazyLoad: 'ondemand',
+	lazyLoad: 'ondemand',
 
 	onAfterChange: function(){
 		setTimeout(function(){
