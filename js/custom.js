@@ -205,6 +205,7 @@ console.log("The length of the misc slider is" + miscSlidesTotal);
 graphicSlider.slick({
 	speed: 500,
 	touchThreshold: 20,
+	lazyLoad: 'ondemand',
 
 	onAfterChange: function() {
 		setTimeout(function(){
