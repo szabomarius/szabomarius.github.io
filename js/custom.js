@@ -50,6 +50,7 @@ close_info.click(function(){
 webSlider.slick({
 	speed: 500 ,
 	dots: true ,
+	touchThreshold: 20,
 	slide: 'img',
 	onAfterChange: function(){
 		// Had to put in a timeour because the callback triggered faster than the active class could be applied
@@ -138,6 +139,7 @@ var logoSlidesTotal = logoSlider.find("div").length;
 console.log("The length of the logo slider is" + logoSlidesTotal);
 logoSlider.slick({
 	speed: 500 ,
+	touchThreshold: 20,
 	dots: false,
 	lazyLoad: 'ondemand',
 
