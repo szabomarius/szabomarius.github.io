@@ -1073,39 +1073,44 @@ body {
 }
 
 /* line 581, ../sass/partials/_layout.scss */
+.sass {
+  background: transparent url('../img/skills/sass.png?1402324247') no-repeat left center;
+}
+
+/* line 584, ../sass/partials/_layout.scss */
 .idesign {
   background: transparent url('../img/skills/id.png?1401562482') no-repeat left center;
 }
 
-/* line 584, ../sass/partials/_layout.scss */
+/* line 587, ../sass/partials/_layout.scss */
 .c5 {
   background: transparent url('../img/skills/c5.png?1401562482') no-repeat left center;
 }
 
-/* line 587, ../sass/partials/_layout.scss */
+/* line 590, ../sass/partials/_layout.scss */
 .foundation {
   background: transparent url('../img/skills/foundation.png?1401562482') no-repeat left center;
 }
 
-/* line 590, ../sass/partials/_layout.scss */
+/* line 593, ../sass/partials/_layout.scss */
 .ocart {
   background: transparent url('../img/skills/open.png?1401562482') no-repeat left center;
 }
 
-/* line 593, ../sass/partials/_layout.scss */
+/* line 596, ../sass/partials/_layout.scss */
 .grunt {
   background: transparent url('../img/skills/grunt.png?1401562482') no-repeat left center;
 }
 
-/* line 597, ../sass/partials/_layout.scss */
+/* line 600, ../sass/partials/_layout.scss */
 .footer_contact {
   text-align: left;
 }
-/* line 599, ../sass/partials/_layout.scss */
+/* line 602, ../sass/partials/_layout.scss */
 .footer_contact h2 {
   margin-bottom: 35px;
 }
-/* line 602, ../sass/partials/_layout.scss */
+/* line 605, ../sass/partials/_layout.scss */
 .footer_contact label {
   margin: 30px 0px 15px 0px;
   display: block;
@@ -1116,7 +1121,7 @@ body {
   transition: all 0.3s ease-out;
 }
 
-/* line 608, ../sass/partials/_layout.scss */
+/* line 611, ../sass/partials/_layout.scss */
 .form_input {
   width: 100%;
   background: none;
@@ -1128,13 +1133,13 @@ body {
   outline: none;
 }
 
-/* line 619, ../sass/partials/_layout.scss */
+/* line 622, ../sass/partials/_layout.scss */
 #yMessage {
   margin-bottom: 15px;
   height: 150px;
 }
 
-/* line 623, ../sass/partials/_layout.scss */
+/* line 626, ../sass/partials/_layout.scss */
 #ySend {
   background: none;
   outline: none;
@@ -1150,29 +1155,29 @@ body {
   transition: all 0.3s ease-out;
 }
 
-/* line 633, ../sass/partials/_layout.scss */
+/* line 636, ../sass/partials/_layout.scss */
 .social_contact {
   text-align: center;
 }
-/* line 635, ../sass/partials/_layout.scss */
+/* line 638, ../sass/partials/_layout.scss */
 .social_contact li {
   display: inline-block;
   width: 19.75%;
   height: 79px;
   margin-left: 6%;
 }
-/* line 640, ../sass/partials/_layout.scss */
+/* line 643, ../sass/partials/_layout.scss */
 .social_contact li:first-child {
   margin-left: 0px;
 }
-/* line 644, ../sass/partials/_layout.scss */
+/* line 647, ../sass/partials/_layout.scss */
 .social_contact a {
   display: block;
   position: relative;
   width: 100%;
   height: 100%;
 }
-/* line 649, ../sass/partials/_layout.scss */
+/* line 652, ../sass/partials/_layout.scss */
 .social_contact a img {
   display: block;
   position: absolute;
@@ -1182,7 +1187,7 @@ body {
   top: 0;
 }
 
-/* line 659, ../sass/partials/_layout.scss */
+/* line 662, ../sass/partials/_layout.scss */
 .social_contact img:nth-child(2) {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -1192,7 +1197,7 @@ body {
   opacity: 1;
 }
 
-/* line 664, ../sass/partials/_layout.scss */
+/* line 667, ../sass/partials/_layout.scss */
 .social_hover img:nth-child(2) {
   opacity: 0;
 }
