@@ -42,7 +42,7 @@ var descriptions = [
 	// primarie
 	"This was a project that never came into fruition. I tried to design a town hall website to be as modern as possible while still being able to serve the heavy amount of information that such a website is supposed to. Opted for a 2 collumn layout simply because there was a need for some links to always be accesible to users. I designed it and will probably not develop it.",
 	// upload platform
-	""
+	"A simple upload interface I designed for a project I'm currently developing. I'm trying to build a drag and drop upload platform with user accounts to use in any future projects that need it. I designed it and currently developing it"
 ]
 
 // Hide every other device instead of the first one, or something like that
