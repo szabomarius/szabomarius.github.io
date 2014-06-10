@@ -28,19 +28,19 @@ var descriptions = [
 	// eva gaja
 	"This is a redesign of the original site. It uses a simple slider made in javascript/jQuery. Most images required to be cutout in photoshop to achieve the desired effect that you can see in the thumbnail. I designed and developed it." ,
 	// personal portofolio
-	"This is my personal portofolio website, the same one you are using right now. The reason I put it in here, is to showcase the fact that I do have the capabilities to make a responsive website. Most animations are done in CSS3 and the important ones have jQuery fallback in case of older browsers. I designed and developed it." ,
+	"This is my personal portofolio website, the same one you are using right now. The reason I put it in here, is to showcase the fact that I do have the capabilities to make a responsive website. Animations are done in CSS3 with a Jquery fallback. I designed and developed it." ,
 	// redhouse
-	"This is another redisign of the original website. I opted for a 2 column layout, where I position the main content on the left, and the sidebar which features quick links and widgets on the right. Unfortunately, the website is only 90% completed because the restaurant has closed while in development. I designed and developed it.",
+	"This is another redisign of the original website. Unfortunately, the website is only 90% completed because the restaurant has closed while in development. I designed and developed it.",
 	// ritmocardio
-	"This website was made using Wordpress, and each section is editable from the administrator panel. The main reason for using a CMS was for the medical team to be able to personally edit the website and they needed a forum type section where people could post comments or questions about procedures. I designed and developed it.",
+	"This website was made using Wordpress. The main reason for using a CMS was for the medical team to be able to personally edit the website and recieve and moderate comments from patients. I designed and developed it.",
 	// ciurila
-	"This website also uses Wordpress. The sections are editable, widgets can be placed in the 2 sidebars, there is an editable gallery and news template. The gallery relies on the fancy box jQuery plugin and with the events you can put a calendar widget to properly show you the date of all upcoming events. I only developed this website (front and backend)",
+	"This website also uses Wordpress. The sections are editable, widgets can be placed in the 2 sidebars, there is an editable gallery and news template. I only developed this website (front and backend)",
 	// my blog
-	"This is my personal blog that I designed. It is currently in development and will soon be launched and linked properly in the contact page of my portofolio website. When a page has articles of text as its main focus, I enjoy it to be as clutter free as possible. With that in mind I tried to make the blog as simple and easy to read as possible. I designed it and will develop it",
+	"This is my personal blog that I designed. It is currently in development and will soon be launched. I tried to design it as simple as possible to remove all clutter that inhibits good readability. I designed it and will develop it",
 	// happy pups
-	"A personal project of mine where I designed a one page website for a fictional dog walking company called HappyPups. I made the logo and graphics for it and I'm planning to develop it using the foundation framework as practice. It will also be fully responsive. I designed it and will develop it",
+	"A personal project of mine where I designed a one page website for a fictional dog walking company called HappyPups. I made its logo and I'm planning to develop it using the foundation framework as practice. It will also be fully responsive. I designed it and will develop it",
 	// primarie
-	"This was a project that never came into fruition. I tried to design a town hall website to be as modern as possible while still being able to serve the heavy amount of information that such a website is supposed to. Opted for a 2 collumn layout simply because there was a need for some links to always be accesible to users. I designed it and will probably not develop it.",
+	"This was a project that never came into fruition. I tried to design a town hall website to be as modern as possible while still being able to serve the heavy amount of information that such a website is supposed to. I designed it and will probably not develop it.",
 	// upload platform
 	"A simple upload interface I designed for a project I'm currently developing. I'm trying to build a drag and drop upload platform with user accounts to use in any future projects that need it. I designed it and currently developing it"
 ]
