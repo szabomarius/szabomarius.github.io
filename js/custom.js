@@ -1,10 +1,7 @@
 $(document).ready(function() {
 // Responsive window width for the footer
 var windo = $(window);
-$(window).resize(function() {
-        var wi = window.outerWidth;
-        console.log('Screen width is currently: ' + wi + 'px.');
-});
+
 // Javascript for the web slider
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Variables with each jquery slider object
@@ -23,32 +20,30 @@ var close_info = $('.close_info');
 var info_txt = info.find('p');
 
 // Variables with the description of each web slide
-
-var descriptions = [
-	// eva gaja
-	"This is a redesign of the original site. It uses a simple slider made in javascript/jQuery. Most images required to be cutout in photoshop to achieve the desired effect that you can see in the thumbnail. I designed and developed it." ,
-	// personal portofolio
-	"This is my personal portofolio website, the same one you are using right now. The reason I put it in here, is to showcase the fact that I do have the capabilities to make a responsive website. Animations are done in CSS3 with a Jquery fallback. I designed and developed it." ,
-	// redhouse
-	"This is another redisign of the original website. Unfortunately, the website is only 90% completed because the restaurant has closed while in development. I designed and developed it.",
-	// ritmocardio
-	"This website was made using Wordpress. The main reason for using a CMS was for the medical team to be able to personally edit the website and recieve and moderate comments from patients. I designed and developed it.",
-	// ciurila
-	"This website also uses Wordpress. The sections are editable, widgets can be placed in the 2 sidebars, there is an editable gallery and news template. I only developed this website (front and backend)",
-	// my blog
-	"This is my personal blog that I designed. It is currently in development and will soon be launched. I tried to design it as simple as possible to remove all clutter that inhibits good readability. I designed it and will develop it",
-	// happy pups
-	"A personal project of mine where I designed a one page website for a fictional dog walking company called HappyPups. I made its logo and I'm planning to develop it using the foundation framework as practice. It will also be fully responsive. I designed it and will develop it",
-	// primarie
-	"This was a project that never came into fruition. I tried to design a town hall website to be as modern as possible while still being able to serve the heavy amount of information that such a website is supposed to. I designed it and will probably not develop it.",
-	// upload platform
-	"A simple upload interface I designed for a project I'm currently developing. I'm trying to build a drag and drop upload platform with user accounts to use in any future projects that need it. I designed it and currently developing it"
-]
+// This is found in either en.js or ro.js
+// var descriptions = [
+// 	// eva gaja
+// 	"This is a redesign of the original site. It uses a simple slider made in javascript/jQuery. Most images required to be cutout in photoshop to achieve the desired effect that you can see in the thumbnail. I designed and developed it." ,
+// 	// personal portofolio
+// 	"This is my personal portofolio website, the same one you are using right now. The reason I put it in here, is to showcase the fact that I do have the capabilities to make a responsive website. Animations are done in CSS3 with a Jquery fallback. I designed and developed it." ,
+// 	// redhouse
+// 	"This is another redisign of the original website. Unfortunately, the website is only 90% completed because the restaurant has closed while in development. I designed and developed it.",
+// 	// ritmocardio
+// 	"This website was made using Wordpress. The main reason for using a CMS was for the medical team to be able to personally edit the website and recieve and moderate comments from patients. I designed and developed it.",
+// 	// ciurila
+// 	"This website also uses Wordpress. The sections are editable, widgets can be placed in the 2 sidebars, there is an editable gallery and news template. I only developed this website (front and backend)",
+// 	// my blog
+// 	"This is my personal blog that I designed. It is currently in development and will soon be launched. I tried to design it as simple as possible to remove all clutter that inhibits good readability. I designed it and will develop it",
+// 	// happy pups
+// 	"A personal project of mine where I designed a one page website for a fictional dog walking company called HappyPups. I made its logo and I'm planning to develop it using the foundation framework as practice. It will also be fully responsive. I designed it and will develop it",
+// 	// primarie
+// 	"This was a project that never came into fruition. I tried to design a town hall website to be as modern as possible while still being able to serve the heavy amount of information that such a website is supposed to. I designed it and will probably not develop it.",
+// 	// upload platform
+// 	"A simple upload interface I designed for a project I'm currently developing. I'm trying to build a drag and drop upload platform with user accounts to use in any future projects that need it. I designed it and currently developing it"
+// ]
 
 // Hide every other device instead of the first one, or something like that
-if ( firstImg.data('res') ) {
-	console.log ("the first image is responsive");
-} else {
+if ( !firstImg.data('res') ) {
 	responsiveDevices.hide();
 }
 
@@ -108,47 +103,47 @@ webSlider.slick({
 			switch (projectNr) {
 				case "project1":
 					link.attr("href" , "http://szabomarius.comze.com/evagaja/");
-					linkText.html("Art Eva Gaja");
+					linkText.html(webTitles[0]);
 					info_txt.html(descriptions[0]);
 					break;
 				case "project2":
 					link.attr("href" , "#");
-					linkText.html("My Portofolio");
+					linkText.html(webTitles[1]);
 					info_txt.html(descriptions[1]);
 					break;
 				case "project3":
 					link.attr("href" , "https://dl.dropboxusercontent.com/u/16930332/redhouse/index.html");
-					linkText.html("Restaurant RedHouse");
+					linkText.html(webTitles[2]);
 					info_txt.html(descriptions[2]);
 					break;
 				case "project4":
 					link.attr("href" , "http://szabomarius.comze.com/wp_ritmocardio/");
-					linkText.html("Ritmocardio");
+					linkText.html(webTitles[3]);
 					info_txt.html(descriptions[3]);
 					break;
 				case "project5":
 					link.attr("href" , "http://szabomarius.comze.com/wp_ciurila/");
-					linkText.html("Ciurila - (Only Development)");
+					linkText.html(webTitles[4]);
 					info_txt.html(descriptions[4]);
 					break;
 				case "project6":
 					link.attr("href" , "https://www.behance.net/gallery/17536897/My-personal-blog");
-					linkText.html("My blog - (Design)");
+					linkText.html(webTitles[5]);
 					info_txt.html(descriptions[5]);
 					break;
 				case "project7":
 					link.attr("href" , "https://www.behance.net/gallery/17532297/HappyPupscom");
-					linkText.html("HappyPups - (Design)");
+					linkText.html(webTitles[6]);
 					info_txt.html(descriptions[6]);
 					break;
 				case "project8":
 					link.attr("href" , "https://www.behance.net/gallery/17546015/Town-Hall-Design");
-					linkText.html("Primaria Cosna - (Design)");
+					linkText.html(webTitles[7]);
 					info_txt.html(descriptions[7]);
 					break;					
 				case "project9":
 					link.attr("href" , "https://www.behance.net/wip/629737/1161061");
-					linkText.html("Upload Platform - (In-Development)");
+					linkText.html(webTitles[8]);
 					info_txt.html(descriptions[8]);
 					break;
 				default:
@@ -181,7 +176,6 @@ var slideProgress = $('.logo_slider h3 div');
 var logoSlidesTotal = logoSlider.find("div").length;
 
 // Initiate the slick slider plugin
-console.log("The length of the logo slider is" + logoSlidesTotal);
 logoSlider.slick({
 	speed: 500 ,
 	touchThreshold: 20,
@@ -247,7 +241,6 @@ logoControl.click(function() {
 var text_container_misc = $('.bottom_divider h3');
 var slideProgress_misc = $('.bottom_divider div');
 var miscSlidesTotal = graphicSlider.find("div").length;
-console.log("The length of the misc slider is" + miscSlidesTotal);
 // Initiate the slick slider plugin
 graphicSlider.slick({
 	speed: 500,
@@ -357,7 +350,7 @@ function testError(object, message) {
 		var dotpos = objectValue.lastIndexOf(".");
 		var vlength = objectValue.length;
 		if (atpos < 1 || dotpos<atpos+2 || dotpos+2>=vlength) {
-			labelObj.append('<span class="errorMsg"> - Please enter a valid email</span>');
+			labelObj.append('<span class="errorMsg"> - ' + formErrors["validError"] + '</span>');
 			setTimeout(function(){
 				$('.errorMsg').fadeOut(200, function() {
 					$(this).remove();
@@ -372,13 +365,9 @@ function testError(object, message) {
 	}
 }
 function validateForm() {
-	var yName = testError(formName, 'Please enter your name');
-	var yEmail = testError(formEmail, 'Please enter your email');
-	var yMessage = testError(formMessage, 'Please enter your message');
+	var yName = testError(formName, formErrors["nameError"]);
+	var yEmail = testError(formEmail, formErrors["emailError"]);
+	var yMessage = testError(formMessage, formErrors["messageError"]);
 	var result = yName && yEmail && yMessage;
-	console.log("y Name is " + yName);
-	console.log("y Message is " + yMessage);
-	console.log("y Email is " + yEmail);
-	console.log(result);
 	return result;
 }

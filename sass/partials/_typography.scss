@@ -28,6 +28,16 @@ body {
 	@include x-rem ( font-size, 72px );
 	color: $main-color;
 }
+.language_link {
+	li {
+
+	}
+	a {
+		text-transform: uppercase;
+		font-family: $heading-type;
+		text-decoration: none;
+	}
+}
 // CONTENT STYLES
 // ---------------------------------------------------------------
 .web_link {
