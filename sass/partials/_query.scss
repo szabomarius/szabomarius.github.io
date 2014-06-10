@@ -96,6 +96,17 @@
 	width: 50%;
 	float: right;
 }
+// graphic slider
+.graphic_slider {
+	.slick_slider {
+		div {
+			img {
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+	}
+}
 // ------------------------------------------------------
 }
 @media all and ( max-width: 930px ) {
@@ -280,6 +291,22 @@ height: auto;
 .about_heading_paragraphs {
 	float: none;
 	width: 100%;
+}
+// ------------------------------------------------------
+}
+@media all and ( max-width: 550px ) {
+// ------------------------------------------------------
+.graphic_slider {
+	.slick_slider {
+		div {
+			img {
+				max-width: default;
+				width: 80%;
+				height: auto;
+				max-height: 100%;
+			}
+		}
+	}
 }
 // ------------------------------------------------------
 }

@@ -25,9 +25,24 @@ var info_txt = info.find('p');
 // Variables with the description of each web slide
 
 var descriptions = [
-	"Bacon ipsum dolor sit amet filet mignon kevin ball tip brisket, tenderloin doner turkey pork loin meatball. Cow sirloin tri-tip chicken boudin ribeye pancetta bacon ball tip frankfurter capicola t-bone shoulder. Pork tongue tri-tip chicken." ,
-	"Strip steak venison corned beef, chicken brisket doner meatball short loin pastrami pork pork belly. Pork belly biltong ham hock ribeye, capicola tongue chuck drumstick hamburger corned beef" ,
-	"Ground round hamburger shank prosciutto capicola. Beef andouille pork chop ham pork chuck frankfurter. Shank capicola pig sirloin flank meatloaf leberkas pancetta beef ribs shoulder porchetta corned beef. Turducken andouille boudin bacon frankfurter"
+	// eva gaja
+	"This is a redesign of the original site. It uses a simple slider made in javascript/jQuery. Most images required to be cutout in photoshop to achieve the desired effect that you can see in the thumbnail. I designed and developed it." ,
+	// personal portofolio
+	"This is my personal portofolio website, the same one you are using right now. The reason I put it in here, is to showcase the fact that I do have the capabilities to make a responsive website. Animations are done in CSS3 with a Jquery fallback. I designed and developed it." ,
+	// redhouse
+	"This is another redisign of the original website. Unfortunately, the website is only 90% completed because the restaurant has closed while in development. I designed and developed it.",
+	// ritmocardio
+	"This website was made using Wordpress. The main reason for using a CMS was for the medical team to be able to personally edit the website and recieve and moderate comments from patients. I designed and developed it.",
+	// ciurila
+	"This website also uses Wordpress. The sections are editable, widgets can be placed in the 2 sidebars, there is an editable gallery and news template. I only developed this website (front and backend)",
+	// my blog
+	"This is my personal blog that I designed. It is currently in development and will soon be launched. I tried to design it as simple as possible to remove all clutter that inhibits good readability. I designed it and will develop it",
+	// happy pups
+	"A personal project of mine where I designed a one page website for a fictional dog walking company called HappyPups. I made its logo and I'm planning to develop it using the foundation framework as practice. It will also be fully responsive. I designed it and will develop it",
+	// primarie
+	"This was a project that never came into fruition. I tried to design a town hall website to be as modern as possible while still being able to serve the heavy amount of information that such a website is supposed to. I designed it and will probably not develop it.",
+	// upload platform
+	"A simple upload interface I designed for a project I'm currently developing. I'm trying to build a drag and drop upload platform with user accounts to use in any future projects that need it. I designed it and currently developing it"
 ]
 
 // Hide every other device instead of the first one, or something like that
@@ -50,6 +65,7 @@ close_info.click(function(){
 webSlider.slick({
 	speed: 500 ,
 	dots: true ,
+	touchThreshold: 20,
 	slide: 'img',
 	onAfterChange: function(){
 		// Had to put in a timeour because the callback triggered faster than the active class could be applied
@@ -91,19 +107,49 @@ webSlider.slick({
 			// Change links according to the current selected
 			switch (projectNr) {
 				case "project1":
-					link.attr("href" , "http://www.google-1.com");
-					linkText.html("Ciclist");
+					link.attr("href" , "http://szabomarius.comze.com/evagaja/");
+					linkText.html("Art Eva Gaja");
 					info_txt.html(descriptions[0]);
 					break;
 				case "project2":
-					link.attr("href" , "http://www.google-2.com");
-					linkText.html("Electronica");
+					link.attr("href" , "#");
+					linkText.html("My Portofolio");
 					info_txt.html(descriptions[1]);
 					break;
 				case "project3":
-					link.attr("href" , "http://www.google-3.com");
-					linkText.html("Autobus Rosu");
+					link.attr("href" , "https://dl.dropboxusercontent.com/u/16930332/redhouse/index.html");
+					linkText.html("Restaurant RedHouse");
 					info_txt.html(descriptions[2]);
+					break;
+				case "project4":
+					link.attr("href" , "http://szabomarius.comze.com/wp_ritmocardio/");
+					linkText.html("Ritmocardio");
+					info_txt.html(descriptions[3]);
+					break;
+				case "project5":
+					link.attr("href" , "http://szabomarius.comze.com/wp_ciurila/");
+					linkText.html("Ciurila - (Only Development)");
+					info_txt.html(descriptions[4]);
+					break;
+				case "project6":
+					link.attr("href" , "https://www.behance.net/gallery/17536897/My-personal-blog");
+					linkText.html("My blog - (Design)");
+					info_txt.html(descriptions[5]);
+					break;
+				case "project7":
+					link.attr("href" , "https://www.behance.net/gallery/17532297/HappyPupscom");
+					linkText.html("HappyPups - (Design)");
+					info_txt.html(descriptions[6]);
+					break;
+				case "project8":
+					link.attr("href" , "https://www.behance.net/gallery/17546015/Town-Hall-Design");
+					linkText.html("Primaria Cosna - (Design)");
+					info_txt.html(descriptions[7]);
+					break;					
+				case "project9":
+					link.attr("href" , "https://www.behance.net/wip/629737/1161061");
+					linkText.html("Upload Platform - (In-Development)");
+					info_txt.html(descriptions[8]);
 					break;
 				default:
 					
@@ -138,6 +184,7 @@ var logoSlidesTotal = logoSlider.find("div").length;
 console.log("The length of the logo slider is" + logoSlidesTotal);
 logoSlider.slick({
 	speed: 500 ,
+	touchThreshold: 20,
 	dots: false,
 	lazyLoad: 'ondemand',
 
@@ -205,6 +252,7 @@ console.log("The length of the misc slider is" + miscSlidesTotal);
 graphicSlider.slick({
 	speed: 500,
 	touchThreshold: 20,
+	lazyLoad: 'ondemand',
 
 	onAfterChange: function() {
 		setTimeout(function(){
