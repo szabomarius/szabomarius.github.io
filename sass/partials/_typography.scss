@@ -76,7 +76,7 @@ body {
 	font-family: "Open Sans Condensed" , sans-serif;
 	@include x-rem ( font-size, 20px );
 	letter-spacing: 2px;
-	text-transform: capitalize;
+	text-transform: none;
 	color: $header-txt-color;
 }
 .bottom_divider h3 {
