@@ -41,14 +41,25 @@
 	display: none;
 }
 .language_link {
+	margin-top: 40px;
 	display: block;
 	width: 100%;
 	text-align: center;
 	li {
 		display: inline-block;
+		padding: 0px 40px;
 	}
 	a {
-
+		opacity: 0.2;
+		padding: 5px;
+		&:hover {
+			opacity: 0.5;
+		}
+	}
+	.language_link_active {
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 // CONTENT STYLES

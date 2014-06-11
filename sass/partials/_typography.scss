@@ -36,6 +36,11 @@ body {
 		text-transform: uppercase;
 		font-family: $heading-type;
 		text-decoration: none;
+		color: $header-txt-color;
+	}
+	.language_link_active {
+		color: $main-color;
+		opacity: 1;
 	}
 }
 // CONTENT STYLES
