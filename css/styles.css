@@ -135,6 +135,13 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #fff inset;
 }
 
+/* line 20, ../sass/partials/_general.scss */
+img {
+  color: transparent;
+  outline: none;
+  border: none;
+}
+
 /* line 4, ../sass/partials/_typography.scss */
 html {
   font-size: 62.5%;
