@@ -2,10 +2,20 @@
 
 // Variables with the description of each web slide - line 22
 var descriptions = [
-	// eva gaja
-	"Acesta este un redesign al site-ului oficial. Majoritatea imaginilor din slider au avut nevoie de decupaje in Photoshop pentru a ajunge la efectul prezent in thumbnail. Am facut designul si programarea." ,
+    // Warrior films promotions
+    "Site-ul principal pentru warriorfilmpromotions, Am folosit wordpress impreuna cu Advanced custom fields pentru o usoara editare a continutului de catre client. Am realizat programarea",
+    // Warrior films promotions landing
+    "Pagina de promovare warriorfilmpromotions, Editabila integral, Testare A/B , Wordpress. Am realizat design-ul si programarea",
+    // Bye Bye Stud Website
+    "Website pentru ByeByeStud events, Framework PHP custom. Am realizat design-ul si programarea",
+    // Bye Bye Stud Interactive story
+    "Brochura de prezentare interactiva. Am realizat design-ul si programarea",
+    // Practica formativa
+    "Site web sponsorizat guvernamental pentru practica studentilor in medicina. Am realizat design-ul si programarea",
 	// personal portofolio
 	"Portofoliul meu personal, pe care sunteti si vizionati proiectele. Designul si Implementarea receptiva (se modifica cu dimensiunile ecranului) . Animatii in CSS3 cu fallback jQuery. Am facut designul si programarea." ,
+	// eva gaja
+	"Acesta este un redesign al site-ului oficial. Majoritatea imaginilor din slider au avut nevoie de decupaje in Photoshop pentru a ajunge la efectul prezent in thumbnail. Am facut designul si programarea." ,
 	// redhouse
 	"Inca un redesign al site-ului oficial. Din nefericire, Site-ul este in proportie de 90% functional doarece restaurantul a fost inchis in timpul productiei. Am facut designul si programarea.",
 	// ritmocardio
@@ -24,8 +34,13 @@ var descriptions = [
 
 // Variables for the titles of each slide in web slider
 var webTitles = [
+    "Warriorfilmpromotions Website",
+    "Warriorfilmpromotions Landing Page",
+    "ByeByeStud Website",
+    "ByeByeStud Interactiv",
+    "Practica Formativa",
+    "Portofoliul Meu",
 	"Art Eva Gaja",
-	"Portofoliul Meu",
 	"Restaurant RedHouse",
 	"Ritmocardio",
 	"Ciurila - (Doar Programare)",

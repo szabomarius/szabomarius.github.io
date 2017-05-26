@@ -2,10 +2,20 @@
 
 // Variables with the description of each web slide - line 22
 var descriptions = [
-	// eva gaja
-	"This is a redesign of the original site. It uses a simple slider made in javascript/jQuery. Most images required to be cutout in photoshop to achieve the desired effect that you can see in the thumbnail. I designed and developed it." ,
+	// Warrior films promotions
+	"Main website for warriorfilmpromotions, Used wordpress for it with Advanced custom fields to be easily editable by the client, including custom functionality to add movies and tag their status. I developed it",
+	// Warrior films promotions landing
+	"Landing page for warriorfilmpromotions, Fully editable, Using A/B testing, Wordpress. I developed and designed it",
+	// Bye Bye Stud Website
+	"Website for ByeByeStud events, Custom PHP framework. I developed and designed it",
+	// Bye Bye Stud Interactive story
+	"Interactive one page brochure website for ByeByeStud. I developed and designed it",
+    // Practica formativa
+	"Government sponsored website for student medical internships. I developed and designed it",
 	// personal portofolio
 	"This is my personal portofolio website, the same one you are using right now. The reason I put it in here, is to showcase the fact that I do have the capabilities to make a responsive website. Animations are done in CSS3 with a Jquery fallback. I designed and developed it." ,
+	// eva gaja
+	"This is a redesign of the original site. It uses a simple slider made in javascript/jQuery. Most images required to be cutout in photoshop to achieve the desired effect that you can see in the thumbnail. I designed and developed it." ,
 	// redhouse
 	"This is another redisign of the original website. Unfortunately, the website is only 90% completed because the restaurant has closed while in development. I designed and developed it.",
 	// ritmocardio
@@ -24,15 +34,20 @@ var descriptions = [
 
 // Variables for the titles of each slide in web slider
 var webTitles = [
-	"Art Eva Gaja",
-	"My Portofolio",
+    "Warriorfilmpromotions Website",
+    "Warriorfilmpromotions Landing Page",
+    "ByeByeStud Website",
+    "ByeByeStud Interactive Story",
+    "Practica Formativa",
+    "My Portofolio",
+    "Art Eva Gaja",
 	"Restaurant RedHouse",
 	"Ritmocardio",
 	"Ciurila - (Only Development)",
 	"My blog - (Design)",
 	"HappyPups - (Design)",
 	"Primaria Cosna - (Design)",
-	"Upload Platform - (In-Development)"	
+	"Upload Platform - (In-Development)"
 ]
 // Variables for the form errors
 var formErrors = {
