@@ -258,6 +258,29 @@ body {
   font-size: 3.2rem;
   font-family: "Intro", "Arial", sans-serif;
 }
+.footer_section h3 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-family: "Intro", "Arial", sans-serif;
+  margin-bottom: 5px;
+}
+
+.skill_section {
+  margin-top: 30px;
+}
+
+.skills_list {
+  opacity: 0.6;
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  text-align: justify;
+  text-justify: inter-word;
+  font-weight: normal;
+  list-style-type: circle;
+  margin-left: 10px;
+}
 
 /* line 98, ../sass/partials/_typography.scss */
 .footer_about p {
