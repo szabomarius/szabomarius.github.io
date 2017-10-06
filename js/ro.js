@@ -2,6 +2,7 @@
 
 // Variables with the description of each web slide - line 22
 var descriptions = [
+    "Site-ul principal pentru badpennyentertainment, Am folosit wordpress impreuna cu Advanced custom fields pentru o usoara editare a continutului de catre client, registrare useri si template mail-uri. Am realizat programarea",
     // Warrior films promotions
     "Site-ul principal pentru warriorfilmpromotions, Am folosit wordpress impreuna cu Advanced custom fields pentru o usoara editare a continutului de catre client. Am realizat programarea",
     // Warrior films promotions landing

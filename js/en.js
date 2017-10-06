@@ -2,6 +2,7 @@
 
 // Variables with the description of each web slide - line 22
 var descriptions = [
+    "Main website for badpennyentertainment, Used wordpress for it with Advanced custom fields to be easily editable by the client, including custom registration, emails etc.",
 	// Warrior films promotions
 	"Main website for warriorfilmpromotions, Used wordpress for it with Advanced custom fields to be easily editable by the client, including custom functionality to add movies and tag their status. I developed it",
 	// Warrior films promotions landing
@@ -34,6 +35,7 @@ var descriptions = [
 
 // Variables for the titles of each slide in web slider
 var webTitles = [
+	"Badpennyentertainment Website",
     "Warriorfilmpromotions Website",
     "Warriorfilmpromotions Landing Page",
     "ByeByeStud Website",
