@@ -96,33 +96,33 @@ webSlider.slick({
 
 			// Change links according to the current selected
 			switch (projectNr) {
-				case "project1":
-					link.attr("href" , "http://warriorfilmpromotions.co.uk");
-					linkText.html(webTitles[0]);
-					info_txt.html(descriptions[0]);
-					break;
+                case "project1":
+                    link.attr("href" , "http://badpennyentertainment.com/");
+                    linkText.html(webTitles[0]);
+                    info_txt.html(descriptions[0]);
+                    break;
 				case "project2":
-					link.attr("href" , "http://warriorfilmpromotions.co.uk/landing-page");
+					link.attr("href" , "http://warriorfilmpromotions.co.uk");
 					linkText.html(webTitles[1]);
 					info_txt.html(descriptions[1]);
 					break;
 				case "project3":
-					link.attr("href" , "http://byebyestud.ro");
+					link.attr("href" , "http://warriorfilmpromotions.co.uk/landing-page");
 					linkText.html(webTitles[2]);
 					info_txt.html(descriptions[2]);
 					break;
 				case "project4":
-					link.attr("href" , "http://byebyestud.ro/mapaonline2016/");
+					link.attr("href" , "http://byebyestud.ro");
 					linkText.html(webTitles[3]);
 					info_txt.html(descriptions[3]);
 					break;
 				case "project5":
-					link.attr("href" , "http://www.practicaformativa.ro/");
+					link.attr("href" , "http://byebyestud.ro/mapaonline2016/");
 					linkText.html(webTitles[4]);
 					info_txt.html(descriptions[4]);
 					break;
 				case "project6":
-					link.attr("href" , "javascript:void(0);");
+					link.attr("href" , "http://www.practicaformativa.ro/");
 					linkText.html(webTitles[5]);
 					info_txt.html(descriptions[5]);
 					break;
@@ -135,12 +135,12 @@ webSlider.slick({
 					link.attr("href" , "javascript:void(0);");
 					linkText.html(webTitles[7]);
 					info_txt.html(descriptions[7]);
-					break;					
+					break;
 				case "project9":
 					link.attr("href" , "javascript:void(0);");
 					linkText.html(webTitles[8]);
 					info_txt.html(descriptions[8]);
-					break;
+					break;					
 				case "project10":
 					link.attr("href" , "javascript:void(0);");
 					linkText.html(webTitles[9]);
@@ -150,6 +150,7 @@ webSlider.slick({
 					link.attr("href" , "javascript:void(0);");
 					linkText.html(webTitles[10]);
 					info_txt.html(descriptions[10]);
+					break;
 				case "project12":
 					link.attr("href" , "javascript:void(0);");
 					linkText.html(webTitles[11]);
@@ -162,6 +163,10 @@ webSlider.slick({
 					link.attr("href" , "javascript:void(0);");
 					linkText.html(webTitles[13]);
 					info_txt.html(descriptions[13]);
+				case "project15":
+					link.attr("href" , "javascript:void(0);");
+					linkText.html(webTitles[14]);
+					info_txt.html(descriptions[14]);
 					break;
 				default:
 					
